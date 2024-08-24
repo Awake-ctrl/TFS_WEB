@@ -36,7 +36,10 @@ const Article = () => {
                 />
                 <div className="author-details">
                     <p className="author-name">
-                        <Link to={`/authors/${authorName}`}>{authorName}</Link>
+                        Author:<Link to={`/authors/${authorName}`}>{authorName}</Link>
+                    </p>
+                    <p className="publication-date">
+                        Published On: {publicationDate}
                     </p>
                 
                 </div>

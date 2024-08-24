@@ -52,38 +52,36 @@
 
 .author-container {
     display: flex;
-    flex-direction: row;  
-    object-position: center;
-    background-color: gray ;
-    border-color: bisque;
-    border-radius: 20px;
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-bottom: 1%;
-    /*padding-right: 15vw;
-    max-width: 1000px; */
+    flex-direction: row;
+    align-items: center;
+    min-height: 100%; 
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
+    border: 2px solid #d0bfa3; 
+    border-radius: 15px;
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2vw; 
 }
 
 .author-image {
-    width: 20%;
+    width: 15%;
     height: auto;
     border-radius: 50%;
-    margin-right: 20px; /* Space between image and text */
-    
-    
+    margin-right: 20px; 
+    border: 3px solid #d0bfa3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .author-name,
 .publication-date {
     margin: 0;
-    /* Adjust font size */
-    color: black;
-    align-self: flex-start;
+    font-size: 1.2em; 
+    font-family: 'Courier New', Courier, monospace;
+    color: #333; 
 }
 
 .author-details {
     display: flex;
-    flex-direction: column; /* Stack name and date vertically */
-    align-items: flex-start; /* Align text to the start of the container */
-    align-self: center;
+    flex-direction: column; 
+    align-items: flex-start; 
 }
