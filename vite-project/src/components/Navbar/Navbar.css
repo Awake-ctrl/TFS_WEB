@@ -1,0 +1,121 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Stack logo and links vertically */
+  align-items: center;
+  padding: 0 20px;
+  background-color: #333;
+  position: relative;
+}
+
+.navbar-logo {
+  margin-bottom: 10px; /* Space between logo and navigation links */
+}
+
+.navbar-logo a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-image {
+  height: 60px; /* Adjust the height as needed */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.navbar-menu {
+  width: 100%;
+}
+
+.navbar-links {
+  display: flex; /* Make the links display in a row */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the links horizontally */
+}
+
+.navbar-links li {
+  margin: 0;
+  position: relative; /* Position for dropdown positioning */
+}
+
+.navbar-link {
+  color: #fff; /* Text color */
+  text-decoration: none; /* Remove underline */
+  font-family: Tahoma, Arial, sans-serif; /* Font styling */
+  font-size: 15px; /* Font size */
+  padding: 10px 15px; /* Padding around the text */
+  border-radius: 4px; /* Optional: rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover and active states */
+}
+
+.navbar-link:hover {
+  background-color: #900603; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+.navbar-link.active {
+  background-color: #eab5a7; /* Background color when selected (active link) */
+  color: #900603; /* Text color when selected (active link) */
+}
+
+.dropdown {
+  position: relative; /* Position for dropdown menu */
+}
+
+.dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: absolute; /* Position dropdown relative to the parent */
+  top: 100%; /* Position below the parent link */
+  left: 0;
+  /* background-color: #333; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px; /* Optional: rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: box shadow */
+}
+
+.dropdown-menu.show {
+  display: block; /* Show dropdown when active */
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu .navbar-link {
+  padding: 10px 15px; /* Padding for dropdown items */
+  background-color: #333; 
+}
+
+.dropdown-menu .navbar-link:hover {
+  background-color: #900603; /* Background color on hover in dropdown */
+  color: #0c0b0b; /* Text color on hover in dropdown */
+}
+.button{
+  background-color: #333; 
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide links by default on smaller screens */
+    position: absolute;
+    top: 60px; /* Adjust based on logo height */
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show toggle button on smaller screens */
+  }
+}
