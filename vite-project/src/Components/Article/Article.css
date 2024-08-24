@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100vw;
-    height: 100vh;
+    
    
 }
 
@@ -14,7 +14,7 @@
     padding-top: 3vw;
     padding-left: 15vw;
     padding-right: 15vw;
-    max-width: 650px;
+    max-width: 1000px;
     
 }
 
@@ -27,7 +27,7 @@
 
 .rect-heading{
     font-family: 'Times New Roman', Times, serif;
-    font-size: clamp(12px,7vw,40px);
+    font-size: clamp(12px,7vw,35px);
     margin: 0;
 }
 .rect-additional-data{

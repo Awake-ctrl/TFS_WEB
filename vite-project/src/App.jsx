@@ -23,6 +23,7 @@ import About_us from "../src/pages/ABOUT_US"
 import Contact_us from "../src/pages/CONTACT_US"
 import Feedback from "../src/pages/Feedback"
 import Saikiran from "../src/pages/Authors/Author1"
+import Article from "./Components/Article/Article";
 
 function App() {
   // const [token, setToken] = useState(false);
@@ -43,7 +44,7 @@ function App() {
       <Route path="/rectangle" element={<Rectangle />} /> */}
 
       <Routes>s
-       <Route path="/rectangle" element={<Rectangle />} />
+       <Route path="/rectangle" element={<Article />} />
 
 
         <Route path="/" element={<Home/>}/>
