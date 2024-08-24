@@ -1,0 +1,19 @@
+/* Sidebar */
+aside {
+    /* width: 15%; Takes 20% of the screen width */
+
+    /* padding: 20px; Add some padding */
+    background-color:white; /* Dark background for the sidebar */
+    color: rgb(32, 31, 31); /* White text color */
+    /* overflow: auto; Scrollable content */
+    margin-top: 1rem;
+    height: auto;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
+  }
