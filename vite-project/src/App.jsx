@@ -1,7 +1,7 @@
 
 
 // ?import React from 'react'
-import { useState } from 'react';
+// import { useState } from 'react';
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
 import Rectangle from './Components/Rectangle';
 
@@ -21,13 +21,11 @@ import Entertainment from "../src/pages/ENTERTAINMENT"
 import About_us from "../src/pages/ABOUT_US"
 import Contact_us from "../src/pages/CONTACT_US"
 import Feedback from "../src/pages/Feedback"
+import Saikiran from "../src/pages/Authors/Author1"
 
 function App() {
   // const [token, setToken] = useState(false);
   return (
-
- 
-
 
 
     
@@ -36,10 +34,10 @@ function App() {
 
       
       <Routes>
-       <Route path="/rectangle" element={<Rectangle />} />
+      <Route path="/rectangle" element={<Rectangle />} />
 
 
-         
+
         <Route path="/" element={<Home/>}/>
         <Route path="/Bytes" element={<Bytes />} />
         <Route path="/News" element={<News/>}/>
@@ -55,7 +53,10 @@ function App() {
         <Route path="/Entertainment" element={<Entertainment/>}/>
         <Route path="/About_us" element={<About_us/>}/>
         <Route path="/Contact_us" element={<Contact_us/>}/>
-        <Route path="/Feedback" element={<Feedback/>}/>
+        <Route path="/Feedback" element={<Feedback />} />
+        <Route path="/Authors/Saikiran" element={<Saikiran/>} />
+
+        
 
         
           
@@ -68,8 +69,7 @@ function App() {
         </Routes>
       </Router>
       
-          
-          
+  
       
     
   )
