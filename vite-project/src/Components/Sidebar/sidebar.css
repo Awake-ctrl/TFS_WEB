@@ -1,19 +1,27 @@
 /* Sidebar */
 aside {
-    /* width: 15%; Takes 20% of the screen width */
+  margin: 3vw; /* Add some padding */
+  background-color: white; /* White background for the sidebar */
+  color: rgb(32, 31, 31); /* Text color */
+  height: auto; /* Ensures the sidebar adjusts to its content height */
+}
 
-    /* padding: 20px; Add some padding */
-    background-color:white; /* Dark background for the sidebar */
-    color: rgb(32, 31, 31); /* White text color */
-    /* overflow: auto; Scrollable content */
-    margin-top: 1rem;
-    height: auto;
-  }
-  .main{
-    display: flex;
-    flex-direction: column;
-  }
-  .content{
-    display: flex;
-    justify-content: space-between;
-  }
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.article{
+  padding-left: 2vw;
+}
+
+
+

@@ -3,10 +3,9 @@
 // ?import React from 'react'
 // import { useState } from 'react';
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
-import Rectangle from './Components/Article/Article';
-import ArticleCards from "./Components/ArticleCards/ArticleCards";
-
+import ArticleCards from "./Components/Article/ArticleCards";
 import Article from "./Components/Article/Article";
+
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
 import News from "../src/pages/News"
@@ -24,7 +23,7 @@ import About_us from "../src/pages/ABOUT_US"
 import Contact_us from "../src/pages/CONTACT_US"
 import Feedback from "../src/pages/Feedback"
 import Saikiran from "../src/pages/Authors/Author1"
-import Article from "./Components/Article/Article";
+
 import Section from "./Components/Sidebar/section";
 
 function App() {
@@ -47,7 +46,6 @@ function App() {
 
       <Routes>
        <Route path="/Article" element={<Article/>}/>
-       <Route path="/rectangle" element={<Article />} />
        <Route path="/articlecard" element={<ArticleCards />} />
 
         <Route path="/" element={<Home/>}/>

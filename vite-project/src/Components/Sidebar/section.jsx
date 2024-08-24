@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Heading_and_line from './heading_and_line2';
 
 const Section = () => {

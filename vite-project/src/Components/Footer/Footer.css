@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 4vw; /* added by simeon*/
     background-color: #f7f3ee; /* Light background color */
     padding: 40px 20px; /* Padding for top section */
     display: flex;

@@ -1,6 +1,6 @@
-import React from 'react'
+// import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
-import Article from '../Components/Article/Article'
+import ArticleCards from '../Components/Article/ArticleCards'
 import '../Components/Sidebar/sidebar.css'
 import Heading_and_line from '../Components/Sidebar/heading_and_line2'
 import Footer from '../Components/Footer/Footer'
@@ -12,27 +12,20 @@ const Home = () => {
       <Navbar />
       <div className="content">
         <div className="article">
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        </div>
-     
+        <ArticleCards />
+        <ArticleCards />
+        <ArticleCards />
+        <ArticleCards />
+        <ArticleCards />
+        <ArticleCards />
+        <ArticleCards />
+        <ArticleCards />
+        <ArticleCards />
+        </div> 
 
-      <aside>
-
-      <Heading_and_line />
-
-      </aside>
+        <aside>
+          <Heading_and_line />
+        </aside>
       </div>
       <Footer />
     </div>
