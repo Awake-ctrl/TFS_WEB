@@ -1,0 +1,53 @@
+.rect-full-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    
+   
+}
+
+.rect-full-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    max-width: 1000px;
+    
+}
+
+.rect-image{
+    width:100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.rect-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(12px,7vw,35px);
+    margin: 0;
+}
+.rect-additional-data{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 3vw;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(6px,5vw,20px);
+}
+
+.rect-additional-data li{
+    margin-right: 3vw;
+}
+
+.rect-additional-data li a{
+    color: gray;
+    text-decoration: none;
+    
+}
+
+
