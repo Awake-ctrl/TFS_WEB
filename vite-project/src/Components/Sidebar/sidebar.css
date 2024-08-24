@@ -1,10 +1,19 @@
 /* Sidebar */
 aside {
-    width: 30%; /* Takes 20% of the screen width */
-    float: right; /* Float it to the right */
-    padding: 20px; /* Add some padding */
-    background-color: #333; /* Dark background for the sidebar */
-    color: white; /* White text color */
-    overflow: auto; /* Scrollable content */
+    /* width: 15%; Takes 20% of the screen width */
+
+    /* padding: 20px; Add some padding */
+    background-color:white; /* Dark background for the sidebar */
+    color: rgb(32, 31, 31); /* White text color */
+    /* overflow: auto; Scrollable content */
     margin-top: 1rem;
+    height: auto;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .content{
+    display: flex;
+    justify-content: space-between;
   }

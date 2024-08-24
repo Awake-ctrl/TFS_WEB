@@ -8,26 +8,33 @@ import Footer from '../Components/Footer/Footer'
 
 const Home = () => {
   return (
-    <div>
-      <Navbar/>
+    <div className='Main'>
+      <Navbar />
+      <div className="content">
+        <div className="article">
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        <Article />
+        </div>
      
+
       <aside>
-        {/* ghhkgkkkkhhjjhhjhhhjhhjh */}
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
-      <Heading_and_line />
+
       <Heading_and_line />
 
       </aside>
-
-      <Article />      
+      </div>
+      <Footer />
     </div>
   )
 }

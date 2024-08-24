@@ -1,10 +1,9 @@
 .rect-full-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* justify-content: center; */
     /* align-items: flex-start; */
-    width: 70%;
-    float: left;
+    /* width: 70%; */
     
    
 }
@@ -24,6 +23,7 @@
     height: auto;
     object-fit: contain;
 }
+
 
 
 .rect-heading{
