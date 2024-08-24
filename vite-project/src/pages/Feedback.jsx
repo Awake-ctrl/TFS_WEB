@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 const Feedback = () => {
   return (
-    <div>Feedback</div>
+    <div>
+      <Navbar/>
+      Feedback</div>
   )
 }
 

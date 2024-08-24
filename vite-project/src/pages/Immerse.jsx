@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 const Immerse = () => {
   return (
-    <div>Immerse</div>
+    <div>
+      <Navbar/>
+      Immerse</div>
   )
 }
 
