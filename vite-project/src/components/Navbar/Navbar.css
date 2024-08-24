@@ -1,11 +1,12 @@
 /* Navbar.css */
 
+/* General Navbar Styles */
 .navbar {
   display: flex;
   flex-direction: column; /* Stack logo and links vertically */
   align-items: center;
   padding: 0 20px;
-  background-color: #333;
+  background-color: #333; /* Background color for the navbar */
   position: relative;
 }
 
@@ -23,12 +24,13 @@
   width: auto; /* Maintain the aspect ratio */
 }
 
+/* Navbar Menu and Links */
 .navbar-menu {
   width: 100%;
 }
 
 .navbar-links {
-  display: flex; /* Make the links display in a row */
+  display: flex; /* Display links in a row */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -37,7 +39,10 @@
 
 .navbar-links li {
   margin: 0;
+  padding: 0; /* Remove default padding */
   position: relative; /* Position for dropdown positioning */
+  display: flex; /* Ensure items are aligned in a row */
+  align-items: center; /* Center items vertically */
 }
 
 .navbar-link {
@@ -48,8 +53,13 @@
   padding: 10px 15px; /* Padding around the text */
   border-radius: 4px; /* Optional: rounded corners */
   transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover and active states */
+  background-color: transparent; /* Ensure button background is transparent */
+  border: none; /* Remove default button border */
+  display: flex; /* Ensure button content is centered */
+  align-items: center; /* Center content vertically */
 }
 
+/* Hover and Active States for Navbar Links */
 .navbar-link:hover {
   background-color: #900603; /* Background color on hover */
   color: #fff; /* Text color on hover */
@@ -60,6 +70,7 @@
   color: #900603; /* Text color when selected (active link) */
 }
 
+/* Dropdown Styles */
 .dropdown {
   position: relative; /* Position for dropdown menu */
 }
@@ -69,7 +80,7 @@
   position: absolute; /* Position dropdown relative to the parent */
   top: 100%; /* Position below the parent link */
   left: 0;
-  /* background-color: #333; */
+  background-color: #333; /* Background color for dropdown */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -86,16 +97,17 @@
 }
 
 .dropdown-menu .navbar-link {
+  display: block; /* Ensure dropdown items are displayed as blocks */
   padding: 10px 15px; /* Padding for dropdown items */
-  background-color: #333; 
+  color: #fff; /* Text color for dropdown items */
+  background-color: #333; /* Background color for dropdown items */
+  border: none; /* Remove border */
+  text-align: left; /* Align text to the left */
 }
 
 .dropdown-menu .navbar-link:hover {
   background-color: #900603; /* Background color on hover in dropdown */
-  color: #0c0b0b; /* Text color on hover in dropdown */
-}
-.button{
-  background-color: #333; 
+  color: #fff; /* Text color on hover in dropdown */
 }
 
 /* Responsive styles for smaller screens */
