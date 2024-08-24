@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
 import Rectangle from './Components/Article/Article';
 import ArticleCards from "./Components/ArticleCards/ArticleCards";
 
-
+import Article from "./Components/Article/Article";
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
 import News from "../src/pages/News"
@@ -45,7 +45,8 @@ function App() {
       <Routes>
       <Route path="/rectangle" element={<Rectangle />} /> */}
 
-      <Routes>s
+      <Routes>
+       <Route path="/Article" element={<Article/>}/>
        <Route path="/rectangle" element={<Article />} />
        <Route path="/articlecard" element={<ArticleCards />} />
 

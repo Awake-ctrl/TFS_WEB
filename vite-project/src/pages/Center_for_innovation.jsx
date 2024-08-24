@@ -1,11 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
+import Footer from '../Components/Footer/Footer'
 
 const Center_for_innovation = () => {
   return (
     <div>
       <Navbar/>
-      Center_for_innovation</div>
+      Center_for_innovation
+      <Footer/></div>
   )
 }
 
