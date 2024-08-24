@@ -1,9 +1,10 @@
 .rect-full-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100vw;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    width: 70%;
+    float: left;
     
    
 }

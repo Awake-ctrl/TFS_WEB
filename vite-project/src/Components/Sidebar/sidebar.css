@@ -1,0 +1,10 @@
+/* Sidebar */
+aside {
+    width: 30%; /* Takes 20% of the screen width */
+    float: right; /* Float it to the right */
+    padding: 20px; /* Add some padding */
+    background-color: #333; /* Dark background for the sidebar */
+    color: white; /* White text color */
+    overflow: auto; /* Scrollable content */
+    margin-top: 1rem;
+  }
