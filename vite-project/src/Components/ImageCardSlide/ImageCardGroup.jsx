@@ -4,32 +4,65 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 import "./ImageCardGroup.css";
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
+import { MdNavigateNext } from "react-icons/md";
+import { MdNavigateBefore } from "react-icons/md";
 function ImageCardGroup() {
   return (
     <div className="ImageCardGroupContainer">
       <div className="ImageCardGroupRow">
         <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
           loop={true}
-          pagination={{
-            clickable: true,
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
           }}
-          navigation={true}
-          modules={[Pagination, Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          modules={[Autoplay, Navigation]}
+          breakpoints={{
+            480: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            834: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 3.5,
+            },
+            1440: {
+              slidesPerView: 4,
+            },
+          }}
           className="swiper"
         >
-          <SwiperSlide>
+          <div className="swiper-button-next">
+            <MdNavigateNext className="next-icon" />
+          </div>
+          <div className="swiper-button-prev">
+            <MdNavigateBefore className="prev-icon" />
+          </div>
+          <SwiperSlide style={{ width: "70%" }}>
             <ImageCard />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide style={{ width: "70%" }}>
             <ImageCard />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide style={{ width: "70%" }}>
             <ImageCard />
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide style={{ width: "70%" }}>
+            <ImageCard />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "70%" }}>
+            <ImageCard />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "70%" }}>
             <ImageCard />
           </SwiperSlide>
         </Swiper>
@@ -39,35 +72,3 @@ function ImageCardGroup() {
 }
 
 export default ImageCardGroup;
-/*
-
-    <div className="ImageCardGroupContainer">
-      <div className="ImageCardGroupRow">
-        <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        loop={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <ImageCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageCard />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImageCard />
-        </SwiperSlide>
-      </Swiper>
-      </div>
-    </div>
-
-*/
