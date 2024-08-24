@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 const BYTES = () => {
   return (
-    <div>BYTES</div>
+    <div>
+      <Navbar/>
+      BYTES
+    </div>
   )
 }
 

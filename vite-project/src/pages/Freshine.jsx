@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 
 const Freshine = () => {
   return (
-    <div>Freshine</div>
+    <div>
+      <Navbar/>
+      Freshine</div>
   )
 }
 

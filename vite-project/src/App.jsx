@@ -5,6 +5,7 @@
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
 import Rectangle from './Components/Rectangle/Rectangle';
 
+
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
 import News from "../src/pages/News"
@@ -27,15 +28,17 @@ function App() {
   return (
 
  
+    
+    
 
 
 
     
     <Router>
-    
+     
 
       
-      <Routes>
+      <Routes>s
        <Route path="/rectangle" element={<Rectangle />} />
 
 
