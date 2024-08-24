@@ -22,7 +22,7 @@ import Entertainment from "../src/pages/ENTERTAINMENT"
 import About_us from "../src/pages/ABOUT_US"
 import Contact_us from "../src/pages/CONTACT_US"
 import Feedback from "../src/pages/Feedback"
-import Saikiran from "../src/pages/Authors/Author1"
+import Saikiran from "../src/pages/Authors/Saikiran"
 
 function App() {
   // const [token, setToken] = useState(false);
@@ -63,7 +63,7 @@ function App() {
         <Route path="/About_us" element={<About_us/>}/>
         <Route path="/Contact_us" element={<Contact_us/>}/>
         <Route path="/Feedback" element={<Feedback />} />
-        <Route path="/Authors/Saikiran" element={<Saikiran/>} />
+        <Route path="/Authors/:authorName" element={<Saikiran/>} />
 
         
 

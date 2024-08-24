@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Article.css'
 
 const Article = () => {
-    const authorName = "Simeon K.";  // Define the author name
+    const authorName = "Saikiran";  // Define the author name
     const publicationDate = "24th August, 2024";  // Define the publication date
 
     return (
@@ -34,8 +35,10 @@ const Article = () => {
                     alt="Author"
                 />
                 <div className="author-details">
-                    <p className="author-name">{authorName}</p>
-                    <p className="publication-date">{publicationDate}</p>
+                    <p className="author-name">
+                        <Link to={`/authors/${authorName}`}>{authorName}</Link>
+                    </p>
+                
                 </div>
                 </div>
             </div>
