@@ -4,6 +4,7 @@
 // import { useState } from 'react';
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
 import Rectangle from './Components/Article/Article';
+import ArticleCards from "./Components/ArticleCards/ArticleCards";
 
 
 import Home from "../src/pages/Home"
@@ -46,7 +47,7 @@ function App() {
 
       <Routes>s
        <Route path="/rectangle" element={<Article />} />
-
+       <Route path="/articlecard" element={<ArticleCards />} />
 
         <Route path="/" element={<Home/>}/>
         <Route path="/Bytes" element={<Bytes />} />
