@@ -1,9 +1,9 @@
 
 
 // ?import React from 'react'
-import { useState } from 'react';
+// import { useState } from 'react';
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
-import Rectangle from './Components/Rectangle';
+import Rectangle from './Components/Rectangle/Rectangle';
 
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
