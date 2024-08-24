@@ -3,7 +3,7 @@
 // ?import React from 'react'
 // import { useState } from 'react';
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
-import Rectangle from './Components/Rectangle/Rectangle';
+import Rectangle from './Components/Article/Article';
 
 
 import Home from "../src/pages/Home"
