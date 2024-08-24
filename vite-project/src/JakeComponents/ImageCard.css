@@ -1,0 +1,29 @@
+.ImageCardBackground {
+  width: 296.5px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.ImageCardCategory {
+
+  font-size: calc(15 / 16) rem;
+}
+.ImageCardTextContainer {
+  display: flex;
+
+  padding: 0 20px;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  height: 40%;
+  background-color: hsl(0deg 0% 0% / 30%);
+  justify-content: center;
+}
+
+.ImageCardContainer {
+  font-family: Oswald, "Arial Narrow", Arial, sans-serif;
+  width: min-content;
+  position: relative;
+}
