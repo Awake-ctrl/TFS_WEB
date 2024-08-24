@@ -5,7 +5,7 @@
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
 import Rectangle from './Components/Article/Article';
 
-
+import Article from "./Components/Article/Article";
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
 import News from "../src/pages/News"
@@ -44,6 +44,7 @@ function App() {
 
       <Routes>s
        <Route path="/rectangle" element={<Rectangle />} />
+       <Route path="/Article" element={<Article/>}/>
 
 
         <Route path="/" element={<Home/>}/>
