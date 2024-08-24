@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar/Navbar'
 import Article from '../Components/Article/Article'
 import '../Components/Sidebar/sidebar.css'
 import Heading_and_line from '../Components/Sidebar/heading_and_line2'
+import Footer from '../Components/Footer/Footer'
 
 
 const Home = () => {
