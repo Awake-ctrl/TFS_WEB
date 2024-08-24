@@ -50,7 +50,7 @@ function App() {
         <Route path="/Entertainment" element={<Entertainment/>}/>
         <Route path="/About_us" element={<About_us/>}/>
         <Route path="/Contact_us" element={<Contact_us/>}/>
-        <Route path="/Feetback" element={<Feedback/>}/>
+        <Route path="/Feedback" element={<Feedback/>}/>
 
         
           
