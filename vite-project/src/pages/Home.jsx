@@ -11,6 +11,7 @@ const Home = () => {
     <div className='Main'>
       <Navbar />
       <div className="content">
+        <div className='wrapper'>
         <div className="article">
         <ArticleCards />
         <ArticleCards />
@@ -26,6 +27,7 @@ const Home = () => {
         <aside>
           <Heading_and_line />
         </aside>
+        </div>
       </div>
       <Footer />
     </div>

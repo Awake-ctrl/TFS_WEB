@@ -1,5 +1,5 @@
 .art-card-full-container{
-    margin-top: 3vw;
+    padding-top: 2.5vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 3vw;
+    padding: clamp(0px,2vw,30px);
     background-color: white;
     border-radius: 0.25vw;
     max-width: 900px;  
@@ -21,8 +21,8 @@
     width:100%;
     height: auto;
     object-fit: contain;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-top: clamp(0px,2vw,10px);
+    margin-bottom: clamp(0px,2vw,10px);
 }
 
 .art-card-heading{
