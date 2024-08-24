@@ -1,0 +1,24 @@
+.widget_text {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+  
+  .widget-title {
+    background-color: #800000; /* Maroon color */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 0 15px;
+    display: inline-block;
+    border-radius: 3px;
+  }
+  
+  .textwidget {
+    font-size: 14px;
+    color: #333;
+  }

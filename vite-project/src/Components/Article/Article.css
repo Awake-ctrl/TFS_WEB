@@ -1,10 +1,11 @@
 .rect-full-container{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100vw;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* width: 70%; */
     
+   
 }
 
 .rect-full-wrapper{
@@ -22,6 +23,7 @@
     height: auto;
     object-fit: contain;
 }
+
 
 
 .rect-heading{
