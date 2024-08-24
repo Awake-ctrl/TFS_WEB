@@ -5,6 +5,7 @@
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
 import Rectangle from './Components/Rectangle/Rectangle';
 
+
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
 import News from "../src/pages/News"
@@ -21,25 +22,36 @@ import Entertainment from "../src/pages/ENTERTAINMENT"
 import About_us from "../src/pages/ABOUT_US"
 import Contact_us from "../src/pages/CONTACT_US"
 import Feedback from "../src/pages/Feedback"
+import Saikiran from "../src/pages/Authors/Author1"
 
 function App() {
   // const [token, setToken] = useState(false);
   return (
 
+<<<<<<< HEAD
+=======
  
+    
+    
 
 
+>>>>>>> d044a03c1c4a8434da867728a44d8b75c83cf1c0
 
     
     <Router>
-    
+     
 
       
+<<<<<<< HEAD
       <Routes>
+      <Route path="/rectangle" element={<Rectangle />} />
+
+=======
+      <Routes>s
        <Route path="/rectangle" element={<Rectangle />} />
+>>>>>>> d044a03c1c4a8434da867728a44d8b75c83cf1c0
 
 
-         
         <Route path="/" element={<Home/>}/>
         <Route path="/Bytes" element={<Bytes />} />
         <Route path="/News" element={<News/>}/>
@@ -55,7 +67,10 @@ function App() {
         <Route path="/Entertainment" element={<Entertainment/>}/>
         <Route path="/About_us" element={<About_us/>}/>
         <Route path="/Contact_us" element={<Contact_us/>}/>
-        <Route path="/Feedback" element={<Feedback/>}/>
+        <Route path="/Feedback" element={<Feedback />} />
+        <Route path="/Authors/Saikiran" element={<Saikiran/>} />
+
+        
 
         
           
@@ -68,8 +83,7 @@ function App() {
         </Routes>
       </Router>
       
-          
-          
+  
       
     
   )
