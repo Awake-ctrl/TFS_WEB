@@ -1,53 +1,91 @@
 .rect-full-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100vw;
-    height: 100vh;
-   
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .rect-full-wrapper{
     display: flex;
     flex-direction: column;
-    padding-top: 3vw;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    max-width: 650px;
-    
+    width: 100%;
+    padding: 2vw;
+    padding-top: 1.5vw;
+    border-radius: 1vw;
+    max-width: 700px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
 .rect-image{
     width:100%;
     height: auto;
     object-fit: contain;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
-
 
 .rect-heading{
     font-family: 'Times New Roman', Times, serif;
-    font-size: clamp(12px,7vw,40px);
-    margin: 0;
+    font-size: clamp(0px,3.5vw,35px);
 }
+
+
 .rect-additional-data{
     padding: 0;
     margin: 0;
     list-style: none;
-    margin-bottom: 3vw;
     display: flex;
     font-family: 'Times New Roman', Times, serif;
-    font-size: clamp(6px,5vw,20px);
+    font-size: clamp(0px,2.5vw,20px);
 }
-
 .rect-additional-data li{
     margin-right: 3vw;
 }
-
 .rect-additional-data li a{
     color: gray;
-    text-decoration: none;
-    
+    text-decoration: none;   
+}
+
+.rect-text{
+    font-size:clamp(0px,1.5vw,20px);
 }
 
 
+.rect-author-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100%; 
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
+    border: 2px solid #d0bfa3; 
+    border-radius: 15px;
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2vw; 
+}
+
+.rect-author-image {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 2vw; 
+    border: 3px solid #d0bfa3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.rect-author-name,
+.rect-publication-date {
+    margin: 0;
+    font-size: clamp(0px,1.5vw,20px); 
+    font-family: 'Courier New', Courier, monospace;
+    color: #333; 
+}
+
+.rect-author-details {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}

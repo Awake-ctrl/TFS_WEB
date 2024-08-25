@@ -1,0 +1,36 @@
+/* Sidebar */
+
+aside {
+    /* Add some padding */
+    margin-top: 3vw;
+    margin-left: 30%;
+    margin-right: 1vw;
+    background-color: white;
+    /* White background for the sidebar */
+    color: rgb(32, 31, 31);
+    /* Text color */
+    height: auto;
+    /* Ensures the sidebar adjusts to its content height */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.article {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}

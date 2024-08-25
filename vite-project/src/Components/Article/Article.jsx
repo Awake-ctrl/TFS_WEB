@@ -1,42 +1,44 @@
 // import React from "react";
+import { Link } from "react-router-dom";
+import image from "../../assets/image.webp"
 import './Article.css'
 
 const Article = () => {
+    const heading = "Freshie's Guide to RG: Do's, Don'ts, and Common Mistakes";
+    const authorName = "Saikiran"; 
+    const publicationDate = "24th August, 2024"; 
+
     return (
-        <div>
         <div className="rect-full-container">
             <div className='rect-full-wrapper'>
                 <header className='rect-header'>
-                    <h1 className="rect-heading">Freshie&apos;s Guide to RG: Do&apos;s, Don&apos;ts, and Common Mistakes</h1>
+                    <h1 className="rect-heading">{heading}</h1>
                     <ul className="rect-additional-data">
-                        <li className='rect-date'><a href="#">24th August, 2024</a></li>
-                        <li className='rect-author'><a href="#">Simeon K.</a></li>
+                        <li className='rect-date'><a href="#">{publicationDate}</a></li>
+                        <li className='rect-author'><a href="#">{authorName}</a></li>
                     </ul>
                 </header>
-                <img className="rect-image" src="https://www.t5eiitm.org/wp-content/uploads/2024/08/Signature-look-of-superiority.png?w=1080&ssl=1" alt="image" />
+                <img className="rect-image" src={image} alt="article image"/>
                 <div className='rect-text'>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero expedita id nisi ullam, nihil animi veritatis suscipit at officiis obcaecati dolores velit consequuntur eum, tenetur fugiat similique iure reiciendis.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero expedita id nisi ullam, nihil animi veritatis suscipit at officiis obcaecati dolores velit consequuntur eum, tenetur fugiat similique iure reiciendis.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero expedita id nisi ullam, nihil animi veritatis suscipit at officiis obcaecati dolores velit consequuntur eum, tenetur fugiat similique iure reiciendis.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero expedita id nisi ullam, nihil animi veritatis suscipit at officiis obcaecati dolores velit consequuntur eum, tenetur fugiat similique iure reiciendis.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero expedita id nisi ullam, nihil animi veritatis suscipit at officiis obcaecati dolores velit consequuntur eum, tenetur fugiat similique iure reiciendis.
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem libero expedita id nisi ullam, nihil animi veritatis suscipit at officiis obcaecati dolores velit consequuntur eum, tenetur fugiat similique iure reiciendis.
-                    </p>
-                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    {/* Add additional paragraphs as needed */}
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                </div>
+                <div className='rect-author-container'>
+                    <img className="rect-author-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle5CxW6QjBz4FH6p5szdloz2gPoQLJ8Outg&s" alt="Author"/>
+                    <div className="rect-author-details">
+                        <p className="rect-author-name">
+                            Author:  <Link to={`/authors/${authorName}`}>{authorName}</Link>
+                        </p>
+                        <p className="rect-publication-date">
+                            Published On: {publicationDate}
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+            
         </div>
     );
 }
