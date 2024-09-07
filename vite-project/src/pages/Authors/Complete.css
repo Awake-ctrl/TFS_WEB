@@ -26,10 +26,6 @@ aside {
     grid-template-columns: 1.5fr 1fr;
 }
 
-.wrapper2{
-    display: grid;
-    grid-template-columns: 1.8fr 1fr;
-}
 
 .article {
     margin-left: 3vw;

@@ -1,9 +1,9 @@
 // import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
-import ArticleCards from '../../Components/Article/ArticleCards'
-import Heading_and_line from '../../Components/Sidebar/heading_and_line2'
-import Footer from '../../Components/Footer/Footer'
-import './Complete.css'
+import Navbar from '../Components/Navbar/Navbar'
+import Article from '../Components/Article/Article'
+import Heading_and_line from '../Components/Sidebar/heading_and_line2'
+import Footer from '../Components/Footer/Footer'
+import '../Components/Sidebar/sidebar.css'
 
 
 
@@ -16,8 +16,7 @@ const ArticlePage = () => {
       <div className="content">
         <div className='wrapper'>
           <div className="article">
-            <ArticleCards/>
-            <ArticleCards/>
+            <Article/>
           </div> 
           <aside>
             <Heading_and_line />

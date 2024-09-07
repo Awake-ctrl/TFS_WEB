@@ -1,9 +1,10 @@
 // import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../Components/Navbar/Navbar'
 import ArticleCards from '../Components/Article/ArticleCards'
-import '../Components/Sidebar/sidebar.css'
 import Heading_and_line from '../Components/Sidebar/heading_and_line2'
 import Footer from '../Components/Footer/Footer'
+import '../Components/Sidebar/sidebar.css'
+
 
 
 const Home = () => {
