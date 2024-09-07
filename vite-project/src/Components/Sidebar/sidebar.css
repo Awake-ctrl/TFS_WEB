@@ -1,4 +1,29 @@
-/* Sidebar */
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+/* .wrapper2{
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+} */
+
+.article {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
 
 aside {
     margin-top: 3vw;
@@ -9,29 +34,3 @@ aside {
     height: auto;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: white;
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-}
-
-.wrapper2{
-    display: grid;
-    grid-template-columns: 1.8fr 1fr;
-}
-
-.article {
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
