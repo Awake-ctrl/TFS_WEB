@@ -1,0 +1,43 @@
+<style>
+  .widget-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .follow-us ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .follow-us li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .follow-us a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .follow-us a:hover {
+    color: #666;
+  }
+
+  .fa-2x {
+    font-size: 2em;
+  }
+
+  .fa-instagram {
+    color: #e1306c;
+  }
+
+  .fa-facebook {
+    color: #3b5998;
+  }
+
+  .fa-X {
+    color: #333; 
+  }
+</style>

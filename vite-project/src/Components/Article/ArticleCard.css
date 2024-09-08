@@ -1,0 +1,121 @@
+.art-card-full-container{
+    padding-top: 2.5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.art-card-link-styles {
+    text-decoration: none;
+    color: black;
+}
+
+.art-card-link-styles2{
+    text-decoration: none;
+    color: grey;
+}
+
+.art-card-link-styles2:hover{
+    color: red;
+}
+
+
+.art-card-full-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: clamp(0px,2vw,30px);
+    background-color: white;
+    border-radius: 0.25vw;
+    max-width: 900px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    text-decoration: none;
+    color: black;
+}
+
+.art-card-image{
+    width:100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: clamp(0px,2vw,10px);
+    margin-bottom: clamp(0px,2vw,10px);
+}
+
+.art-card-heading{
+    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+    font-size: clamp(0px,3vw,35px);
+}
+
+
+.art-card-additional-data{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+    font-size: clamp(0px,2.2vw,23px);
+}
+.art-card-additional-data li{
+    margin-right: clamp(0px,2vw,40px);
+}
+
+
+.art-card-text{
+    font-size:clamp(0px,1.8vw,20px);
+    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
+}
+
+
+
+
+
+
+
+.rect-additional-data{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
+    font-size: clamp(0px,2vw, 23px);
+}
+.rect-additional-data li{
+    margin-right: clamp(0px,2vw, 40px);
+}
+
+.rect-author-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100%; 
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
+    border: 2px solid #d0bfa3; 
+    border-radius: 15px;
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2vw; 
+}
+
+.rect-author-image {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 2vw; 
+    border: 3px solid #d0bfa3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.rect-author-name,
+.rect-publication-date {
+    margin: 0;
+    font-size: clamp(0px,1.5vw,20px); 
+    font-family: 'Courier New', Courier, monospace;
+    color: #333; 
+}
+
+.rect-author-details {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}

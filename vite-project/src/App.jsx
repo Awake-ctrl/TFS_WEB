@@ -1,8 +1,9 @@
 // ?import React from 'react'
 // import { useState } from 'react';
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
-import Rectangle from './Components/Article/Article';
 
+import ArticlePage from "./pages/ArticlePage"
+import Saikiran from "../src/pages/Authors/Saikiran"
 
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
@@ -20,9 +21,8 @@ import Entertainment from "../src/pages/ENTERTAINMENT"
 import About_us from "../src/pages/ABOUT_US"
 import Contact_us from "../src/pages/CONTACT_US"
 import Feedback from "../src/pages/Feedback"
-import Saikiran from "../src/pages/Authors/Author1"
-import Article from "./Components/Article/Article";
-import Section from "./Components/Sidebar/section";
+
+import Section from "./Components/Sidebar/section"
 
 function App() {
   // const [token, setToken] = useState(false);
@@ -36,15 +36,10 @@ function App() {
 
     
     <Router>
-     
 
-{/*       
       <Routes>
-      <Route path="/rectangle" element={<Rectangle />} /> */}
-
-      <Routes>s
-       <Route path="/rectangle" element={<Article />} />
-
+       <Route path="/Article" element={<ArticlePage/>}/>
+       <Route path="/Authors/Saikiran" element={<Saikiran/>} />
 
         <Route path="/" element={<Home/>}/>
         <Route path="/Bytes" element={<Bytes />} />
@@ -62,7 +57,6 @@ function App() {
         <Route path="/About_us" element={<About_us/>}/>
         <Route path="/Contact_us" element={<Contact_us/>}/>
         <Route path="/Feedback" element={<Feedback />} />
-        <Route path="/Authors/Saikiran" element={<Saikiran/>} />
         <Route path = "/section" element={<Section/>}/>
 
         
