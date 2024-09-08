@@ -13,54 +13,63 @@ const cardData = [
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "1",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "2",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "3",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "4",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "5",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "6",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "7",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "8",
   },
   {
     image:
       "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
+    id: "9",
   },
 ];
 function ImageCardGroup() {
@@ -105,7 +114,7 @@ function ImageCardGroup() {
           </div>
           {cardData.map((card) => (
             <>
-              <SwiperSlide style={{ width: "70%" }}>
+              <SwiperSlide style={{ width: "70%" }} key={card.id}>
                 <ImageCard {...card} />
               </SwiperSlide>
             </>
