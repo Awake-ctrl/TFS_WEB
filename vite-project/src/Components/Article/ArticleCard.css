@@ -1,204 +1,198 @@
 .art-card-full-container{
-    padding-top: 2.5vw;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+  padding-top: min(2.5vw, 40px); /* Ensures the padding doesn't get too small */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .art-card-link-styles {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .art-card-link-styles2{
-    text-decoration: none;
-    color: grey;
+  text-decoration: none;
+  color: grey;
 }
 
 .art-card-link-styles2:hover{
-    color: red;
+  color: red;
 }
 
-
 .art-card-full-wrapper{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: clamp(0px,2vw,30px);
-    background-color: white;
-    border-radius: 0.25vw;
-    max-width: 900px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
-    text-decoration: none;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: clamp(5px, 2vw, 30px); /* Minimum padding set to 20px */
+  background-color: white;
+  border-radius: min(0.25vw, 5px); /* Sets a minimum for border radius */
+  max-width: 900px;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  text-decoration: none;
+  color: black;
 }
 
 .art-card-image{
-    width:100%;
-    height: auto;
-    object-fit: contain;
-    margin-top: clamp(0px,2vw,10px);
-    margin-bottom: clamp(0px,2vw,10px);
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: clamp(5px, 2vw, 20px); /* Sets a minimum margin */
+  margin-bottom: clamp(5px, 2vw, 20px);
 }
 
 .art-card-heading{
-    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-    font-size: clamp(0px,3vw,35px);
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(8px, 3vw, 35px); /* Ensures heading doesn't shrink too much */
 }
-
 
 .art-card-additional-data{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-    font-size: clamp(0px,2.2vw,23px);
-}
-.art-card-additional-data li{
-    margin-right: clamp(0px,2vw,40px);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(6px, 2.2vw, 23px); /* Sets a minimum font size */
 }
 
+.art-card-additional-data li{
+  margin-right: clamp(5px, 2vw, 40px); /* Ensures minimum spacing */
+}
 
 .art-card-text{
-    font-size:clamp(0px,1.8vw,20px);
-    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
+  font-size: clamp(4px, 1.8vw, 20px); /* Ensures text doesn't get too small */
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
 }
-
-
-
 
 
 
 
 .rect-additional-data{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
-    font-size: clamp(0px,2vw, 23px);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
+  font-size: clamp(0px,2vw, 23px);
 }
 .rect-additional-data li{
-    margin-right: clamp(0px,2vw, 40px);
+  margin-right: clamp(0px,2vw, 40px);
 }
 
 .rect-author-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 100%; 
-    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
-    border: 2px solid #d0bfa3; 
-    border-radius: 15px;
-    padding: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 2vw; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100%; 
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
+  border: 2px solid #d0bfa3; 
+  border-radius: 15px;
+  padding: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 2vw; 
 }
 
 .rect-author-image {
-    width: 15%;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 2vw; 
-    border: 3px solid #d0bfa3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 2vw; 
+  border: 3px solid #d0bfa3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
 
 .rect-author-name,
 .rect-publication-date {
-    margin: 0;
-    font-size: clamp(0px,1.5vw,20px); 
-    font-family: 'Courier New', Courier, monospace;
-    color: #333; 
+  margin: 0;
+  font-size: clamp(0px,1.5vw,20px); 
+  font-family: 'Courier New', Courier, monospace;
+  color: #333; 
 }
 
 .rect-author-details {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
 }
 
 
 .comment-section {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  /* Styling for the comment textarea */
-  .comment-textarea {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical; /* Allows vertical resizing while preventing horizontal resizing */
-    box-sizing: border-box;
-    transition: border-color 0.3s;
-  }
-  
-  /* Input group for Name and Email */
-  .comment-input-group {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    height: 100%;
-  }
-  
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styling for the comment textarea */
+.comment-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Allows vertical resizing while preventing horizontal resizing */
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+/* Input group for Name and Email */
+.comment-input-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.comment-input {
+  width: calc(50% - 5px);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none; /* Disables resizing for the name and email fields */
+}
+
+/* Submit button styling */
+.comment-submit-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comment-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .comment-input {
-    width: calc(50% - 5px);
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: none; /* Disables resizing for the name and email fields */
+    width: 100%;
+    font-size: 13px;
   }
-  
-  /* Submit button styling */
+
+  .comment-textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
   .comment-submit-btn {
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 13px;
   }
-  
-  .comment-submit-btn:hover {
-    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .comment-textarea {
+    font-size: 12px;
+    padding: 8px;
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .comment-input {
-      width: 100%;
-      font-size: 13px;
-    }
-  
-    .comment-textarea {
-      font-size: 13px;
-      padding: 8px;
-    }
-  
-    .comment-submit-btn {
-      font-size: 13px;
-    }
+
+  .comment-submit-btn {
+    font-size: 12px;
+    padding: 8px 16px;
   }
-  
-  @media (max-width: 480px) {
-    .comment-textarea {
-      font-size: 12px;
-      padding: 8px;
-    }
-  
-    .comment-submit-btn {
-      font-size: 12px;
-      padding: 8px 16px;
-    }
-  }
+}

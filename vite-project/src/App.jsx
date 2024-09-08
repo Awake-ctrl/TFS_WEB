@@ -22,8 +22,6 @@ import About_us from "../src/pages/ABOUT_US"
 import Contact_us from "../src/pages/CONTACT_US"
 import Feedback from "../src/pages/Feedback"
 
-import Section from "./Components/Sidebar/section"
-
 function App() {
   // const [token, setToken] = useState(false);
   return (
@@ -57,7 +55,6 @@ function App() {
         <Route path="/About_us" element={<About_us/>}/>
         <Route path="/Contact_us" element={<Contact_us/>}/>
         <Route path="/Feedback" element={<Feedback />} />
-        <Route path = "/section" element={<Section/>}/>
 
         
 

@@ -3,10 +3,12 @@ body {
 }
 
 /* Widget Styles */
-#recent-posts-0 {
-    max-width: 300px;
-    border: 1px solid #ddd;
-    padding: 10px;
+.recent-posts-0 {
+    text-align: center;
+    width: 18.75rem; /* 300px */
+    border: 0.0625rem solid #ccc; /* 1px */
+    border-radius: 0.3125rem; /* 5px */
+    padding: 1.25rem; /* 20px */
     background-color: #fff;
 }
 
@@ -14,8 +16,8 @@ body {
     background-color: #b90000;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    margin: 0 0 10px 0;
+    padding: 0.625rem; /* 10px */
+    margin: 0 0 0.625rem 0; /* 10px */
 }
 
 /* Post List Styles */
@@ -28,15 +30,15 @@ body {
 .recent-post-media {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* 15px */
 }
 
 .recent-post-image img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem; /* 60px */
+    height: 3.75rem; /* 60px */
     object-fit: cover;
-    margin-right: 10px;
-    border-radius: 4px;
+    margin-right: 0.625rem; /* 10px */
+    border-radius: 0.25rem; /* 4px */
 }
 
 .media-body {
@@ -46,7 +48,7 @@ body {
 
 .recent-post-title {
     margin: 0;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px */
 }
 
 .recent-post-title a {
@@ -59,6 +61,6 @@ body {
 }
 
 .post-date {
-    font-size: 12px;
+    font-size: 0.75rem; /* 12px */
     color: #999;
 }

@@ -3,8 +3,11 @@ import Navbar from "../Components/Navbar/Navbar";
 import ImageCardGroup from "../Components/ImageCardSlide/ImageCardGroup";
 
 import ArticleCards from '../Components/Article/ArticleCards'
-import Heading_and_line from '../Components/Sidebar/heading_and_line2'
+import Heading_and_line from '../Components/sidebar/heading_and_line2'
+import Recentposts from "../Components/sidebar/recentposts2";
+import Socials from "../Components/sidebar/socials2";
 import Footer from '../Components/Footer/Footer'
+import SubscriptionForm from "../Components/sidebar/subscriptionform2";
 import '../Components/Sidebar/sidebar.css'
 
 
@@ -19,22 +22,26 @@ const Home = () => {
         <div className='wrapper'>
         
         
-        <div className="article">
-        <ArticleCards />
-        <ArticleCards />
-        <ArticleCards />
-        <ArticleCards />
-        <ArticleCards />
-        <ArticleCards />
-        <ArticleCards />
-        <ArticleCards />
-        <ArticleCards />
-        </div> 
+          <div className="article">
+          <ArticleCards />
+          <ArticleCards />
+          <ArticleCards />
+          <ArticleCards />
+          <ArticleCards />
+          <ArticleCards />
+          <ArticleCards />
+          <ArticleCards />
+          <ArticleCards />
+          </div> 
+          
+          <aside>
 
-        <aside>
-          <Heading_and_line />
-        </aside>
+            <Heading_and_line />
+            {/* <SubscriptionForm/> */}
+            <Socials/>
+          </aside>
         </div>
+        
       </div>
       <Footer />
     </div>
