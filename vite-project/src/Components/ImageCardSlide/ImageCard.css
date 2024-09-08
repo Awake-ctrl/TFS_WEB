@@ -1,15 +1,14 @@
 .ImageCardBackground {
-  max-width: 296.5px;
   height: 500px;
   width: 100%;
-  flex-shrink: 1;
-  flex-grow: 0;
-  flex-basis: 0;
   object-fit: inherit;
   display: block;
+  user-select: none;
 }
 .ImageCardCategory {
-  font-size: calc(15 / 16) rem;
+  font-size: calc(0.9375rem);
+  font-family: "Oswald", sans-serif;
+  user-select: none;
 }
 .ImageCardTextContainer {
   display: flex;
@@ -20,11 +19,17 @@
   height: 40%;
   background-color: hsl(0deg 0% 0% / 30%);
   justify-content: center;
-  overflow-wrap: break-word;
 }
 
 .ImageCardContainer {
-  font-family: Oswald, "Arial Narrow", Arial, sans-serif;
   color: white;
   position: relative;
+  width: 296.5px;
+}
+.ImageCardDescription {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-size: calc((28 / 16) rem);
+  font-weight: 300;
+  overflow-wrap: break-word;
+  user-select: none;
 }

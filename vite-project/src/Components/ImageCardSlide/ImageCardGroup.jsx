@@ -7,6 +7,62 @@ import "./ImageCardGroup.css";
 import { Autoplay, Navigation } from "swiper/modules";
 import { MdNavigateNext } from "react-icons/md";
 import { MdNavigateBefore } from "react-icons/md";
+const cardData = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "humour",
+    description: "Freshie Guide to Side Hustles in Institute",
+  },
+];
 function ImageCardGroup() {
   return (
     <div className="ImageCardGroupContainer">
@@ -47,24 +103,13 @@ function ImageCardGroup() {
           <div className="swiper-button-prev">
             <MdNavigateBefore className="prev-icon" />
           </div>
-          <SwiperSlide style={{ width: "70%" }}>
-            <ImageCard />
-          </SwiperSlide>
-          <SwiperSlide style={{ width: "70%" }}>
-            <ImageCard />
-          </SwiperSlide>
-          <SwiperSlide style={{ width: "70%" }}>
-            <ImageCard />
-          </SwiperSlide>
-          <SwiperSlide style={{ width: "70%" }}>
-            <ImageCard />
-          </SwiperSlide>
-          <SwiperSlide style={{ width: "70%" }}>
-            <ImageCard />
-          </SwiperSlide>
-          <SwiperSlide style={{ width: "70%" }}>
-            <ImageCard />
-          </SwiperSlide>
+          {cardData.map((card) => (
+            <>
+              <SwiperSlide style={{ width: "70%" }}>
+                <ImageCard {...card} />
+              </SwiperSlide>
+            </>
+          ))}
         </Swiper>
       </div>
     </div>
