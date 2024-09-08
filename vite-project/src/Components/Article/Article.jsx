@@ -45,8 +45,43 @@ const Article = () => {
                         </p>
                     </div>
                 </div>
+                <div className="comment-section">
+                    <h3 id="reply-title" className="comment-reply-title">Write a Comment</h3>
 
+                    <textarea 
+                        id="comment" 
+                        name="comment" 
+                        placeholder="* Comment" 
+                        rows="8" 
+                        aria-required="true" 
+                        className="comment-textarea"
+                    ></textarea>
 
+          
+                    {/* Container for Name and Email fields */}
+                    <div className="comment-input-group">
+                        <textarea 
+                        id="short-comment" 
+                        name="short-comment" 
+                        placeholder="* Name" 
+                        rows="2" 
+                        className="comment-input Name-area"
+                        aria-required="true"
+                        ></textarea>
+
+                        <textarea 
+                        id="comment-email" 
+                        name="comment-email" 
+                        placeholder="* E-mail" 
+                        rows="2" 
+                        className="comment-input mail-area"
+                        aria-required="true"
+                        ></textarea>
+                    </div>
+
+                    
+                    <button className="comment-submit-btn">Submit</button>
+                </div>
             </div>   
         </div>
     );

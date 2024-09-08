@@ -1,0 +1,35 @@
+.ImageCardBackground {
+  height: 500px;
+  width: 100%;
+  object-fit: inherit;
+  display: block;
+  user-select: none;
+}
+.ImageCardCategory {
+  font-size: calc(0.9375rem);
+  font-family: "Oswald", sans-serif;
+  user-select: none;
+}
+.ImageCardTextContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  height: 40%;
+  background-color: hsl(0deg 0% 0% / 30%);
+  justify-content: center;
+}
+
+.ImageCardContainer {
+  color: white;
+  position: relative;
+  width: 296.5px;
+}
+.ImageCardDescription {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-size: calc((28 / 16) rem);
+  font-weight: 300;
+  overflow-wrap: break-word;
+  user-select: none;
+}

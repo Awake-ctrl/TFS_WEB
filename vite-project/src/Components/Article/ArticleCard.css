@@ -119,3 +119,86 @@
     flex-direction: column; 
     align-items: flex-start; 
 }
+
+
+.comment-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Styling for the comment textarea */
+  .comment-textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allows vertical resizing while preventing horizontal resizing */
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  /* Input group for Name and Email */
+  .comment-input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  
+  .comment-input {
+    width: calc(50% - 5px);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* Disables resizing for the name and email fields */
+  }
+  
+  /* Submit button styling */
+  .comment-submit-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .comment-submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .comment-input {
+      width: 100%;
+      font-size: 13px;
+    }
+  
+    .comment-textarea {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .comment-submit-btn {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .comment-textarea {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .comment-submit-btn {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }

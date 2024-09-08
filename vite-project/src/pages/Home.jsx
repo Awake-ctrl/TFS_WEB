@@ -1,5 +1,7 @@
-// import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
+import React from "react";
+import Navbar from "../Components/Navbar/Navbar";
+import ImageCardGroup from "../Components/ImageCardSlide/ImageCardGroup";
+
 import ArticleCards from '../Components/Article/ArticleCards'
 import Heading_and_line from '../Components/Sidebar/heading_and_line2'
 import Footer from '../Components/Footer/Footer'
@@ -9,10 +11,14 @@ import '../Components/Sidebar/sidebar.css'
 
 const Home = () => {
   return (
-    <div className='Main'>
+    <div>
       <Navbar />
+      <ImageCardGroup />
+      
       <div className="content">
         <div className='wrapper'>
+        
+        
         <div className="article">
         <ArticleCards />
         <ArticleCards />
@@ -32,7 +38,7 @@ const Home = () => {
       </div>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
