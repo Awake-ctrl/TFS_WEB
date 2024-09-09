@@ -1,13 +1,13 @@
-import React from 'react';
+// import React from 'react';
 import './heading_and_line.css'
 // import React from 'react';
 
 const Heading_and_line = () => {
 
   return (
-    <div class="widget_text">
-        <h3 class="widget-title">Heading</h3>
-        <div class="textwidget">
+    <div className="widget_text">
+        <h3 className="widget-title">Heading</h3>
+        <div className="textwidget">
             <p>
 	            <a href=""> put link here </a>
             </p>

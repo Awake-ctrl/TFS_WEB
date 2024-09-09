@@ -1,9 +1,9 @@
 // import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import ArticleCards from '../../Components/Article/ArticleCards'
-import Heading_and_line from '../../Components/Sidebar/heading_and_line2'
+import Heading_and_line from '../../Components/sidebar/heading_and_line2'
 import Footer from '../../Components/Footer/Footer'
-import './Complete.css'
+import '../../Components/sidebar/sidebar.css'
 
 
 
@@ -31,4 +31,4 @@ const ArticlePage = () => {
   )
 }
 
-export default ArticlePage;
+export default ArticlePage

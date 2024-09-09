@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Navbar from "../Components/Navbar/Navbar";
 import ImageCardGroup from "../Components/ImageCardSlide/ImageCardGroup";
 
@@ -8,7 +8,7 @@ import Recentposts from "../Components/sidebar/recentposts2";
 import Socials from "../Components/sidebar/socials2";
 import Footer from '../Components/Footer/Footer'
 import SubscriptionForm from "../Components/sidebar/subscriptionform2";
-import '../Components/Sidebar/sidebar.css'
+import '../Components/sidebar/sidebar.css'
 
 
 
@@ -19,7 +19,7 @@ const Home = () => {
       <ImageCardGroup />
       
       <div className="content">
-        <div className='wrapper'>
+        <div className="wrapper">
         
         
           <div className="article">
@@ -49,4 +49,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home

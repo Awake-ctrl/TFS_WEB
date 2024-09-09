@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './subscriptionform.css';  // Make sure the path is correct
 
 const SubscriptionForm = () => {

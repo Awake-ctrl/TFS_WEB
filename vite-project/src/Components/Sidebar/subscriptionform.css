@@ -1,9 +1,6 @@
 /* subscriptionform.css */
-
 form {
-    /* width: 300px; */
     margin: 0 auto;
-    /* padding: 20px; */
     padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
     border: 1px solid #ddd;
     background-color: #fff;
@@ -16,7 +13,6 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    /* font-size: 14px; */
     font-size: clamp(0px, 1vw, 16px);
     color: #333;
 }
@@ -24,26 +20,20 @@ label {
 input[type="text"],
 input[type="email"] {
     width: 100%;
-    /* padding: 10px; */
     padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
-    /* font-size: 14px; */
     font-size: clamp(0px, 0.875vw, 14px);
     border: 1px solid #ccc;
-    /* border-radius: 4px; */
     border-radius: clamp(0px, 0.2vw, 3px);
     box-sizing: border-box;
 }
 
-/* input[type="checkbox"] {
-    margin-right: 5px;
-} */
 
 input[type="checkbox"] {
+   -webkit-appearance: none;
     appearance: none;
-    -webkit-appearance: none; /* For Safari */
     position: relative;
-    width: clamp(8px, 0.5vw, 16px); /* Smaller minimum size */
-    height: clamp(8px, 0.5vw, 16px); /* Smaller minimum size */
+    width: clamp(8px, 0.5vw, 16px);
+    height: clamp(8px, 0.5vw, 16px); 
     border: 1px solid #ccc;
     border-radius: clamp(1px, 0.2vw, 3px);
     background-color: #fff;
@@ -56,7 +46,7 @@ input[type="checkbox"]:checked::before {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: clamp(6px, 0.5vw, 12px); /* Adjusted font-size */
+    font-size: clamp(6px, 0.5vw, 12px);
     width: 100%;
     height: 100%;
     display: flex;
@@ -72,16 +62,13 @@ input[type="checkbox"]:hover {
 
 
 .tnp-field-privacy label {
-    /* font-size: 12px; */
     font-size: clamp(0px, 0.875vw, 14px);
     color: #333;
 }
 
 .tnp-submit {
     width: 100%;
-    /* padding: 10px; */
     padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
-    /* font-size: 14px; */
     font-size: clamp(0px, 0.875vw, 14px);
     background-color: #333;
     color: #fff;
