@@ -37,7 +37,8 @@ const Home = () => {
           <aside>
 
             <Heading_and_line />
-            {/* <SubscriptionForm/> */}
+            <SubscriptionForm/>
+            <Recentposts/>
             <Socials/>
           </aside>
         </div>

@@ -36,13 +36,13 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  margin-top: clamp(5px, 2vw, 20px); /* Sets a minimum margin */
-  margin-bottom: clamp(5px, 2vw, 20px);
+  margin-top: clamp(10px, 2vw, 20px); /* Sets a minimum margin */
+  margin-bottom: clamp(10px, 2vw, 20px);
 }
 
 .art-card-heading{
   font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-  font-size: clamp(8px, 3vw, 35px); /* Ensures heading doesn't shrink too much */
+  font-size: clamp(0px, 3vw, 35px); /* Ensures heading doesn't shrink too much */
 }
 
 .art-card-additional-data{
@@ -51,15 +51,15 @@
   list-style: none;
   display: flex;
   font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-  font-size: clamp(6px, 2.2vw, 23px); /* Sets a minimum font size */
+  font-size: clamp(0px, 2.2vw, 23px); /* Sets a minimum font size */
 }
 
 .art-card-additional-data li{
-  margin-right: clamp(5px, 2vw, 40px); /* Ensures minimum spacing */
+  margin-right: clamp(10px, 2vw, 40px); /* Ensures minimum spacing */
 }
 
 .art-card-text{
-  font-size: clamp(4px, 1.8vw, 20px); /* Ensures text doesn't get too small */
+  font-size: clamp(0px, 1.8vw, 20px); /* Ensures text doesn't get too small */
   font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
 }
 
