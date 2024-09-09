@@ -16,8 +16,7 @@ const cardData = [
     id: "1",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "http://127.0.0.1:5173/src/assets/image.webp",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
     id: "2",
@@ -78,8 +77,9 @@ function ImageCardGroup() {
       <div className="ImageCardGroupRow">
         <Swiper
           loop={true}
+          spaceBetween={"20px"}
           autoplay={{
-            delay: 2500,
+            delay: 1000,
             disableOnInteraction: false,
           }}
           navigation={{
@@ -114,7 +114,7 @@ function ImageCardGroup() {
           </div>
           {cardData.map((card) => (
             <>
-              <SwiperSlide style={{ width: "70%" }} key={card.id}>
+              <SwiperSlide style={{ width: "296.5px" }} key={card.id}>
                 <ImageCard {...card} />
               </SwiperSlide>
             </>

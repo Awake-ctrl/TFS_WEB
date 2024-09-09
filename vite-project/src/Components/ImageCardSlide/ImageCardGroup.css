@@ -7,7 +7,6 @@
 
 .ImageCardGroupContainer {
   width: 100vw;
-  margin: 2rem;
 }
 element.style {
   margin-right: 0rem;
@@ -29,8 +28,10 @@ element.style {
   background: #fff;
   /* Center slide text vertically */
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  width: 296.5px;
 }
 .swiper-button-next,
 .swiper-button-prev {
