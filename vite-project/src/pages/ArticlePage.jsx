@@ -6,6 +6,7 @@ import Recentposts from "../Components/sidebar/recentposts2";
 import Socials from "../Components/sidebar/socials2";
 import SubscriptionForm from "../Components/sidebar/subscriptionform2";
 import Footer from '../Components/Footer/Footer'
+import ImageCardGroup from '../Components/ImageCardSlide/ImageCardGroup';
 import '../Components/sidebar/sidebar.css'
 
 
@@ -14,10 +15,12 @@ const ArticlePage = () => {
   return (
     <div className='Main'>
       <Navbar />
+      <ImageCardGroup />
 
 
       <div className="content">
-        <div className='wrapper'>
+      <div className="wrapper">
+      <div className="wrapper2">
           <div className="article">
             <Article/>
           </div> 
@@ -28,6 +31,7 @@ const ArticlePage = () => {
             <Socials/>
           </aside>
         </div>
+      </div>
       </div>
 
 

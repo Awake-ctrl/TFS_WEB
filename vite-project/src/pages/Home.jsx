@@ -20,6 +20,7 @@ const Home = () => {
       
       <div className="content">
         <div className="wrapper">
+        <div className="wrapper2">
         
         
           <div className="article">
@@ -41,6 +42,7 @@ const Home = () => {
             <Recentposts/>
             <Socials/>
           </aside>
+        </div>
         </div>
         
       </div>

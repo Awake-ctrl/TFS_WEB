@@ -1,17 +1,17 @@
 /* Navbar.css */
 
-/* General Navbar Styles */
 .navbar {
   display: flex;
-  flex-direction: column; /* Stack logo and links vertically */
+  flex-direction: column;
   align-items: center;
   padding: 0 20px;
-  background-color: #333; /* Background color for the navbar */
+  background-color: #333;
   position: relative;
+  z-index: 1000;
 }
 
 .navbar-logo {
-  margin-bottom: 10px; /* Space between logo and navigation links */
+  margin-bottom: 10px;
 }
 
 .navbar-logo a {
@@ -20,77 +20,74 @@
 }
 
 .navbar-image {
-  height: 60px; /* Adjust the height as needed */
+  height: 60px;
   width: auto;
-  max-width: 100%; /* Maintain the aspect ratio */
+  max-width: 100%;
 }
 
-/* Navbar Menu and Links */
 .navbar-menu {
   width: 100%;
 }
 
 .navbar-links {
-  display: flex; /* Display links in a row */
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center; /* Center the links horizontally */
+  justify-content: center;
 }
 
 .navbar-links li {
   margin: 0;
-  padding: 0; /* Remove default padding */
-  position: relative; /* Position for dropdown positioning */
-  display: flex; /* Ensure items are aligned in a row */
-  align-items: center; /* Center items vertically */
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-link {
-  color: #fff; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-family: Tahoma, Arial, sans-serif; /* Font styling */
-  font-size: 15px; /* Font size */
-  padding: 10px 15px; /* Padding around the text */
-  border-radius: 4px; /* Optional: rounded corners */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover and active states */
-  background-color: transparent; /* Ensure button background is transparent */
-  border: none; /* Remove default button border */
-  display: flex; /* Ensure button content is centered */
-  align-items: center; /* Center content vertically */
+  color: #fff;
+  text-decoration: none;
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
 }
 
-/* Hover and Active States for Navbar Links */
 .navbar-link:hover {
-  background-color: #900603; /* Background color on hover */
-  color: #fff; /* Text color on hover */
+  background-color: #900603;
+  color: #fff;
 }
 
 .navbar-link.active {
-  background-color: #eab5a7; /* Background color when selected (active link) */
-  color: #900603; /* Text color when selected (active link) */
+  background-color: #eab5a7;
+  color: #900603;
 }
 
-/* Dropdown Styles */
 .dropdown {
-  position: relative; /* Position for dropdown menu */
+  position: relative;
 }
 
 .dropdown-menu {
-  display: none; /* Hide dropdown by default */
-  position: absolute; /* Position dropdown relative to the parent */
-  top: 100%; /* Position below the parent link */
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
-  background-color: #333; /* Background color for dropdown */
+  background-color: #333;
   list-style: none;
   padding: 0;
   margin: 0;
-  border-radius: 4px; /* Optional: rounded corners */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: box shadow */
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .dropdown-menu.show {
-  display: block; /* Show dropdown when active */
+  display: block;
 }
 
 .dropdown-menu li {
@@ -98,38 +95,36 @@
 }
 
 .dropdown-menu .navbar-link {
-  display: block; /* Ensure dropdown items are displayed as blocks */
-  padding: 10px 15px; /* Padding for dropdown items */
-  color: #fff; /* Text color for dropdown items */
-  background-color: #333; /* Background color for dropdown items */
-  border: none; /* Remove border */
-  text-align: left; /* Align text to the left */
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  text-align: left;
 }
 
 .dropdown-menu .navbar-link:hover {
-  background-color: #900603; /* Background color on hover in dropdown */
-  color: #fff; /* Text color on hover in dropdown */
+  background-color: #900603;
+  color: #fff;
 }
 
-/* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .navbar-menu {
-    display: none; /* Hide links by default on smaller screens */
+    display: none;
     position: absolute;
-    top: 60px; /* Adjust based on logo height */
+    top: 60px;
     right: 0;
     background-color: #333;
     width: 100%;
     flex-direction: column;
     align-items: center;
   }
-  
 
   .navbar-menu.active {
-    display: flex; /* Show menu when active */
+    display: flex;
   }
 
   .navbar-toggle {
-    display: block; /* Show toggle button on smaller screens */
+    display: block;
   }
 }
