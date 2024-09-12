@@ -1,5 +1,5 @@
-.art-card-full-container{
-  padding-top: min(2.5vw, 40px); /* Ensures the padding doesn't get too small */
+.art-card-full-container {
+  padding-top: 2.5vw; /* Adjusted padding to rem */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,72 +10,70 @@
   color: black;
 }
 
-.art-card-link-styles2{
+.art-card-link-styles2 {
   text-decoration: none;
   color: grey;
 }
 
-.art-card-link-styles2:hover{
+.art-card-link-styles2:hover {
   color: red;
 }
 
-.art-card-full-wrapper{
+.art-card-full-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: clamp(5px, 2vw, 30px); /* Minimum padding set to 20px */
+  padding: 1.5rem; /* Adjusted padding to rem */
   background-color: white;
-  border-radius: min(0.5vw, 10px); /* Sets a minimum for border radius */
+  border-radius: 0.5rem; /* Adjusted border radius to rem */
   max-width: 900px;  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
   text-decoration: none;
   color: black;
 }
 
-.art-card-image{
+.art-card-image {
   width: 100%;
   height: auto;
   object-fit: contain;
-  margin-top: clamp(10px, 2vw, 20px); /* Sets a minimum margin */
-  margin-bottom: clamp(10px, 2vw, 20px);
+  margin-top: 1rem; /* Adjusted margin to rem */
+  margin-bottom: 1rem;
 }
 
-.art-card-heading{
+.art-card-heading {
   font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-  font-size: clamp(0px, 3vw, 35px); /* Ensures heading doesn't shrink too much */
+  font-size: 2rem; /* Adjusted font size to rem */
 }
 
-.art-card-additional-data{
+.art-card-additional-data {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-  font-size: clamp(0px, 2.2vw, 23px); /* Sets a minimum font size */
+  font-size: 1.4rem; /* Adjusted font size to rem */
 }
 
-.art-card-additional-data li{
-  margin-right: clamp(10px, 2vw, 40px); /* Ensures minimum spacing */
+.art-card-additional-data li {
+  margin-right: 1.5rem; /* Adjusted margin to rem */
 }
 
-.art-card-text{
-  font-size: clamp(0px, 1.8vw, 20px); /* Ensures text doesn't get too small */
-  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
+.art-card-text {
+  font-size: 1.25rem; /* Adjusted font size to rem */
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
 }
 
-
-
-
-.rect-additional-data{
+.rect-additional-data {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
-  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;  
-  font-size: clamp(0px,2vw, 23px);
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4rem; /* Adjusted font size to rem */
 }
-.rect-additional-data li{
-  margin-right: clamp(0px,2vw, 40px);
+
+.rect-additional-data li {
+  margin-right: 1.5rem; /* Adjusted margin to rem */
 }
 
 .rect-author-container {
@@ -86,16 +84,16 @@
   background: linear-gradient(135deg, #f0f0f0, #e0e0e0); 
   border: 2px solid #d0bfa3; 
   border-radius: 15px;
-  padding: 15px; 
+  padding: 1rem; /* Adjusted padding to rem */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 2vw; 
+  margin-top: 1.5rem; /* Adjusted margin to rem */
 }
 
 .rect-author-image {
   width: 15%;
   height: auto;
   border-radius: 50%;
-  margin-right: 2vw; 
+  margin-right: 1.5rem; /* Adjusted margin to rem */
   border: 3px solid #d0bfa3;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
@@ -103,7 +101,7 @@
 .rect-author-name,
 .rect-publication-date {
   margin: 0;
-  font-size: clamp(0px,1.5vw,20px); 
+  font-size: 1.25rem; /* Adjusted font size to rem */
   font-family: 'Courier New', Courier, monospace;
   color: #333; 
 }
@@ -111,55 +109,51 @@
 .rect-author-details {
   display: flex;
   flex-direction: column; 
-  align-items: flex-start; 
+  align-items: flex-start;
 }
-
 
 .comment-section {
-  margin-top: 20px;
+  margin-top: 1.5rem; /* Adjusted margin to rem */
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem; /* Adjusted gap to rem */
 }
 
-/* Styling for the comment textarea */
 .comment-textarea {
   width: 100%;
   height: 100%;
-  padding: 10px;
-  font-size: clamp(0px,2vw,20px);
+  padding: 0.625rem; /* Adjusted padding to rem */
+  font-size: 1.25rem; /* Adjusted font size to rem */
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical; /* Allows vertical resizing while preventing horizontal resizing */
+  resize: vertical;
   box-sizing: border-box;
   transition: border-color 0.3s;
 }
 
-/* Input group for Name and Email */
 .comment-input-group {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem; /* Adjusted gap to rem */
   flex-wrap: wrap;
   height: 100%;
 }
 
-.comment-reply-title{
-  font-size: clamp(0px,3vw,30px);
+.comment-reply-title {
+  font-size: 2rem; /* Adjusted font size to rem */
 }
 
 .comment-input {
   width: calc(50% - 5px);
-  padding: 10px;
-  font-size: clamp(0px,2.2vw,20px);
+  padding: 0.625rem; /* Adjusted padding to rem */
+  font-size: 1.25rem; /* Adjusted font size to rem */
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: none; /* Disables resizing for the name and email fields */
+  resize: none;
 }
 
-/* Submit button styling */
 .comment-submit-btn {
-  padding: 10px 20px;
-  font-size: clamp(0px,2vw,12px);
+  padding: 0.625rem 1.25rem; /* Adjusted padding to rem */
+  font-size: 0.875rem; /* Adjusted font size to rem */
   border: none;
   background-color: #007bff;
   color: white;
@@ -172,23 +166,22 @@
   background-color: #0056b3;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .comment-input {
     width: 100%;
   }
 
   .comment-textarea {
-    padding: 8px;
+    padding: 0.5rem; /* Adjusted padding for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   .comment-textarea {
-    padding: 8px;
+    padding: 0.5rem;
   }
 
   .comment-submit-btn {
-    padding: 8px 16px;
+    padding: 0.5rem 1rem; /* Adjusted button padding */
   }
 }

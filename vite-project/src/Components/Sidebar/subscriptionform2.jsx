@@ -4,7 +4,7 @@ import './subscriptionform.css';  // Make sure the path is correct
 const SubscriptionForm = () => {
 
   return (
-    <form method="post" action="">
+    <form method="post" action="#">
         <input type="hidden" name="nr" value="widget"/>
         <input type="hidden" name="nlang" value=""/>
         <div className="tnp-field tnp-field-firstname">

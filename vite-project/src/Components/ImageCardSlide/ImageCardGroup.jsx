@@ -16,7 +16,7 @@ const cardData = [
     id: "1",
   },
   {
-    image: "http://127.0.0.1:5173/src/assets/image.webp",
+    image: "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "humour",
     description: "Freshie Guide to Side Hustles in Institute",
     id: "2",
