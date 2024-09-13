@@ -1,52 +1,53 @@
-/* subscriptionform.css */
 form {
     margin: 0 auto;
-    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
-    border: 1px solid #ddd;
-    background-color: #fff;
+    padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
+/* subscriptionform.css */
 }
 
 .tnp-field {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* Equivalent to 15px */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    font-size: clamp(0px, 1vw, 16px);
+    margin-bottom: 0.3125rem; /* Equivalent to 5px */
+    font-size: 1rem; /* Equivalent to 16px */
     color: #333;
+    white-space: normal; /* Allow label text to wrap */
+    overflow: visible; /* Ensure full visibility of the label */
 }
 
 input[type="text"],
 input[type="email"] {
     width: 100%;
-    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
-    font-size: clamp(0px, 0.875vw, 14px);
+    padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
+    font-size: 0.875rem; /* Equivalent to 14px */
     border: 1px solid #ccc;
-    border-radius: clamp(0px, 0.2vw, 3px);
+    border-radius: 0.2rem; /* Equivalent to 3px */
     box-sizing: border-box;
+    white-space: normal; /* Allow input content to wrap */
 }
-
 
 input[type="checkbox"] {
    -webkit-appearance: none;
     appearance: none;
+    -webkit-appearance: none;
     position: relative;
-    width: clamp(8px, 0.5vw, 16px);
-    height: clamp(8px, 0.5vw, 16px); 
+    width: 1rem; /* Equivalent to 16px */
+    height: 1rem; /* Equivalent to 16px */
     border: 1px solid #ccc;
-    border-radius: clamp(1px, 0.2vw, 3px);
+    border-radius: 0.1875rem; /* Equivalent to 3px */
     background-color: #fff;
     cursor: pointer;
+    display: inline-block;
 }
 
-/* Style the checkmark */
 input[type="checkbox"]:checked::before {
     content: "✔";
     position: absolute;
     top: 0;
     left: 0;
-    font-size: clamp(6px, 0.5vw, 12px);
+    font-size: 0.75rem; /* Equivalent to 12px */
     width: 100%;
     height: 100%;
     display: flex;
@@ -55,29 +56,32 @@ input[type="checkbox"]:checked::before {
     color: #333;
 }
 
-/* Add hover effect */
 input[type="checkbox"]:hover {
     background-color: #f0f0f0;
 }
 
-
 .tnp-field-privacy label {
-    font-size: clamp(0px, 0.875vw, 14px);
+    font-size: 0.875rem; /* Equivalent to 14px */
     color: #333;
+    white-space: normal; /* Allow privacy label to wrap */
+    overflow: visible; /* Ensure full visibility of the text */
 }
 
 .tnp-submit {
     width: 100%;
-    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
-    font-size: clamp(0px, 0.875vw, 14px);
+    padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
+    font-size: 0.875rem; /* Equivalent to 14px */
     background-color: #333;
     color: #fff;
     border: none;
-    border-radius: clamp(0px, 0.2vw, 3px);
+    border-radius: 0.2rem; /* Equivalent to 3px */
     cursor: pointer;
     text-transform: uppercase;
+    white-space: normal; /* Allow button text to wrap */
 }
 
 .tnp-submit:hover {
     background-color: #555;
 }
+
+
