@@ -7,7 +7,6 @@
 
 .ImageCardGroupContainer {
   width: 100vw;
-  margin: 2rem;
 }
 element.style {
   margin-right: 0rem;
@@ -31,7 +30,52 @@ element.style {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 296.5px;
 }
+.swiper-slide {
+  height: auto; /* Let it adapt to the content */
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.3s ease;
+}
+
+/* For large desktop screens */
+@media (min-width: 1440px) {
+  .swiper-slide {
+    min-height: 500px; /* More spacious height for large screens */
+  }
+}
+
+/* For desktops and laptops */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .swiper-slide {
+    min-height: 450px; /* Moderate height for desktops */
+  }
+}
+
+/* For tablets and smaller laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .swiper-slide {
+    min-height: 400px; /* Comfortable height for tablets */
+  }
+}
+
+/* For mobile landscape and large phones */
+@media (min-width: 480px) and (max-width: 768px) {
+  .swiper-slide {
+    min-height: 300px; /* Adjust height for smaller devices */
+  }
+}
+
+/* For small mobile screens */
+@media (max-width: 480px) {
+  .swiper-slide {
+    min-height: 250px; /* Compact height for small mobile screens */
+  }
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   opacity: 0%;

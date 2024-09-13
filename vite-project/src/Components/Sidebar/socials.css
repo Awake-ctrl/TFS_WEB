@@ -1,70 +1,17 @@
-/* socials.css
-.social-widget {
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 300px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-.widget-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.social-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-item {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-item a {
-  text-decoration: none;
-  color: #333;
-}
-
-.social-item a:hover {
-  color: #666;
-}
-
-.fa-2x {
-  font-size: 2em;
-}
-
-.fa-instagram {
-  color: #e1306c;
-}
-
-.fa-facebook {
-  color: #3b5998;
-}
-
-.fa-twitter {
-  color: #333;
-} */
-
-
 /* socials.css */
 .social-widget {
   text-align: center;
-  padding: clamp(0px, 1.5vw, 20px); /* Padding between 10px and 20px */
+  padding: clamp(0px, 1.5vw, 20px); 
   border: 0.1vw solid #ccc;
-  border-radius: clamp(0px, 0.5vw, 5px); /* Border-radius between 3px and 5px */
+  border-radius: clamp(0px, 0.5vw, 5px); 
   margin: 0 auto;
   background-color: #fff;
 }
 
 .widget-title {
-  font-size: clamp(0px, 1.5vw, 18px); /* Font size between 14px and 18px */
+  font-size: clamp(0px, 1.5vw, 18px); 
   font-weight: bold;
-  margin-bottom: clamp(0px, 1vw, 10px); /* Margin-bottom between 5px and 10px */
+  margin-bottom: clamp(0px, 1vw, 10px); 
 }
 
 .social-list {
@@ -75,7 +22,7 @@
 
 .social-item {
   display: inline-block;
-  margin-right: clamp(0px, 1vw, 10px); /* Margin-right between 5px and 10px */
+  margin-right: clamp(0px, 1vw, 10px); 
 }
 
 .social-item a {
@@ -88,7 +35,7 @@
 }
 
 .fa-2x {
-  font-size: clamp(0em, 3vw, 2em); /* Font size between 1.5em and 2em */
+  font-size: clamp(0em, 3vw, 2em);
 }
 
 .fa-instagram {

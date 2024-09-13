@@ -1,15 +1,21 @@
+.ImageCardContainer {
+  color: white;
+  position: relative;
+  width: 100%; /* Ensure the card takes full width */
+  height: 100%; /* Ensures that it inherits the Swiper slide height */
+  max-width: 100%; /* Prevent overflow */
+  display: flex;
+  flex-direction: column;
+}
+
 .ImageCardBackground {
-  height: 500px;
-  width: 100%;
-  object-fit: inherit;
+  width: 100%; /* Fill the width */
+  height: 100%; /* Fill the height */
+  object-fit: fill; /* Ensures the image covers the card without distortion */
   display: block;
   user-select: none;
 }
-.ImageCardCategory {
-  font-size: calc(0.9375rem);
-  font-family: "Oswald", sans-serif;
-  user-select: none;
-}
+
 .ImageCardTextContainer {
   display: flex;
   text-align: center;
@@ -17,18 +23,20 @@
   position: absolute;
   bottom: 0px;
   height: 40%;
+  width: 100%;
   background-color: hsl(0deg 0% 0% / 30%);
   justify-content: center;
 }
 
-.ImageCardContainer {
-  color: white;
-  position: relative;
-  width: 296.5px;
+.ImageCardCategory {
+  font-size: calc(0.9rem + 0.3vw); /* Responsive text size */
+  font-family: "Oswald", sans-serif;
+  user-select: none;
 }
+
 .ImageCardDescription {
   font-family: "Oswald", "Arial Narrow", sans-serif;
-  font-size: calc((28 / 16) rem);
+  font-size: clamp(0.8rem, 2vw, 1.5rem); /* Responsive text size */
   font-weight: 300;
   overflow-wrap: break-word;
   user-select: none;

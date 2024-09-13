@@ -18,15 +18,15 @@ const Article = () => {
         <div className="art-card-full-container">
             <div className='art-card-full-wrapper'>
 
-                <header className='art-card-header'>
-                    <h1 className="art-card-heading">{heading}</h1>
+                <header className='art-card-header' >
+                    <h1 className="art-card-heading" style={{fontSize:"1.75em"}}>{heading}</h1>
                     <ul className="rect-additional-data">
                         <li className='art-card-date'><Link className={linkstyles2} to={DateLink}>{publicationDate}</Link></li>
                         <li className='art-card-author'><Link className={linkstyles2} to={AuthorLink}>{authorName}</Link></li>
                     </ul>
                 </header>
                 <img className="art-card-image" src={image} alt="article image"/>
-                <div className='art-card-text'>
+                <div className='art-card-text' style={{fontSize:"1.15em"}}>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>

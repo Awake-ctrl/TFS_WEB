@@ -1,8 +1,14 @@
 .widget_text {
     text-align: center;
+<<<<<<< HEAD
     padding: 1.25rem; /* Equivalent to 20px */
     border: 0.1rem solid #ccc; /* Equivalent to 1.6px */
     border-radius: 0.3rem; /* Equivalent to 5px */
+=======
+    padding: clamp(0px, 1.25vw, 20px);
+    border: 0.1vw solid #ccc;
+    border-radius: clamp(2px, 0.3vw, 5px);
+>>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
     margin: 0 auto;
     background-color: #fff;
     display: flex; /* Apply Flexbox */
@@ -14,6 +20,7 @@
 .widget-title {
     background-color: #800000;
     color: #fff;
+<<<<<<< HEAD
     font-size: 1rem; /* Equivalent to 16px */
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
     margin-bottom: 0.9375rem; /* Equivalent to 15px */
@@ -24,6 +31,17 @@
 
 .textwidget {
     font-size: 0.875rem; /* Equivalent to 14px */
+=======
+    font-size: clamp(0px, 1vw, 16px); 
+    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px); 
+    margin: 0 0 clamp(0px, 0.9375vw, 15px); 
+    display: inline-block;
+    border-radius: clamp(0px, 0.2vw, 3px); 
+}
+
+.textwidget {
+    font-size: clamp(0px, 0.875vw, 14px); 
+>>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
     color: #333;
     white-space: nowrap; /* Prevent text wrapping */
     display: inline-block; /* Ensure elements stay on the same line */

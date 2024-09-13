@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './socials.css';  // Ensure the path is correct
 
 const Socials = () => {
