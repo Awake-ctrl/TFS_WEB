@@ -7,7 +7,7 @@ import Heading_and_line from '../Components/sidebar/heading_and_line2'
 import Recentposts from "../Components/sidebar/recentposts2";
 import Socials from "../Components/sidebar/socials2";
 import Footer from '../Components/Footer/Footer'
-import SubscriptionForm from "../Components/sidebar/subscriptionform2";
+import FeedbackForm from "../Components/sidebar/subscriptionform2";
 import '../Components/sidebar/sidebar.css'
 
 
@@ -38,8 +38,12 @@ const Home = () => {
           <aside>
 
             <Heading_and_line />
-            <SubscriptionForm/>
             <Recentposts/>
+            <br></br>
+            <br></br>
+            <FeedbackForm/>
+            <br></br>
+            <br></br>
             <Socials/>
           </aside>
         </div>

@@ -33,6 +33,7 @@ const ArticleCards = () => {
                 <div className='art-card-text'>
                     <p>{text}</p>     
                 </div>
+                <Link className='art-card-read-more-button' to={ArticleLink}>Read More</Link>
             </div>
             </Link>
 
