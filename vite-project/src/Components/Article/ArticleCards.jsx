@@ -9,9 +9,13 @@ const ArticleCards = () => {
     const publicationDate = "24th August, 2024"; 
     const text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus deserunt numquam nobis ipsam corporis, corrupti aliquid consectetur odio ad blanditiis voluptatum, assumenda maiores temporibus necessitatibus. Iusto magni dolores rerum.";
     
-    const ArticleLink = "/Article";
-    const AuthorLink = `/Authors/${authorName}`;
     const DateLink = "#";
+
+    const AuthorOnsetCSSID = "author-page-author-onset";
+    const AuthorLink = `/Authors/${authorName}#${AuthorOnsetCSSID}`
+
+    const ArticleOnsetCSSID = "article-page-article-onset";
+    const ArticleLink = `/Article#${ArticleOnsetCSSID}`;
 
     const linkstyles = "art-card-link-styles";
     const linkstyles2 = "art-card-link-styles2";

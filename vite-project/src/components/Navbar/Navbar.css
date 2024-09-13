@@ -5,8 +5,9 @@
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-  background-color: #333;
-  position: relative;
+  background-color: rgba(5, 1, 1, 0.75);
+  position: sticky;
+  top: 0; /*necessary for sticky*/
   z-index: 1000;
 }
 
@@ -27,6 +28,7 @@
 
 .navbar-menu {
   width: 100%;
+  
 }
 
 .navbar-links {
@@ -35,6 +37,7 @@
   margin: 0;
   padding: 0;
   justify-content: center;
+  
 }
 
 .navbar-links li {
@@ -78,7 +81,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #333;
+  background-color: rgba(5, 1, 1, 0.75);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -98,14 +101,16 @@
   display: block;
   padding: 10px 15px;
   color: #fff;
-  background-color: #333;
+  background-color: transparent;
   border: none;
   text-align: left;
+  width: 100%;
 }
 
 .dropdown-menu .navbar-link:hover {
   background-color: #900603;
   color: #fff;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -114,7 +119,7 @@
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #333;
+    background-color: rgba(5, 1, 1, 0.75);
     width: 100%;
     flex-direction: column;
     align-items: center;
