@@ -49,3 +49,9 @@ aside {
   }
 }
 
+@media (max-width: 425px) {
+  .wrapper{
+    width: 99.85%;
+  }
+}
+
