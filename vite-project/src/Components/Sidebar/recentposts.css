@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
 }
@@ -8,47 +7,44 @@ body {
     padding: 1.25rem; /* Equivalent to 20px */
     border: 0.0625rem solid #ccc; /* Equivalent to 1px */
     border-radius: 0.3rem; /* Equivalent to 5px */
-=======
-.recent-posts-0 {
-    text-align: center;
-    padding: clamp(0px, 1.25vw, 20px);
-    font-family: Arial, sans-serif;
-    border: 0.0625rem solid #ccc; 
-    border-radius: clamp(2px, 0.3vw, 5px);
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
     background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures full width on smaller screens */
+    box-sizing: border-box; /* Prevents padding from adding to the width */
 }
 
 .widget-title {
     background-color: #b90000;
     color: #fff;
     text-align: center;
-<<<<<<< HEAD
     font-size: 1rem; /* Equivalent to 16px */
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
     margin-bottom: 0.9375rem; /* Equivalent to 15px */
-=======
-    font-size: clamp(0px, 1vw, 16px);
-    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
-    margin: 0 0 clamp(0px, 0.9375vw, 15px);
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
     display: inline-block;
     border-radius: 0.2rem; /* Equivalent to 3px */
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: normal; /* Allow text wrapping */
+    width: 100%; /* Full width for responsiveness */
+    text-align: center; /* Center text inside */
 }
 
 .recent-posts {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%; /* Ensure list takes full width */
+    box-sizing: border-box; /* Prevent padding from increasing width */
 }
 
 .recent-post-media {
     display: flex;
-<<<<<<< HEAD
     align-items: center; /* Center image and text vertically */
     margin-bottom: 0.9375rem; /* Equivalent to 15px */
     flex-wrap: nowrap; /* Prevent line breaks inside flex container */
+    width: 100%; /* Ensure media content fits within full width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 .recent-post-image img {
@@ -57,18 +53,7 @@ body {
     object-fit: cover;
     margin-right: 0.625rem; /* Equivalent to 10px */
     border-radius: 0.25rem; /* Equivalent to 4px */
-=======
-    align-items: flex-start;
-    margin-bottom: 0.9375rem; 
-}
-
-.recent-post-image img {
-    width: 3.75rem; 
-    height: 3.75rem;
-    object-fit: cover;
-    margin-right: 0.625rem;
-    border-radius: 0.25rem; 
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
+    flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 .media-body {
@@ -76,23 +61,25 @@ body {
     flex-direction: column;
     flex-shrink: 1; /* Allow text to shrink if needed */
     overflow: hidden; /* Hide overflowing text */
+    width: 100%; /* Ensure text block fits full width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 .recent-post-title {
     margin: 0;
-<<<<<<< HEAD
     font-size: 0.875rem; /* Equivalent to 14px */
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflowing text */
     text-overflow: ellipsis; /* Add ellipsis for long text */
-=======
-    font-size: clamp(0px, 0.875vw, 14px);
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
+    width: 100%; /* Ensure title takes full width */
 }
 
 .recent-post-title a {
     text-decoration: none;
     color: #333;
+    display: block; /* Ensure clickable area takes full width */
+    width: 100%; /* Ensure link takes full width */
+    box-sizing: border-box;
 }
 
 .recent-post-title a:hover {
@@ -100,14 +87,13 @@ body {
 }
 
 .post-date {
-<<<<<<< HEAD
     font-size: 0.875rem; /* Equivalent to 14px */
-=======
-    font-size: clamp(0px, 0.875vw, 14px);
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
     color: #999;
     white-space: nowrap; /* Prevent date from wrapping */
     overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    width: 100%; /* Ensure date takes full width */
+    box-sizing: border-box; /* Prevent overflow */
 }
 
 

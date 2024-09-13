@@ -1,57 +1,48 @@
 .widget_text {
     text-align: center;
-<<<<<<< HEAD
     padding: 1.25rem; /* Equivalent to 20px */
     border: 0.1rem solid #ccc; /* Equivalent to 1.6px */
     border-radius: 0.3rem; /* Equivalent to 5px */
-=======
-    padding: clamp(0px, 1.25vw, 20px);
-    border: 0.1vw solid #ccc;
-    border-radius: clamp(2px, 0.3vw, 5px);
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
     margin: 0 auto;
     background-color: #fff;
-    display: flex; /* Apply Flexbox */
-    flex-direction: column; /* Ensure it stacks vertically */
+    display: flex; 
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
+    width: 100%; /* Ensures full width on smaller screens */
+    box-sizing: border-box; /* Prevents padding from adding to the width */
 }
 
 .widget-title {
     background-color: #800000;
     color: #fff;
-<<<<<<< HEAD
     font-size: 1rem; /* Equivalent to 16px */
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
     margin-bottom: 0.9375rem; /* Equivalent to 15px */
     display: inline-block;
     border-radius: 0.2rem; /* Equivalent to 3px */
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: normal; /* Allow text wrapping */
+    width: 100%; /* Full width for responsiveness */
+    text-align: center; /* Center text inside */
 }
 
 .textwidget {
     font-size: 0.875rem; /* Equivalent to 14px */
-=======
-    font-size: clamp(0px, 1vw, 16px); 
-    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px); 
-    margin: 0 0 clamp(0px, 0.9375vw, 15px); 
-    display: inline-block;
-    border-radius: clamp(0px, 0.2vw, 3px); 
-}
-
-.textwidget {
-    font-size: clamp(0px, 0.875vw, 14px); 
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
     color: #333;
-    white-space: nowrap; /* Prevent text wrapping */
-    display: inline-block; /* Ensure elements stay on the same line */
-    overflow: hidden; /* Hide any overflowing text */
+    white-space: normal; /* Allow text wrapping */
+    display: block; /* Make the element responsive */
+    overflow: visible; /* Let the text be fully visible */
+    width: 100%; /* Full width to prevent overflow */
+    text-align: center; /* Center the text */
 }
 
 input, button {
-    display: inline-block;
-    white-space: nowrap;
-    width: auto; /* Set this to avoid wrapping */
+    display: block;
+    white-space: normal; /* Allow wrapping if necessary */
+    width: 100%; /* Set to full width for better responsiveness */
+    padding: 0.625rem; /* Add some padding for touch screens */
+    box-sizing: border-box; /* Prevents padding from overflowing */
 }
+
 
 
