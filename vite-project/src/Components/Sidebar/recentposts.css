@@ -2,15 +2,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Widget Styles */
 .recent-posts-0 {
     text-align: center;
-    padding: clamp(0px, 1.25vw, 20px);
-    /* width: 18.75rem;  */
-    border: 0.0625rem solid #ccc; /* 1px */
-    border-radius: clamp(2px, 0.3vw, 5px);
-    /* border-radius: 0.3125rem;  */
-    /* padding: 1.25rem; */
+    padding: 1.25rem; /* Equivalent to 20px */
+    border: 0.0625rem solid #ccc; /* Equivalent to 1px */
+    border-radius: 0.3rem; /* Equivalent to 5px */
     background-color: #fff;
 }
 
@@ -18,16 +14,14 @@ body {
     background-color: #b90000;
     color: #fff;
     text-align: center;
-    font-size: clamp(0px, 1vw, 16px);
-    /* padding: 0.625rem; */
-    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px);
-    /* margin: 0 0 0.625rem 0; */
-    margin: 0 0 clamp(0px, 0.9375vw, 15px);
+    font-size: 1rem; /* Equivalent to 16px */
+    padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
+    margin-bottom: 0.9375rem; /* Equivalent to 15px */
     display: inline-block;
-    border-radius: clamp(0px, 0.2vw, 3px);
+    border-radius: 0.2rem; /* Equivalent to 3px */
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
-/* Post List Styles */
 .recent-posts {
     list-style: none;
     padding: 0;
@@ -36,27 +30,32 @@ body {
 
 .recent-post-media {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 0.9375rem; /* 15px */
+    align-items: center; /* Center image and text vertically */
+    margin-bottom: 0.9375rem; /* Equivalent to 15px */
+    flex-wrap: nowrap; /* Prevent line breaks inside flex container */
 }
 
 .recent-post-image img {
-    width: 3.75rem; /* 60px */
-    height: 3.75rem; /* 60px */
+    width: 3.75rem; /* Equivalent to 60px */
+    height: 3.75rem; /* Equivalent to 60px */
     object-fit: cover;
-    margin-right: 0.625rem; /* 10px */
-    border-radius: 0.25rem; /* 4px */
+    margin-right: 0.625rem; /* Equivalent to 10px */
+    border-radius: 0.25rem; /* Equivalent to 4px */
 }
 
 .media-body {
     display: flex;
     flex-direction: column;
+    flex-shrink: 1; /* Allow text to shrink if needed */
+    overflow: hidden; /* Hide overflowing text */
 }
 
 .recent-post-title {
     margin: 0;
-    /* font-size: 0.875rem; */
-    font-size: clamp(0px, 0.875vw, 14px);
+    font-size: 0.875rem; /* Equivalent to 14px */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
 }
 
 .recent-post-title a {
@@ -69,7 +68,10 @@ body {
 }
 
 .post-date {
-    /* font-size: 0.75rem; */
-    font-size: clamp(0px, 0.875vw, 14px);
+    font-size: 0.875rem; /* Equivalent to 14px */
     color: #999;
+    white-space: nowrap; /* Prevent date from wrapping */
+    overflow: hidden; /* Hide overflowing text */
 }
+
+

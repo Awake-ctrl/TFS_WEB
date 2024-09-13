@@ -1,49 +1,39 @@
-/* .widget_text {
-    text-align: center;
-    padding: 1.25rem; 
-    border: 1px solid #ccc;
-    border-radius: 0.3125rem; 
-    width: 18.75rem; 
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-.widget-title {
-    background-color: #800000;
-    color: #fff;
-    font-size: 1rem;
-    padding: 0.625rem 1.25rem; 
-    margin: 0 0 0.9375rem; 
-    display: inline-block;
-    border-radius: 0.1875rem;
-}
-
-.textwidget {
-    font-size: 0.875rem;
-    color: #333;
-} */
-
 .widget_text {
     text-align: center;
-    padding: clamp(0px, 1.25vw, 20px); /* Padding between 10px and 20px */
-    border: 0.1vw solid #ccc;
-    border-radius: clamp(2px, 0.3vw, 5px); /* Border-radius between 2px and 5px */
+    padding: 1.25rem; /* Equivalent to 20px */
+    border: 0.1rem solid #ccc; /* Equivalent to 1.6px */
+    border-radius: 0.3rem; /* Equivalent to 5px */
     margin: 0 auto;
     background-color: #fff;
+    display: flex; /* Apply Flexbox */
+    flex-direction: column; /* Ensure it stacks vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .widget-title {
     background-color: #800000;
     color: #fff;
-    font-size: clamp(0px, 1vw, 16px); /* Font size between 12px and 16px */
-    padding: clamp(0px, 0.625vw, 10px) clamp(10px, 1.25vw, 20px); /* Padding adjusted with clamp */
-    margin: 0 0 clamp(0px, 0.9375vw, 15px); /* Margin between 10px and 15px */
+    font-size: 1rem; /* Equivalent to 16px */
+    padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
+    margin-bottom: 0.9375rem; /* Equivalent to 15px */
     display: inline-block;
-    border-radius: clamp(0px, 0.2vw, 3px); /* Border-radius between 2px and 3px */
+    border-radius: 0.2rem; /* Equivalent to 3px */
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
 .textwidget {
-    font-size: clamp(0px, 0.875vw, 14px); /* Font size between 12px and 14px */
+    font-size: 0.875rem; /* Equivalent to 14px */
     color: #333;
+    white-space: nowrap; /* Prevent text wrapping */
+    display: inline-block; /* Ensure elements stay on the same line */
+    overflow: hidden; /* Hide any overflowing text */
 }
+
+input, button {
+    display: inline-block;
+    white-space: nowrap;
+    width: auto; /* Set this to avoid wrapping */
+}
+
 
