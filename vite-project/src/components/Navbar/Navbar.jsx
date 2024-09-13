@@ -7,6 +7,7 @@ const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isInstiDropdownOpen, setIsInstiDropdownOpen] = useState(false);
     const [isSciTechDropdownOpen, setIsSciTechDropdownOpen] = useState(false);
+    
     // Function to toggle the mobile menu
     const handleToggleMenu = () => {
       setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -92,6 +93,11 @@ const Navbar = () => {
           This button will appear on smaller screens
           <span className="navbar-toggle-icon">ffgsfdg</span>
         </button> */}
+        {/* Hamburger Menu Toggle */}
+      <button className="navbar-toggle" onClick={handleToggleMenu}>
+        <span className="navbar-toggle-icon">&#9776;</span>
+      </button>
+
       </nav>
     );
   };

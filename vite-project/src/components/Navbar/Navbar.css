@@ -8,6 +8,7 @@
   padding: 0 20px;
   background-color: #333; /* Background color for the navbar */
   position: relative;
+  z-index: 1000;
 }
 
 .navbar-logo {
@@ -110,9 +111,25 @@
   background-color: #900603; /* Background color on hover in dropdown */
   color: #fff; /* Text color on hover in dropdown */
 }
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.navbar-toggle-icon {
+  display: inline-block;
+}
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+  }
   .navbar-menu {
     display: none; /* Hide links by default on smaller screens */
     position: absolute;
@@ -132,4 +149,5 @@
   .navbar-toggle {
     display: block; /* Show toggle button on smaller screens */
   }
+
 }
