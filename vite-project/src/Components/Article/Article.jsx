@@ -1,7 +1,7 @@
 // import React from "react";
 import { Link } from "react-router-dom";
 import image from "../../assets/image.webp"
-import './ArticleCard.css'
+import './Article.css'
 
 const Article = () => {
     const heading = "Freshie's Guide to RG: Do's, Don'ts, and Common Mistakes";
@@ -15,18 +15,18 @@ const Article = () => {
     const linkstyles2 = "art-card-link-styles2";
 
     return (
-        <div className="art-card-full-container">
-            <div className='art-card-full-wrapper'>
+        <div className="rect-art-card-full-container">
+            <div className='rect-art-card-full-wrapper'>
 
-                <header className='art-card-header' >
-                    <h1 className="art-card-heading" style={{fontSize:"1.75em"}}>{heading}</h1>
-                    <ul className="rect-additional-data">
-                        <li className='art-card-date'><Link className={linkstyles2} to={DateLink}>{publicationDate}</Link></li>
-                        <li className='art-card-author'><Link className={linkstyles2} to={AuthorLink}>{authorName}</Link></li>
+                <header className='rect-art-card-header' >
+                    <h1 className="rect-art-card-heading">{heading}</h1>
+                    <ul className="rect-art-card-additional-data">
+                        <li className='rect-art-card-date'><Link className={linkstyles2} to={DateLink}>{publicationDate}</Link></li>
+                        <li className='rect-art-card-author'><Link className={linkstyles2} to={AuthorLink}>{authorName}</Link></li>
                     </ul>
                 </header>
-                <img className="art-card-image" src={image} alt="article image"/>
-                <div className='art-card-text' style={{fontSize:"1.15em"}}>
+                <img className="rect-art-card-image" src={image} alt="article image"/>
+                <div className='rect-art-card-text'>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
@@ -45,42 +45,41 @@ const Article = () => {
                         </p>
                     </div>
                 </div>
-                <div className="comment-section">
-                    <h3 id="reply-title" className="comment-reply-title">Write a Comment</h3>
+                <div className="rect-comment-section">
+                    <h3 className="rect-comment-reply-title">Write a Comment</h3>
 
                     <textarea 
-                        id="comment" 
-                        name="comment" 
+                        id="rect-comment" 
+                        name="rect-comment" 
                         placeholder="* Comment" 
                         rows="8" 
                         aria-required="true" 
-                        className="comment-textarea"
+                        className="rect-comment-textarea"
                     ></textarea>
 
           
-                    {/* Container for Name and Email fields */}
-                    <div className="comment-input-group">
+                    <div className="rect-comment-input-group">
                         <textarea 
-                        id="short-comment" 
-                        name="short-comment" 
+                        id="rect-short-comment" 
+                        name="rect-short-comment" 
                         placeholder="* Name" 
                         rows="2" 
-                        className="comment-input Name-area"
+                        className="rect-comment-input Name-area"
                         aria-required="true"
                         ></textarea>
 
                         <textarea 
-                        id="comment-email" 
-                        name="comment-email" 
+                        id="rect-comment-email" 
+                        name="rect-comment-email" 
                         placeholder="* E-mail" 
                         rows="2" 
-                        className="comment-input mail-area"
+                        className="rect-comment-input mail-area"
                         aria-required="true"
                         ></textarea>
                     </div>
 
                     
-                    <button className="comment-submit-btn">Submit</button>
+                    <button className="rect-comment-submit-btn">Submit</button>
                 </div>
             </div>   
         </div>
