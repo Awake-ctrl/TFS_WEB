@@ -1,7 +1,11 @@
 form {
     margin: 0 auto;
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
-/* subscriptionform.css */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 0.3125rem; /* Equivalent to 5px for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    background-color: #fff; /* Background color to match the card style */
+    max-width: 400px; /* Ensure the form has a fixed max width */
 }
 
 .tnp-field {
@@ -18,7 +22,8 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
     width: 100%;
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
     font-size: 0.875rem; /* Equivalent to 14px */
@@ -28,10 +33,15 @@ input[type="email"] {
     white-space: normal; /* Allow input content to wrap */
 }
 
+/* Styling for the textarea (feedback field) */
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Set a minimum height for the feedback box */
+}
+
 input[type="checkbox"] {
    -webkit-appearance: none;
     appearance: none;
-    -webkit-appearance: none;
     position: relative;
     width: 1rem; /* Equivalent to 16px */
     height: 1rem; /* Equivalent to 16px */
@@ -83,5 +93,6 @@ input[type="checkbox"]:hover {
 .tnp-submit:hover {
     background-color: #555;
 }
+
 
 
