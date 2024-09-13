@@ -1,47 +1,18 @@
-/* Ensures the sidebar and content fit within the mobile screen */
-@media (max-width: 580px) {
-  .wrapper {
-      display: block; /* Stacks sidebar and content vertically */
-  }
+.article-page-author-name{
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 0.8rem;
 
-<<<<<<< HEAD
-  aside {
-      width: 100%; /* Makes the sidebar take up full width on smaller screens */
-      margin-left: 0; /* Removes left margin */
-      padding: 1rem; /* Adds padding for better readability */
-  }
+}
 
-  .form, .tnp-field, .tnp-submit {
-      width: 100%; /* Ensures form fields are 100% wide */
-      box-sizing: border-box; /* Includes padding and border in the element's width and height */
-  }
 
-  input[type="text"],
-  input[type="email"] {
-      width: 100%; /* Ensures inputs don't exceed container width */
-      padding: 0.625rem; /* Adequate padding for mobile */
-      font-size: 1rem; /* Makes input text readable on mobile */
-      box-sizing: border-box;
-  }
+.main {
+  display: flex;
+  flex-direction: column;
+}
 
-  /* Ensures buttons and form elements fit within screen */
-  .tnp-submit {
-      width: 100%; 
-      padding: 0.625rem; 
-      font-size: 1rem;
-      box-sizing: border-box;
-  }
-  
-  .social-widget {
-      width: 100%;
-      padding: 1rem;
-      box-sizing: border-box;
-  }
-  
-  .social-item {
-      display: inline-block;
-      margin-right: 10px;
-=======
 .content {
   display: flex;
   align-items: flex-start;
@@ -85,7 +56,6 @@ aside {
   }
   .wrapper{
     width: 95%;
->>>>>>> 2fcc5cfe3a136b01f34f71068eb741cd0874a1aa
   }
 }
 
