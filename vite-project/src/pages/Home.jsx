@@ -21,7 +21,7 @@ const Home = () => {
       <div className="content">
         <div className="wrapper">
         <div className="wrapper2">
-        
+    
         
           <div className="article">
           <ArticleCards />

@@ -40,6 +40,10 @@ const Navbar = () => {
           />
         </Link>
         </div>
+        {/* Hamburger Menu Toggle */}
+      <button className="navbar-toggle" onClick={handleToggleMenu}>
+        <span className="navbar-toggle-icon">&#9776;</span>
+      </button>
         <div className={`navbar-menu ${isMobileMenuOpen ? "active" : ""}`}>
           <ul className="navbar-links">
             <li>
@@ -93,10 +97,7 @@ const Navbar = () => {
           This button will appear on smaller screens
           <span className="navbar-toggle-icon">ffgsfdg</span>
         </button> */}
-        {/* Hamburger Menu Toggle */}
-      <button className="navbar-toggle" onClick={handleToggleMenu}>
-        <span className="navbar-toggle-icon">&#9776;</span>
-      </button>
+
 
       </nav>
     );
