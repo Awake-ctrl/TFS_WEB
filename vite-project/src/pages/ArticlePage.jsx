@@ -8,26 +8,45 @@ import SubscriptionForm from "../Components/sidebar/subscriptionform2";
 import Footer from '../Components/Footer/Footer'
 import ImageCardGroup from '../Components/ImageCardSlide/ImageCardGroup';
 import '../Components/sidebar/sidebar.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 
 const ArticlePage = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [location]);
+
+
   return (
     <div className='Main'>
       <Navbar />
       <ImageCardGroup />
 
-
+      <div id="article-page-article-onset"></div>
       <div className="content">
       <div className="wrapper">
       <div className="wrapper2">
+          
           <div className="article">
             <Article/>
           </div> 
           <aside>
             <Heading_and_line />
-            <SubscriptionForm/>
+            <br></br>
             <Recentposts/>
+            <br></br>
+            <SubscriptionForm/>
+            <br></br>
             <Socials/>
           </aside>
         </div>

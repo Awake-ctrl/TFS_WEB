@@ -1,4 +1,4 @@
-.widget_text {
+.heading-and-line-wrapper {
     text-align: center;
     padding: 1.25rem; /* Equivalent to 20px */
     border: 0.1rem solid #ccc; /* Equivalent to 1.6px */
@@ -13,8 +13,8 @@
     box-sizing: border-box; /* Prevents padding from adding to the width */
 }
 
-.widget-title {
-    background-color: #800000;
+.heading-and-line-widget-heading {
+    background-color: #b90000;
     color: #fff;
     font-size: 1rem; /* Equivalent to 16px */
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
@@ -26,7 +26,8 @@
     text-align: center; /* Center text inside */
 }
 
-.textwidget {
+
+.heading-and-line-widget-text {
     font-size: 0.875rem; /* Equivalent to 14px */
     color: #333;
     white-space: normal; /* Allow text wrapping */
@@ -36,13 +37,17 @@
     text-align: center; /* Center the text */
 }
 
-input, button {
-    display: block;
-    white-space: normal; /* Allow wrapping if necessary */
-    width: 100%; /* Set to full width for better responsiveness */
-    padding: 0.625rem; /* Add some padding for touch screens */
-    box-sizing: border-box; /* Prevents padding from overflowing */
+/* .heading-and-line-widget-text:hover {
+    background-color: darkred; 
+    transform: scale(1.05); 
 }
+  
+.heading-and-line-widget-text:active {
+    background-color: darkred; 
+    transform: scale(0.98); 
+} */
+
+
 
 
 

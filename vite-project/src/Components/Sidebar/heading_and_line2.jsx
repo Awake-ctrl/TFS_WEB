@@ -5,9 +5,39 @@ import './heading_and_line.css'
 const Heading_and_line = () => {
 
   return (
-    <div className="widget_text">
-        <h3 className="widget-title">Heading</h3>
-        <div className="textwidget">
+    <div className="heading-and-line-wrapper">
+        <h3 className="heading-and-line-widget-heading">Heading</h3>
+        <div className="heading-and-line-widget-text">
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
+            <p>
+	            <a href=""> put link here </a>
+            </p>
             <p>
 	            <a href=""> put link here </a>
             </p>
