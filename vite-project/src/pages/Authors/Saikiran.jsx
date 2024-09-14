@@ -23,7 +23,7 @@ const ArticlePage = () => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
   }, [location]);
@@ -32,14 +32,19 @@ const ArticlePage = () => {
     <div>
       <Navbar />
       <ImageCardGroup />
-      <div id="author-page-author-onset" className="article-page-author-name">
+      
+
+      <div className="article-page-author-name">
         <h1><h1>Author</h1>{authorName}</h1>
       </div>
+      
+      
       
       <div className="content">
         <div className="wrapper">
         <div className="wrapper2">
           <div className="article">
+          <div id="author-page-author-onset"></div>
           <ArticleCards />
           <ArticleCards />
           </div> 

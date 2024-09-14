@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import logoImage from "../../assets/head.webp"; 
 import { Link } from "react-router-dom";
@@ -53,7 +53,7 @@ const Navbar = () => {
             onMouseEnter={handleInstiMouseEnter}
             onMouseLeave={handleInstiMouseLeave}
           >
-            <button className="navbar-link">Insti</button>
+            <button className="navbar-link">Insti </button>
             <ul className={`dropdown-menu ${isInstiDropdownOpen ? "show" : ""}`}>
               <li><Link to="/News" className="navbar-link">News</Link></li>
               <li><Link to="/Events" className="navbar-link">Events</Link></li>

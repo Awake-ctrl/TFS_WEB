@@ -21,7 +21,7 @@ const ArticlePage = () => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
   }, [location]);
@@ -32,11 +32,12 @@ const ArticlePage = () => {
       <Navbar />
       <ImageCardGroup />
 
-
+      <div id="article-page-article-onset"></div>
       <div className="content">
       <div className="wrapper">
       <div className="wrapper2">
-          <div id="article-page-article-onset" className="article">
+          
+          <div className="article">
             <Article/>
           </div> 
           <aside>
