@@ -1,9 +1,11 @@
 // ?import React from 'react'
 // import { useState } from 'react';
 import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 import ArticlePage from "../src/pages/ArticlePage"
-import Saikiran from "../src/pages/Authors/Saikiran"
+import Author from "./pages/Authors/Author";
 
 import Home from "../src/pages/Home"
 import Bytes from "../src/pages/BYTES"
@@ -32,7 +34,7 @@ function App() {
 
       <Routes>
        <Route path="/Article" element={<ArticlePage/>}/>
-       <Route path="/Authors/Saikiran" element={<Saikiran/>} />
+       <Route path="/Authors/Author" element={<Author/>} />
 
         <Route path="/" element={<Home/>}/>
         <Route path="/Bytes" element={<Bytes />} />

@@ -5,7 +5,7 @@ import './Article.css'
 
 const Article = () => {
     const heading = "Freshie's Guide to RG: Do's, Don'ts, and Common Mistakes";
-    const authorName = "Saikiran"; 
+    const authorName = "Author"; 
     const publicationDate = "24th August, 2024"; 
 
     

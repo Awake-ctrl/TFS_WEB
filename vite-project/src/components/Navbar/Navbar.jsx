@@ -1,12 +1,14 @@
 import { useState } from "react";
 import "./Navbar.css";
-import logoImage from "../../assets/head.webp"; 
+//import logoImage from "../../assets/head.webp"; 
 import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isInstiDropdownOpen, setIsInstiDropdownOpen] = useState(false);
     const [isSciTechDropdownOpen, setIsSciTechDropdownOpen] = useState(false);
+    const logoImage = "https://lh5.googleusercontent.com/S1LPekjYCVHWTgekqcPB2DrDvVo16rth8SyunpaTgUVOi1XcHbUnlcUmsJxAtC_b3ymN2Q=w16383";
     
     // Function to toggle the mobile menu
     const handleToggleMenu = () => {
@@ -32,13 +34,14 @@ const Navbar = () => {
     return (
       <nav className="navbar">
         <div className="navbar-logo">
-        <Link to="/">
-          <img 
-            src={logoImage} 
-            alt="My Logo" 
-            className="navbar-image"
-          />
-        </Link>
+          <Link to="/">
+            <img 
+              src={logoImage} 
+              alt="My Logo" 
+              className="navbar-image"
+            />
+            <div><h1>THE FLEET STREET</h1></div>
+          </Link>
         </div>
         <div className={`navbar-menu ${isMobileMenuOpen ? "active" : ""}`}>
           <ul className="navbar-links">

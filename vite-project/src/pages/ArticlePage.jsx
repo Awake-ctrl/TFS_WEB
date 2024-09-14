@@ -42,8 +42,11 @@ const ArticlePage = () => {
           </div> 
           <aside>
             <Heading_and_line />
-            <SubscriptionForm/>
+            <br></br>
             <Recentposts/>
+            <br></br>
+            <SubscriptionForm/>
+            <br></br>
             <Socials/>
           </aside>
         </div>

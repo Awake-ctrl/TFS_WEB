@@ -1,24 +1,38 @@
-// import React from 'react';
-import './socials.css';  // Ensure the path is correct
+import './socials.css'; // Ensure the path is correct
 
 const Socials = () => {
   return (
-    <div className="social-widget">
-      <h3 className="widget-title">Follow us on</h3>
-      <ul className="social-list">
-        <li className="social-item">
-          <a href="#" target="_blank" title="Visit The Fleet Street, IIT Palakkad on Instagram">
-            <span className="fa fa-instagram"></span>
+    <div className="socials-wrapper">
+      <h3 className="socials-widget-heading">Follow us on</h3>
+      <ul className="socials-list">
+        <li className="socials-item">
+          <a
+            href="https://www.instagram.com/your-instagram-page" // Replace with actual URL
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit The Fleet Street, IIT Palakkad on Instagram"
+          >
+            <span className="fa-brands fa-instagram"></span> {/* Instagram icon */}
           </a>
         </li>
-        <li className="social-item">
-          <a href="#" target="_blank" title="Visit The Fleet Street, IIT Palakkad on X">
-            <span className="fa fa-twitter"></span>
+        <li className="socials-item">
+          <a
+            href="https://www.linkedin.com/company/tfs-iitpkd/" // Replace with actual URL
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit The Fleet Street, IIT Palakkad on LinkedIn"
+          >
+            <span className="fa-brands fa-linkedin"></span> {/* Updated to LinkedIn */}
           </a>
         </li>
-        <li className="social-item">
-          <a href="#" target="_blank" title="Visit The Fleet Street, IIT Palakkad on Facebook">
-            <span className="fa fa-facebook"></span>
+        <li className="socials-item">
+          <a
+            href="https://www.facebook.com/tfs.iitpkd" // Replace with actual URL
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit The Fleet Street, IIT Palakkad on Facebook"
+          >
+            <span className="fa-brands fa-facebook"></span> {/* Facebook icon */}
           </a>
         </li>
       </ul>
@@ -27,6 +41,3 @@ const Socials = () => {
 };
 
 export default Socials;
-
-
- 

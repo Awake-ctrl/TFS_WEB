@@ -14,9 +14,9 @@ import { useLocation } from 'react-router-dom';
 
 
 
-const ArticlePage = () => {
+const Author = () => {
 
-  const authorName = "Saikiran"; 
+  const authorName = "Author"; 
   const location = useLocation();
 
   useEffect(() => {
@@ -52,8 +52,11 @@ const ArticlePage = () => {
           <aside>
 
             <Heading_and_line />
-            <SubscriptionForm/>
+            <br></br>
             <Recentposts/>
+            <br></br>
+            <SubscriptionForm/>
+            <br></br>
             <Socials/>
           </aside>
         </div>
@@ -65,4 +68,4 @@ const ArticlePage = () => {
   );
 };
 
-export default ArticlePage;
+export default Author;

@@ -38,11 +38,10 @@ const Home = () => {
           <aside>
 
             <Heading_and_line />
+            <br></br>
             <Recentposts/>
             <br></br>
-            <br></br>
             <FeedbackForm/>
-            <br></br>
             <br></br>
             <Socials/>
           </aside>

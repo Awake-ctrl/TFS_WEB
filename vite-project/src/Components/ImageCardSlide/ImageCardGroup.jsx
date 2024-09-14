@@ -23,7 +23,7 @@ const cardData = [
   },
   {
     image:
-      "https://lh3.googleusercontent.com/Mq1a_30iZK_YiEa5_hlPsEaHZ2YxqFfmBaxd2u5_zIIvNaqi54eM0vjdxsLl-aLL-pPV8PfAS9PBFoQicTkVMTAINktPxhJGBMYdNWZJfPf7SmJZshs0yAGW8B5YCwmSdw=w1280",
+      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-07/plant4mother%201.jpg?itok=ZF8vWRgd",
     category: "news",
     description: "The TFS Periodicals",
     id: "3",
