@@ -1,4 +1,4 @@
-form {
+.feedback-form {
     margin: 0 auto;
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
     border: 1px solid #ccc; /* Add border */
@@ -8,11 +8,11 @@ form {
     max-width: 400px; /* Ensure the form has a fixed max width */
 }
 
-.tnp-field {
+.feedback-tnp-field {
     margin-bottom: 0.9375rem; /* Equivalent to 15px */
 }
 
-label {
+.feedback-label {
     display: block;
     margin-bottom: 0.3125rem; /* Equivalent to 5px */
     font-size: 1rem; /* Equivalent to 16px */
@@ -21,9 +21,9 @@ label {
     overflow: visible; /* Ensure full visibility of the label */
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.feedback-input[type="text"],
+.feedback-input[type="email"],
+.feedback-textarea {
     width: 100%;
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
     font-size: 0.875rem; /* Equivalent to 14px */
@@ -34,12 +34,12 @@ textarea {
 }
 
 /* Styling for the textarea (feedback field) */
-textarea {
+.feedback-textarea {
     resize: vertical; /* Allow vertical resizing only */
     min-height: 100px; /* Set a minimum height for the feedback box */
 }
 
-input[type="checkbox"] {
+.feedback-input[type="checkbox"] {
    -webkit-appearance: none;
     appearance: none;
     position: relative;
@@ -52,7 +52,7 @@ input[type="checkbox"] {
     display: inline-block;
 }
 
-input[type="checkbox"]:checked::before {
+.feedback-input[type="checkbox"]:checked::before {
     content: "✔";
     position: absolute;
     top: 0;
@@ -66,18 +66,18 @@ input[type="checkbox"]:checked::before {
     color: #333;
 }
 
-input[type="checkbox"]:hover {
+.feedback-input[type="checkbox"]:hover {
     background-color: #f0f0f0;
 }
 
-.tnp-field-privacy label {
+.feedback-tnp-field-privacy label {
     font-size: 0.875rem; /* Equivalent to 14px */
     color: #333;
     white-space: normal; /* Allow privacy label to wrap */
     overflow: visible; /* Ensure full visibility of the text */
 }
 
-.tnp-submit {
+.feedback-tnp-submit {
     width: 100%;
     padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
     font-size: 0.875rem; /* Equivalent to 14px */
@@ -90,9 +90,10 @@ input[type="checkbox"]:hover {
     white-space: normal; /* Allow button text to wrap */
 }
 
-.tnp-submit:hover {
+.feedback-tnp-submit:hover {
     background-color: #555;
 }
+
 
 
 

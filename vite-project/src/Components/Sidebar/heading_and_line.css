@@ -1,4 +1,4 @@
-.widget_text {
+.heading_and_line_widget_text {
     text-align: center;
     padding: 1.25rem; /* Equivalent to 20px */
     border: 0.1rem solid #ccc; /* Equivalent to 1.6px */
@@ -13,7 +13,7 @@
     box-sizing: border-box; /* Prevents padding from adding to the width */
 }
 
-.widget-title {
+.heading_and_line_widget-title {
     background-color: #800000;
     color: #fff;
     font-size: 1rem; /* Equivalent to 16px */
@@ -26,7 +26,7 @@
     text-align: center; /* Center text inside */
 }
 
-.textwidget {
+.heading_and_line_textwidget {
     font-size: 0.875rem; /* Equivalent to 14px */
     color: #333;
     white-space: normal; /* Allow text wrapping */
@@ -36,13 +36,14 @@
     text-align: center; /* Center the text */
 }
 
-input, button {
+.heading_and_line_input, .heading_and_line_button {
     display: block;
     white-space: normal; /* Allow wrapping if necessary */
     width: 100%; /* Set to full width for better responsiveness */
     padding: 0.625rem; /* Add some padding for touch screens */
     box-sizing: border-box; /* Prevents padding from overflowing */
 }
+
 
 
 

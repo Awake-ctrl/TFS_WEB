@@ -1,4 +1,4 @@
-.social-widget {
+.socials-social-widget {
   text-align: center;
   padding: 1.25rem; /* Equivalent to 20px */
   border: 0.1rem solid #ccc; /* Equivalent to 1.6px */
@@ -13,7 +13,7 @@
   box-sizing: border-box; /* Prevents padding from adding to the width */
 }
 
-.widget-title {
+.socials-widget-title {
   font-size: 1.125rem; /* Equivalent to 18px */
   font-weight: bold;
   margin-bottom: 0.625rem; /* Equivalent to 10px */
@@ -23,7 +23,7 @@
   text-align: center; /* Center the title */
 }
 
-.social-list {
+.socials-social-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -36,37 +36,36 @@
   box-sizing: border-box;
 }
 
-.social-item {
+.socials-social-item {
   display: inline-block;
   margin-right: 0.625rem; /* Equivalent to 10px */
   margin-bottom: 0.625rem; /* Add margin for better spacing on smaller screens */
   white-space: normal; /* Allow items to wrap */
 }
 
-.social-item a {
+.socials-social-item a {
   text-decoration: none;
   color: #333;
   display: inline-block;
   font-size: 1.125rem; /* Equivalent to 18px, scalable for larger displays */
 }
 
-.social-item a:hover {
+.socials-social-item a:hover {
   color: #666;
 }
 
-.fa-2x {
+.socials-fa-2x {
   font-size: 2rem; /* Equivalent to 32px */
 }
 
-.fa-instagram {
+.socials-fa-instagram {
   color: #e1306c;
 }
 
-.fa-facebook {
+.socials-fa-facebook {
   color: #3b5998;
 }
 
-.fa-twitter {
+.socials-fa-twitter {
   color: #333;
 }
-
