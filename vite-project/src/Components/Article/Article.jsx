@@ -8,8 +8,12 @@ const Article = () => {
     const authorName = "Saikiran"; 
     const publicationDate = "24th August, 2024"; 
 
-    const DateLink = "/Article";
-    const AuthorLink = `/Authors/${authorName}`;
+    
+    const ArticleOnsetCSSID = "article-page-article-onset";
+    const DateLink = `/Article#${ArticleOnsetCSSID}`;
+
+    const AuthorOnsetCSSID = "author-page-author-onset";
+    const AuthorLink = `/Authors/${authorName}#${AuthorOnsetCSSID}`;
 
     // const linkstyles = "art-card-link-styles";
     const linkstyles2 = "art-card-link-styles2";
@@ -55,7 +59,7 @@ const Article = () => {
                         rows="8" 
                         aria-required="true" 
                         className="rect-comment-textarea"
-                    ></textarea>
+                    ></textarea>`
 
           
                     <div className="rect-comment-input-group">

@@ -9,18 +9,30 @@ import Socials from "../../Components/sidebar/socials2";
 import Footer from '../../Components/Footer/Footer'
 import SubscriptionForm from "../../Components/sidebar/subscriptionform2";
 import '../../Components/sidebar/sidebar.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 
 const ArticlePage = () => {
 
   const authorName = "Saikiran"; 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   return (
     <div>
       <Navbar />
       <ImageCardGroup />
-      <div className="article-page-author-name">
+      <div id="author-page-author-onset" className="article-page-author-name">
         <h1><h1>Author</h1>{authorName}</h1>
       </div>
       
