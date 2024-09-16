@@ -1,6 +1,6 @@
 // import React from "react";
  import './ArticleCard.css'
-import image from "../../assets/tfs.jpg"
+import image from "../../assets/image.webp"
  import { Link } from "react-router-dom";
 
 const ArticleCards = () => {
