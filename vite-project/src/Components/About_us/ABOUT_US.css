@@ -21,11 +21,9 @@
 }
 
 .About_us-namespan {
-    background-color: beige;
     font-family: 'Source Code Pro',Arial;
     font-size: 13.0pt;
-    font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     text-decoration: none;
     vertical-align: baseline;
 }

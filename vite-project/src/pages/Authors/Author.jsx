@@ -39,7 +39,7 @@ const Author = () => {
       authorName: "Author",
       publicationDate: "24th August, 2022",
       text: "TFS introduced our very own instagram news page 'Tiny Fleeting Stories'.",
-      image: start+"3_tinyfleetingstories.jpg",
+      image: start+"3_tinyfleetingstories.png",
     },
     {
       heading: "Meet The Candidate",
@@ -53,7 +53,7 @@ const Author = () => {
       authorName: "Author",
       publicationDate: "19th February, 2021",
       text: "Noor Jehan Open Grill restaurant, Palakkad, gutted in fire. No casualty reported. The restaurant was a favourite hangout place among IIT Palakkad students.",
-      image: start+"5_NoorJehan.jpeg",
+      image: start+"5_NoorJehan.png",
     },
     {
       heading: "The first EML of the 2021",
@@ -81,7 +81,7 @@ const Author = () => {
       authorName: "Author",
       publicationDate: "2nd January, 2021",
       text: "The Virtual General Championships begin with the Fitness challenges by the Fitness club",
-      image: start+"9_BodyweightBurnout.jpg",
+      image: start+"9_BodyweightBurnout.png",
     },
   ];
 

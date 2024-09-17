@@ -16,9 +16,9 @@ const ABOUT_US = () => {
            Media provides a way for people to exercise their Right to Information. A journalist must strive to discover trends and dissect happenings. To abide by this and to cater to the students with a platform to amplify their opinions, we at IIT Palakkad founded 
           </span>
 
-          <label>&nbsp;
+          <label>
           <span className='About_us-namespan'>
-           THE FLEET STREET
+          &nbsp;&nbsp;&nbsp;THE FLEET STREET&nbsp;&nbsp;&nbsp;
           </span>
           </label>
 

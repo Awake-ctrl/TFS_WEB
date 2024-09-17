@@ -28,8 +28,7 @@ const Home = () => {
       image: "/assets/publicArticles/placement.png",
       category: "SURVEY",
       id: "2",
-      text: `
-      As you guys know, the placement season has already started. As we embark upon this adventure, we understand that you might have some million questions in your head.
+      text: `As you guys know, the placement season has already started. As we embark upon this adventure, we understand that you might have some million questions in your head.
   
   What were the companies that came last year? 
   
@@ -45,7 +44,7 @@ const Home = () => {
       authorName: "Author",
       publicationDate: "August 2023",
       image: "/assets/publicArticles/iit.png",
-      category: "FRESHERS",
+      category: "GUIDE",
       id: "3",
       text: `TFS is back with a bang!! An Exclusive for the Freshers!
   
@@ -56,16 +55,16 @@ const Home = () => {
       authorName: "Author",
       publicationDate: "May 2022",
       image: "/assets/publicArticles/FleetStreet.png",
-      category: "EML",
+      category: "Native",
       id: "4",
       text: `Presenting a new series, The TFS Periodicals! The aim is to give access to an uncluttered space (as opposed to one's mail inbox) to catch up on institute activities and read transcribed interviews with eminent personalities within the institute (and eventually, outside as well).`,
     },
     {
       heading: "Perspective Part 3",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/perspective3.png",
-      category: "EML",
+      category: "ARTICLE-SERIES",
       id: "5",
       text: `Continuation of the guest article series by Mr. Rachit Shah.
   Multi work series`,
@@ -73,9 +72,9 @@ const Home = () => {
     {
       heading: "Perspective Part 2",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/perspective2.png",
-      category: "EML",
+      category: "ARTICLE-SERIES",
       id: "6",
       text: `Continuation of the guest article series by Mr. Rachit Shah.
   Multi work series`,
@@ -83,9 +82,9 @@ const Home = () => {
     {
       heading: "Exodus Part 2",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/exodus2.png",
-      category: "EML",
+      category: "INTERVIEW",
       id: "7",
       text: `Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant.
   Multi work series`,
@@ -93,9 +92,9 @@ const Home = () => {
     {
       heading: "Perspective Part 1",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/perspective1.png",
-      category: "EML",
+      category: "Interview",
       id: "8",
       text: `Continuation of the guest article series by Mr. Rachit Shah.
   Multi work series`,
@@ -103,9 +102,9 @@ const Home = () => {
     {
       heading: "Exodus Part 1",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/exodus1.png",
-      category: "EML",
+      category: "Interview",
       id: "9",
       text: `Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant.
   Multi work series`,
@@ -113,36 +112,36 @@ const Home = () => {
     {
       heading: "Fedena Disclosure",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/fedena.jpeg",
-      category: "EML",
+      category: "Native",
       id: "10",
       text: `A brief look into the security loopholes in Fedena,which were eventually fixed`,
     },
     {
       heading: "Privacy Matters??",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/privacymatters.jpeg",
-      category: "EML",
+      category: "NEWS",
       id: "11",
       text: `A quick look into the recent Privacy Policy update from WhatsApp and why it's causing all the fuzz!`,
     },
     {
       heading: "A Message to the Student Community of IIT Palakkad",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/message.png",
-      category: "EML",
+      category: "Native",
       id: "12",
       text: `From the Gen Sec to the students - A short interview with the General Secretary`,
     },
     {
       heading: "Mother Tongue Instruction at IITs",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/mothertounge.png",
-      category: "EML",
+      category: "Native",
       id: "13",
       text: `As the new year begins and there is fresh hope for change, there is word of one interesting change in the works: the Ministry of Education is proposing to make IITs start teaching students in their mother tongues.
   
@@ -151,27 +150,27 @@ const Home = () => {
     {
       heading: "Catalogue of Clubs",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/clubs.jpg",
-      category: "EML",
+      category: "Native",
       id: "14",
       text: `A concise catalogue of the student bodies of IIT Palakkad.`,
     },
     {
       heading: "NEP 2020",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/NEP.jpg",
-      category: "EML",
+      category: "NEWS",
       id: "15",
       text: `NEP 2020 took the nation by storm. What is it? How is it going to be implemented?`,
     },
     {
       heading: "The Covid Pause",
       authorName: "Author",
-      publicationDate: "",
+      publicationDate: "?/?/?",
       image: "/assets/publicArticles/covid.jpg",
-      category: "EML",
+      category: "NEWS",
       id: "16",
       text: `Are the drawbacks in our Education System more or less apparent during the pandemic? `,
     },
