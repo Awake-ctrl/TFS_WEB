@@ -6,7 +6,7 @@ const Heading_and_line = () => {
 
   return (
     <div className="heading-and-line-wrapper">
-        <h3 className="heading-and-line-widget-heading">Heading</h3>
+        <h3 className="heading-and-line-widget-heading">Archives</h3>
         <div className="heading-and-line-widget-text">
             <p>
 	            <a href=""> put link here </a>
