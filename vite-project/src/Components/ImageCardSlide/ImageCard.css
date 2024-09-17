@@ -11,7 +11,7 @@
 .ImageCardBackground {
   width: 100%; /* Fill the width */
   height: 100%; /* Fill the height */
-  object-fit:cover; /* Ensures the image covers the card without distortion */
+  object-fit: fill; /* Ensures the image covers the card without distortion */
   display: block;
   -webkit-user-select: none;
   user-select: none;
