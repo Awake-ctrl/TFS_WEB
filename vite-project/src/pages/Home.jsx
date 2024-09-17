@@ -14,71 +14,72 @@ import '../Components/sidebar/sidebar.css'
 
 const Home = () => {
 
-    const articles = [
-      {
-        heading: "Welcome to IIT PKD B22",
-        authorName: "Author",
-        publicationDate: "26th August, 2022",
-        text: "Behold batch'22! Freshers arrive on campus for their first day at IIT Palakkad",
-        image: "/assets/Home-articles/1_welctoiitpkd.png",
-      },
-      {
-        heading: "TFS Freshers' Intro!",
-        authorName: "Author",
-        publicationDate: "29th August, 2022",
-        text: "Introduced TFS to batch'22 during the club introduction session as part of the orientation programme 2022",
-        image: "/assets/Home-articles/2_TFSintro.png",
-      },
-      {
-        heading: "Tiny Fleeting Stories",
-        authorName: "Author",
-        publicationDate: "24th August, 2022",
-        text: "TFS introduced our very own instagram news page 'Tiny Fleeting Stories'.",
-        image: "/assets/Home-articles/3_tinyfleetingstories.jpg",
-      },
-      {
-        heading: "Meet The Candidate",
-        authorName: "Author",
-        publicationDate: "23rd February, 2021",
-        text: "The much awaited MTC where the SAC candidates present their manifestos and answer your questions!",
-        image: "/assets/Home-articles/4_MTC.jpeg",
-      },
-      {
-        heading: "Noor Jehan Open Grill Caught on Fire",
-        authorName: "Author",
-        publicationDate: "19th February, 2021",
-        text: "Noor Jehan Open Grill restaurant, Palakkad, gutted in fire. No casualty reported. The restaurant was a favourite hangout place among IIT Palakkad students.",
-        image: "/assets/Home-articles/5_NoorJehan.jpeg",
-      },
-      {
-        heading: "The first EML of the 2021",
-        authorName: "Author",
-        publicationDate: "11th February, 2021",
-        text: "The first EML of the year by Mr.Arun Krishnamurthy, the founder of Environmental Foundation of India",
-        image: "/assets/Home-articles/6_EML.png",
-      },
-      {
-        heading: "The Fifth Institute Day",
-        authorName: "Author",
-        publicationDate: "22nd January, 2021",
-        text: "The 5th Institute Day of IIT Palakkad",
-        image: "/assets/Home-articles/7_5thInstituteDay.png",
-      },
-      {
-        heading: "Launch of Techin",
-        authorName: "Author",
-        publicationDate: "20th January, 2021",
-        text: "Launch of TECHIN (Technology Innovation Foundation of IIT Palakkad)",
-        image: "/assets/Home-articles/8_TechinLaunch.png",
-      },
-      {
-        heading: "Bodyweight Burnout",
-        authorName: "Author",
-        publicationDate: "2nd January, 2021",
-        text: "The Virtual General Championships begin with the Fitness challenges by the Fitness club",
-        image: "/assets/Home-articles/9_BodyweightBurnout.jpg",
-      },
-    ];
+  const start = "/assets/publicArticles/";
+  const articles = [
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+    {
+      heading: "",
+      authorName: "Author",
+      publicationDate: "",
+      text: "",
+      image: start+"",
+    },
+  ];
 
 
   return (
