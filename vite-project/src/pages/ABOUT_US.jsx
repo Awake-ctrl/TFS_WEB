@@ -4,10 +4,25 @@ import Footer from '../Components/Footer/Footer'
 import "../Components/About_us/ABOUT_US.css";
 import "../Components/About_us/Team"
 import Team from '../Components/About_us/Team';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ABOUT_US = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [location]);
+  
   return (
     <div>
+      <div id="about-page-onset"></div>
       <Navbar/>
 
         <h1 className='About_us-heading'> About Us </h1>
