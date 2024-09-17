@@ -67,7 +67,7 @@ const Navbar = () => {
     return (
       <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
         <div className="navbar-logo">
-          <Link to="/">
+          <Link to="/#home-page-onset">
             <img 
               src={logoImage} 
               alt="My Logo" 

@@ -48,7 +48,7 @@ const Team = () => {
         <div className="team-member">
           <p className="role">Developer</p>
           <h3>Ashby Shibi</h3>
-          <p>112301031@smail.iitpkd.ac.in</p>
+          <p>132301007@smail.iitpkd.ac.in</p>
         </div>
         <div className="team-member">
           <p className="role">Developer</p>
