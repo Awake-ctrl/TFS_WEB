@@ -103,7 +103,7 @@
   padding-bottom: 0.2rem;
   font-size: 1rem; 
   color: #fff; 
-  background-color: red; 
+  background-color: darkgray; 
   border: none; 
   border-radius: 0.2rem; 
   text-align: start; 
@@ -114,17 +114,17 @@
 
 
 .art-card-read-more-button:hover {
-  background-color: darkred; 
+  background-color: black; 
   transform: scale(1.05); 
 }
 
 .art-card-read-more-button:active {
-  background-color: darkred; 
+  background-color: black; 
   transform: scale(0.98); 
 }
 
 
 .art-card-read-more-button:focus {
-  outline: 2px solid darkred; 
+  outline: 2px solid black; 
   outline-offset: 2px; 
 }

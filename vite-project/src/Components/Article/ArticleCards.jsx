@@ -37,7 +37,7 @@ const ArticleCards = ({heading,authorName,publicationDate,text,image,disabled=tr
                 </div>
 
                 {!disabled && (
-                    <Link className='art-card-read-more-button' to={ArticleLink}>Read More</Link>
+                    <Link className='art-card-read-more-button' to={ArticleLink}>More</Link>
                 )}
 
                 

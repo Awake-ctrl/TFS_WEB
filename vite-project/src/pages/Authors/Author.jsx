@@ -7,7 +7,7 @@ import Heading_and_line from '../../Components/sidebar/heading_and_line2'
 import Recentposts from "../../Components/sidebar/recentposts2";
 import Socials from "../../Components/sidebar/socials2";
 import Footer from '../../Components/Footer/Footer'
-import SubscriptionForm from "../../Components/sidebar/subscriptionform2";
+import FeedbackForm from "../../Components/sidebar/subscriptionform2";
 import '../../Components/sidebar/sidebar.css'
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -26,6 +26,7 @@ const Author = () => {
       publicationDate: "26th August, 2022",
       text: "Behold batch'22! Freshers arrive on campus for their first day at IIT Palakkad",
       image: start+"1_welctoiitpkd.png",
+      disabled: false,
     },
     {
       heading: "TFS Freshers' Intro!",
@@ -126,13 +127,19 @@ const Author = () => {
           </div> 
           
           <aside>
-            <Recentposts/>
-            <br></br>
-            <SubscriptionForm/>
-            <br></br>
-            <Heading_and_line />
-            <br></br>
-            <Socials/>
+          <Recentposts />
+              <br></br>
+              <FeedbackForm />
+              <br></br>
+              <Heading_and_line 
+               heading={"Archives"}
+              />
+              <br></br>
+              <Heading_and_line 
+                heading={"Contact Us"}
+              />
+              <br></br>
+              <Socials />
           </aside>
         </div>
         </div>

@@ -19,6 +19,7 @@ const Bytes = () => {
       publicationDate: "26th August, 2022",
       text: "Behold batch'22! Freshers arrive on campus for their first day at IIT Palakkad",
       image: start+"1_welctoiitpkd.png",
+      disabled: false,
     },
     {
       heading: "TFS Freshers' Intro!",
@@ -102,13 +103,19 @@ const Bytes = () => {
           </div> 
           
           <aside>
-            <Recentposts/>
-            <br></br>
-            <FeedbackForm/>
-            <br></br>
-            <Heading_and_line />
-            <br></br>
-            <Socials/>
+          <Recentposts />
+              <br></br>
+              <FeedbackForm />
+              <br></br>
+              <Heading_and_line 
+               heading={"Archives"}
+              />
+              <br></br>
+              <Heading_and_line 
+                heading={"Contact Us"}
+              />
+              <br></br>
+              <Socials />
           </aside>
         </div>
         </div>
