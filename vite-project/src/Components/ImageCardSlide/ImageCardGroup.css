@@ -81,7 +81,7 @@ element.style {
   opacity: 0%;
   transition: opacity 0.2s ease;
   color: white;
-  background-color: #900603;
+  background-color: #000000;
   transform: translateY(-32px);
   padding: 0px;
   width: 35.6px;
