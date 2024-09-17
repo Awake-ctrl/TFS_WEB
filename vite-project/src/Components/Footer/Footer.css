@@ -1,6 +1,6 @@
 .footer {
     margin-top: 4vw; /* added by simeon*/
-    background-color: #f7f3ee; /* Light background color */
+    background-color:  #3a506b; /* Light background color */
     padding: 40px 20px; /* Padding for top section */
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
   }
   
   .footer-column h3 {
-    color: #4f1515; /* Dark red color for headings */
+    color: #1c2541; 
     margin-bottom: 10px;
   }
   
@@ -39,7 +39,7 @@
   
   .footer-column a {
     text-decoration: none;
-    color: #8c5959; /* Dark red color for links */
+    color: white;
     font-weight: normal;
   }
   
@@ -48,7 +48,7 @@
   }
   
   .footer-bottom {
-    background-color: #4f1515; /* Dark red background for bottom section */
+    background-color: #1c2541; 
     color: white;
     width: 100%;
     text-align: center;
@@ -65,7 +65,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #4f1515;
+    color:white;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     
@@ -79,6 +79,7 @@
   .footer-title h1 {
     margin-left: 1rem;
     font-size: 1.5rem;
+    color: white;
     
 
 }
