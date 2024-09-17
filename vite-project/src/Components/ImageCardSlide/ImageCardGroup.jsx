@@ -7,68 +7,150 @@ import "./ImageCardGroup.css";
 import { Autoplay, Navigation } from "swiper/modules";
 import { MdNavigateNext } from "react-icons/md";
 import { MdNavigateBefore } from "react-icons/md";
-const cardData = [
+const articles = [
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-03/pbd7.png?itok=PeavdzQz",
-    category: "EML",
-    description: "Pale Blue Dot Lecture",
+    heading: "SAC REVIEW 2023",
+    authorName: "Author",
+    publicationDate: "January 2024",
+    image: "/assets/Home-articles/1_welctoiitpkd.png",
+    category: "SAC",
     id: "1",
+    text: "",
   },
   {
-    image: "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "humour",
-    description: "The Media club",
+    heading: "PLACEMENT / INTERNSHIP SURVEY 2023 -2024",
+    authorName: "Author",
+    publicationDate: "October 2023",
+    image: "",
+    category: "SURVEY",
     id: "2",
+    text: "",
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-07/plant4mother%201.jpg?itok=ZF8vWRgd",
-    category: "news",
-    description: "The TFS Periodicals",
+    heading: "TFS FRESHERS GUIDE 2023",
+    authorName: "Author",
+    publicationDate: "August 2023",
+    image: "", // Add image URL here
+    category: "FRESHERS",
     id: "3",
+    text: "", // Add text content here
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-06/YOGA%20DAY.jpg?itok=j05Hfyiu",
-    category: "yoga",
-    description: "Yoga Day",
+    heading: "TFS Periodicals",
+    authorName: "Author",
+    publicationDate: "May 2022",
+    image: "/CarouselArticleImages/FleetStreet.png",
+    category: "EML",
     id: "4",
+    text: "",
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-07/plant4mother%201.jpg?itok=ZF8vWRgd",
-    category: "campaign",
-    description: "Plant4 mother",
+    heading: "Perspective Part 3",
+    authorName: "Author",
+    publicationDate: "",
+    image: "",
+    category: "EML",
     id: "5",
+    text: "",
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-08/ug%20orientation.jpg?itok=julZJjBu",
-    category: "Institute",
-    description: "Artful Beginnings",
+    heading: "Perspective Part 2",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/CarouselArticleImages/perspective2.png",
+    category: "EML",
     id: "6",
+    text: "",
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-09/20240909_091335_0000.jpg?itok=2GAUnrV8",
-    category: "workshop",
-    description: "Clayforge",
+    heading: "Exodus Part 2",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/CarouselArticleImages/exodus2.png",
+    category: "EML",
     id: "7",
+    text: "",
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-08/Tech%20connect%20new.jpg?itok=FNRb7WUH",
-    category: "industry",
-    description: "Industry Leaders Meet",
+    heading: "Perspective Part 1",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/CarouselArticleImages/perspective1.png",
+    category: "EML",
     id: "8",
+    text: "",
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-08/IPD.jpg?itok=TDWspBol",
-    category: "celeberation",
-    description: "Independence Day",
+    heading: "Exodus Part 1",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/CarouselArticleImages/exodus1.png",
+    category: "EML",
     id: "9",
+    text: "",
+  },
+  {
+    heading: "Fedena Disclosure",
+    authorName: "Author",
+    publicationDate: "",
+    image: "",
+    category: "EML",
+    id: "10",
+    text: "",
+  },
+  {
+    heading: "Privacy Matters??",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/CarouselArticleImages/privacymatters.jpeg",
+    category: "EML",
+    id: "11",
+    text: "",
+  },
+  {
+    heading: "A Message to the Student Community of IIT Palakkad",
+    authorName: "Author",
+    publicationDate: "",
+    image: "",
+    category: "EML",
+    id: "12",
+    text: "",
+  },
+  {
+    heading: "Mother Tongue Instruction at IITs",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/CarouselArticleImages/mothertounge.png",
+    category: "EML",
+    id: "13",
+    text: "",
+  },
+  {
+    heading: "Catalogue of Clubs",
+    authorName: "Author",
+    publicationDate: "",
+    image: "",
+    category: "EML",
+    id: "14",
+    text: "",
+  },
+  {
+    heading: "NEP 2020",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/CarouselArticleImages/NEP.jpg",
+    category: "EML",
+    id: "15",
+    text: "",
+  },
+  {
+    heading: "The Covid Pause",
+    authorName: "Author",
+    publicationDate: "",
+    image: "",
+    category: "EML",
+    id: "16",
+    text: "",
   },
 ];
 function ImageCardGroup() {
@@ -133,7 +215,7 @@ function ImageCardGroup() {
           <div className="swiper-button-prev">
             <MdNavigateBefore className="prev-icon" />
           </div>
-          {cardData.map((card) => (
+          {articles.map((card) => (
             <>
               <SwiperSlide style={{ width: "296.5px" }} key={card.id}>
                 <ImageCard {...card} />
