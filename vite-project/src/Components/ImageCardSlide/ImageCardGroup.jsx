@@ -7,68 +7,169 @@ import "./ImageCardGroup.css";
 import { Autoplay, Navigation } from "swiper/modules";
 import { MdNavigateNext } from "react-icons/md";
 import { MdNavigateBefore } from "react-icons/md";
-const cardData = [
+const articles = [
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-03/pbd7.png?itok=PeavdzQz",
-    category: "EML",
-    description: "Pale Blue Dot Lecture",
+    heading: "SAC REVIEW 2023",
+    authorName: "Author",
+    publicationDate: "January 2024",
+    image: "/assets/publicArticles/sac.png",
+    category: "SAC",
     id: "1",
+    text: "The SAC is an integral part of our institute as they represent the student community and work towards the betterment of the institute. That being said, as the student media body , it is our responsibility to review their work and and bring students opinions to light.                         A big shoutout to all the SAC members for their commendable job in the last term and we hope you would use this review as a positive catalyst for continuous improvement and future success.  ",
   },
   {
-    image: "https://images.unsplash.com/photo-1694878981819-1084b2d7dd0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    category: "humour",
-    description: "The Media club",
+    heading: "PLACEMENT / INTERNSHIP SURVEY 2023 -2024",
+    authorName: "Author",
+    publicationDate: "October 2023",
+    image: "/assets/publicArticles/placement.png",
+    category: "SURVEY",
     id: "2",
+    text: `
+    As you guys know, the placement season has already started. As we embark upon this adventure, we understand that you might have some million questions in your head.
+
+What were the companies that came last year? 
+
+What should I do to get a good internship/job?
+
+ Are POR's /CGPA important?  
+
+We hope this report will answer all your doubts regarding the internship/placement journey, and make your task a little less daunting
+    `,
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-07/plant4mother%201.jpg?itok=ZF8vWRgd",
-    category: "news",
-    description: "The TFS Periodicals",
+    heading: "TFS FRESHERS GUIDE 2023",
+    authorName: "Author",
+    publicationDate: "August 2023",
+    image: "/assets/publicArticles/iit.png",
+    category: "FRESHERS",
     id: "3",
+    text: `TFS is back with a bang!! An Exclusive for the Freshers!
+
+Moving out of your home to a new environment is a difficult task. In such a situation, your wisest option would be to explore and get to know the resources that you have. IITPKD offers its students almost every essential campus resource that they would need. The challenge is to be aware of them and utilise them. Hopefully, this article helps make the task a little less daunting. `, // Add text content here
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-06/YOGA%20DAY.jpg?itok=j05Hfyiu",
-    category: "yoga",
-    description: "Yoga Day",
+    heading: "TFS Periodicals",
+    authorName: "Author",
+    publicationDate: "May 2022",
+    image: "/assets/publicArticles/FleetStreet.png",
+    category: "EML",
     id: "4",
+    text: `Presenting a new series, The TFS Periodicals! The aim is to give access to an uncluttered space (as opposed to one's mail inbox) to catch up on institute activities and read transcribed interviews with eminent personalities within the institute (and eventually, outside as well).`,
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-07/plant4mother%201.jpg?itok=ZF8vWRgd",
-    category: "campaign",
-    description: "Plant4 mother",
+    heading: "Perspective Part 3",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/perspective3.png",
+    category: "EML",
     id: "5",
+    text: `Continuation of the guest article series by Mr. Rachit Shah.
+Multi work series`,
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-08/ug%20orientation.jpg?itok=julZJjBu",
-    category: "Institute",
-    description: "Artful Beginnings",
+    heading: "Perspective Part 2",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/perspective2.png",
+    category: "EML",
     id: "6",
+    text: `Continuation of the guest article series by Mr. Rachit Shah.
+Multi work series`,
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-09/20240909_091335_0000.jpg?itok=2GAUnrV8",
-    category: "workshop",
-    description: "Clayforge",
+    heading: "Exodus Part 2",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/exodus2.png",
+    category: "EML",
     id: "7",
+    text: `Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant.
+Multi work series`,
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-08/Tech%20connect%20new.jpg?itok=FNRb7WUH",
-    category: "industry",
-    description: "Industry Leaders Meet",
+    heading: "Perspective Part 1",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/perspective1.png",
+    category: "EML",
     id: "8",
+    text: `Continuation of the guest article series by Mr. Rachit Shah.
+Multi work series`,
   },
   {
-    image:
-      "https://iitpkd.ac.in/sites/default/files/styles/rectangular_thumbnail/public/2024-08/IPD.jpg?itok=TDWspBol",
-    category: "celeberation",
-    description: "Independence Day",
+    heading: "Exodus Part 1",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/exodus1.png",
+    category: "EML",
     id: "9",
+    text: `Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant.
+Multi work series`,
+  },
+  {
+    heading: "Fedena Disclosure",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/fedena.jpeg",
+    category: "EML",
+    id: "10",
+    text: `A brief look into the security loopholes in Fedena,which were eventually fixed`,
+  },
+  {
+    heading: "Privacy Matters??",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/privacymatters.jpeg",
+    category: "EML",
+    id: "11",
+    text: `A quick look into the recent Privacy Policy update from WhatsApp and why it's causing all the fuzz!`,
+  },
+  {
+    heading: "A Message to the Student Community of IIT Palakkad",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/message.png",
+    category: "EML",
+    id: "12",
+    text: `From the Gen Sec to the students - A short interview with the General Secretary`,
+  },
+  {
+    heading: "Mother Tongue Instruction at IITs",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/mothertounge.png",
+    category: "EML",
+    id: "13",
+    text: `As the new year begins and there is fresh hope for change, there is word of one interesting change in the works: the Ministry of Education is proposing to make IITs start teaching students in their mother tongues.
+
+As this news has gone unnoticed and remains largely unheard, Navaneeth M Nambiar tries to explain why this idea seems bizarre.`,
+  },
+  {
+    heading: "Catalogue of Clubs",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/clubs.jpg",
+    category: "EML",
+    id: "14",
+    text: `A concise catalogue of the student bodies of IIT Palakkad.`,
+  },
+  {
+    heading: "NEP 2020",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/NEP.jpg",
+    category: "EML",
+    id: "15",
+    text: `NEP 2020 took the nation by storm. What is it? How is it going to be implemented?`,
+  },
+  {
+    heading: "The Covid Pause",
+    authorName: "Author",
+    publicationDate: "",
+    image: "/assets/publicArticles/covid.jpg",
+    category: "EML",
+    id: "16",
+    text: `Are the drawbacks in our Education System more or less apparent during the pandemic? `,
   },
 ];
 function ImageCardGroup() {
@@ -133,7 +234,7 @@ function ImageCardGroup() {
           <div className="swiper-button-prev">
             <MdNavigateBefore className="prev-icon" />
           </div>
-          {cardData.map((card) => (
+          {articles.map((card) => (
             <>
               <SwiperSlide style={{ width: "296.5px" }} key={card.id}>
                 <ImageCard {...card} />

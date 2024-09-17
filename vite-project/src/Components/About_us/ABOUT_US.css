@@ -40,3 +40,19 @@ h2{
     text-align: center;
     margin-left: 25%;
 }
+
+.download-link {
+    margin-left: 25%;
+    display: inline-block;
+    background-color: #169cda;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .download-link:hover {
+    background-color: #1bb0f5;
+  }
