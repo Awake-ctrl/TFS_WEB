@@ -221,7 +221,13 @@ const Home = () => {
               <br></br>
               <FeedbackForm />
               <br></br>
-              <Heading_and_line />
+              <Heading_and_line 
+               heading={"Archives"}
+              />
+              <br></br>
+              <Heading_and_line 
+                heading={"Contact Us"}
+              />
               <br></br>
               <Socials />
             </aside>

@@ -1,29 +1,29 @@
 .socials-wrapper {
   text-align: center;
-  padding: 1.25rem; /* 20px */
-  border: 0.1rem solid #ccc; /* 1.6px */
-  border-radius: 0.3rem; /* 5px */
+  padding: 1.25rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.3rem;
   margin: 0 auto;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Ensures full width on smaller screens */
-  box-sizing: border-box; /* Prevents padding from adding to the width */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .socials-widget-heading {
   background-color: #b90000;
   color: #fff;
-  font-size: 1rem; /* 16px */
-  padding: 0.625rem 1.25rem; /* 10px 20px */
-  margin-bottom: 0.9375rem; /* 15px */
+  font-size: 1rem;
+  padding: 0.625rem 1.25rem;
+  margin-bottom: 0.9375rem;
   display: inline-block;
-  border-radius: 0.2rem; /* 3px */
-  white-space: normal; /* Allow text wrapping */
-  width: 100%; /* Full width for responsiveness */
-  text-align: center; /* Center text inside */
+  border-radius: 0.2rem;
+  white-space: normal;
+  width: 100%;
+  text-align: center;
 }
 
 .socials-list {
@@ -39,27 +39,26 @@
 
 .socials-item {
   display: inline-block;
-  margin-right: 0.625rem; /* 10px */
+  margin-right: 0.625rem;
   margin-bottom: 0.625rem;
 }
 
 .socials-item:last-child {
-  margin-right: 0; /* Remove right margin for the last item */
+  margin-right: 0;
 }
 
 .socials-item a {
   text-decoration: none;
   color: #333;
   display: inline-block;
-  font-size: 2rem; /* Increase font size to make icons larger */
-  padding: 0.5rem; /* Add padding for more clickable space around icons */
+  font-size: 2rem;
+  padding: 0.5rem;
 }
 
 .socials-item a:hover {
   color: #666;
 }
 
-/* Increase the size of the icons */
 .fa-instagram {
   color: #e1306c;
 }
@@ -68,6 +67,6 @@
   color: #3b5998;
 }
 
-.fa-linkedin { /* LinkedIn icon color */
+.fa-linkedin {
   color: #0077b5;
 }

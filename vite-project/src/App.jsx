@@ -1,6 +1,7 @@
 // ?import React from 'react'
 // import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import ArticlePage from "../src/pages/ArticlePage";
 import Author from "./pages/Authors/Author";

@@ -1,80 +1,80 @@
 .recent-post-wrapper {
     text-align: center;
-    padding: 1.25rem; /* Equivalent to 20px */
-    border: 0.0625rem solid #ccc; /* Equivalent to 1px */
-    border-radius: 0.3rem; /* Equivalent to 5px */
+    padding: 1.25rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3rem;
     background-color: #fff;
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensures full width on smaller screens */
-    box-sizing: border-box; /* Prevents padding from adding to the width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .recent-post-widget-title {
     background-color: #b90000;
     color: #fff;
     text-align: center;
-    font-size: 1rem; /* Equivalent to 16px */
-    padding: 0.625rem 1.25rem; /* Equivalent to 10px 20px */
-    margin-bottom: 0.9375rem; /* Equivalent to 15px */
+    font-size: 1rem;
+    padding: 0.625rem 1.25rem;
+    margin-bottom: 0.9375rem;
     display: inline-block;
-    border-radius: 0.2rem; /* Equivalent to 3px */
-    white-space: normal; /* Allow text wrapping */
-    width: 100%; /* Full width for responsiveness */
-    text-align: center; /* Center text inside */
+    border-radius: 0.2rem;
+    white-space: normal;
+    width: 100%;
+    text-align: center;
 }
 
 .recent-post-content-container {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%; /* Ensure list takes full width */
-    box-sizing: border-box; /* Prevent padding from increasing width */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .recent-post-content-wrapper {
     display: flex;
-    align-items: center; /* Center image and text vertically */
-    margin-bottom: 0.9375rem; /* Equivalent to 15px */
-    flex-wrap: nowrap; /* Prevent line breaks inside flex container */
-    width: 100%; /* Ensure media content fits within full width */
-    box-sizing: border-box; /* Prevent overflow */
+    align-items: center;
+    margin-bottom: 0.9375rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .recent-post-content-image img {
-    width: 3.75rem; /* Equivalent to 60px */
-    height: 3.75rem; /* Equivalent to 60px */
+    width: 3.75rem;
+    height: 3.75rem;
     object-fit: cover;
-    margin-right: 0.625rem; /* Equivalent to 10px */
-    border-radius: 0.25rem; /* Equivalent to 4px */
-    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 0.625rem;
+    border-radius: 0.25rem;
+    flex-shrink: 0;
 }
 
 .recent-post-content-text {
     display: flex;
     flex-direction: column;
-    flex-shrink: 1; /* Allow text to shrink if needed */
-    overflow: hidden; /* Hide overflowing text */
-    width: 100%; /* Ensure text block fits full width */
-    box-sizing: border-box; /* Prevent overflow */
+    flex-shrink: 1;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .recent-post-content-title {
     margin: 0;
-    font-size: 0.875rem; /* Equivalent to 14px */
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add ellipsis for long text */
-    width: 100%; /* Ensure title takes full width */
+    font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 .recent-post-content-title a {
     text-decoration: none;
     color: #333;
-    display: block; /* Ensure clickable area takes full width */
-    width: 100%; /* Ensure link takes full width */
+    display: block;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -83,13 +83,11 @@
 }
 
 .recent-post-content-date {
-    font-size: 0.875rem; /* Equivalent to 14px */
+    font-size: 0.875rem;
     color: #999;
-    white-space: nowrap; /* Prevent date from wrapping */
-    overflow: hidden; /* Hide overflowing text */
-    text-overflow: ellipsis; /* Add ellipsis for long text */
-    width: 100%; /* Ensure date takes full width */
-    box-sizing: border-box; /* Prevent overflow */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-

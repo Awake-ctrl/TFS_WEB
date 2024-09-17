@@ -1,25 +1,25 @@
 .feedback-form-container form {
     margin: 0 auto;
-    padding: 0.625rem 1.25rem; /* 10px 20px */
+    padding: 0.625rem 1.25rem;
     border: 1px solid #ccc;
-    border-radius: 0.3125rem; /* 5px */
+    border-radius: 0.3125rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     max-width: 400px;
 }
 
 .feedback-form-field {
-    margin-bottom: 0.9375rem; /* 15px */
+    margin-bottom: 0.9375rem;
 }
 
-.feedback-form-field-name h2{
+.feedback-form-field-name h2 {
     font-size: 1.3rem;
 }
 
 .feedback-form-field label {
     display: block;
-    margin-bottom: 0.3125rem; /* 5px */
-    font-size: 1rem; /* 16px */
+    margin-bottom: 0.3125rem;
+    font-size: 1rem;
     color: #333;
 }
 
@@ -27,27 +27,26 @@
 .feedback-form-email-input,
 .feedback-form-feedback-input {
     width: 100%;
-    padding: 0.625rem 1.25rem; /* 10px 20px */
-    font-size: 0.875rem; /* 14px */
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
     border: 1px solid #ccc;
-    border-radius: 0.2rem; /* 3px */
+    border-radius: 0.2rem;
     box-sizing: border-box;
 }
 
-/* Styling for the textarea (feedback field) */
 .feedback-form-feedback-input {
-    resize: vertical; /* Allow vertical resizing only */
+    resize: vertical;
     min-height: 100px;
 }
 
 .feedback-form-submit {
     width: 100%;
-    padding: 0.625rem 1.25rem; /* 10px 20px */
-    font-size: 0.875rem; /* 14px */
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
     background-color: #333;
     color: #fff;
     border: none;
-    border-radius: 0.2rem; /* 3px */
+    border-radius: 0.2rem;
     cursor: pointer;
     text-transform: uppercase;
 }
