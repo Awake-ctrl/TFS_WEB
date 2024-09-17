@@ -8,7 +8,6 @@ const Navbar = () => {
     const [isInstiDropdownOpen, setIsInstiDropdownOpen] = useState(false);
     const [isSciTechDropdownOpen, setIsSciTechDropdownOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const logoImage = "https://lh5.googleusercontent.com/S1LPekjYCVHWTgekqcPB2DrDvVo16rth8SyunpaTgUVOi1XcHbUnlcUmsJxAtC_b3ymN2Q=w16383";
     
     // Function to toggle the mobile menu
     const handleToggleMenu = () => {
@@ -101,12 +100,12 @@ const Navbar = () => {
               <ul className={`dropdown-menu ${isInstiDropdownOpen ? "show" : ""}`}>
                 <li><Link to="/News" className="navbar-link">News</Link></li>
                 <li><Link to="/Events" className="navbar-link">Events</Link></li>
-                <li><Link to="/Heritage" className="navbar-link">Heritage</Link></li>
-                <li><Link to="/Freshine" className="navbar-link">Freshine</Link></li>
+                {/* <li><Link to="/Heritage" className="navbar-link">Heritage</Link></li> */}
+                {/* <li><Link to="/Freshine" className="navbar-link">Freshine</Link></li> */}
                 <li><Link to="/Sports" className="navbar-link">Sports</Link></li>
               </ul>
             </li>
-            <li 
+            {/* <li 
               className="dropdown"
               onMouseEnter={handleSciTechMouseEnter}
               onMouseLeave={handleSciTechMouseLeave}
@@ -118,19 +117,22 @@ const Navbar = () => {
                 <li><Link to="/Spotlight" className="navbar-link">Spotlight</Link></li>
                 <li><Link to="/Immerse" className="navbar-link">Immerse</Link></li>
               </ul>
+            </li> */}
+            <li>
+              <Link to="/Spotlight" className="navbar-link">Spotlight</Link>
             </li>
             <li>
               <Link to="/Interviews" className="navbar-link">Interviews</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/Entertainment" className="navbar-link">Entertainment</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/About_us" className="navbar-link">About Us</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/Contact_us" className="navbar-link">Contact Us</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
