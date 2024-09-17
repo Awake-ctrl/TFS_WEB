@@ -54,4 +54,55 @@
     text-align: center;
     padding: 10px 0;
   }
+
+  .footer-logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+
+  }
+  .footer-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4f1515;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    
+  }
+
+  .footer-image{
+    height: 70px;
+    width: auto;
+    max-width: 100%;
+}
+  .footer-title h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    
+
+}
+
+@media (max-width: 650px) {
+
+  .footer-title h1 {
+    font-size: 1.4rem;
+    
+
+}
+ 
+@media (max-width: 590px) {
+
+  .footer-title h1 {
+    /* font-size: 1.4rem; */
+    display:none;
+
+}
+  .footer-image{
+    height: 80px;
   
+}
+  
+}
+
+}

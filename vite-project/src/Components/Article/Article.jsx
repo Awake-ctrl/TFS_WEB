@@ -1,6 +1,6 @@
 // import React from "react";
 import { Link } from "react-router-dom";
-import image from "../../../public/assets/Home-articles/1_welctoiitpkd.png"
+import image from "../../../public/assets/publicBytes/1_welctoiitpkd.png"
 import './Article.css'
 
 const Article = () => {

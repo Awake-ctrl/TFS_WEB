@@ -8,11 +8,24 @@ import Recentposts from "../Components/sidebar/recentposts2";
 import Socials from "../Components/sidebar/socials2";
 import Footer from '../Components/Footer/Footer'
 import FeedbackForm from "../Components/sidebar/subscriptionform2";
-import '../Components/sidebar/sidebar.css'
+import '../Components/sidebar/sidebar.css';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 
 
 const Home = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [location]);
 
   const start = "/assets/publicArticles/";
   const articles = [
@@ -84,6 +97,7 @@ const Home = () => {
 
   return (
     <div>
+      <div id="home-page-onset"></div>
       <Navbar />
       <ImageCardGroup />
       
