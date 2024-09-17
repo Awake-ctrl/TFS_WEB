@@ -1,0 +1,61 @@
+/* Main container */
+.team-container {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* General styling */
+  h2 {
+    margin-top: 30pt;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox grid for the team members */
+  .team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Styling for individual team members */
+  .team-member {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the executive editor box */
+  .executive-editor {
+    margin-bottom: 20px;
+    width: 25%; /* Make the executive editor wider */
+    margin: 10px; /* Center it horizontally */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive behavior for small screens */
+  @media (max-width: 600px) {
+    .team-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .executive-editor {
+      width: 80%; /* Reduce width for mobile */
+    }
+  }
+  
+  

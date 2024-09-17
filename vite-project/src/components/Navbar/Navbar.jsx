@@ -8,7 +8,6 @@ const Navbar = () => {
     const [isInstiDropdownOpen, setIsInstiDropdownOpen] = useState(false);
     const [isSciTechDropdownOpen, setIsSciTechDropdownOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const logoImage = "https://lh5.googleusercontent.com/S1LPekjYCVHWTgekqcPB2DrDvVo16rth8SyunpaTgUVOi1XcHbUnlcUmsJxAtC_b3ymN2Q=w16383";
     
     // Function to toggle the mobile menu
     const handleToggleMenu = () => {
