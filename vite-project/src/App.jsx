@@ -1,77 +1,57 @@
 // ?import React from 'react'
 // import { useState } from 'react';
-import { BrowserRouter as Router, Route,Routes } from "react-router-dom"
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-
-import ArticlePage from "../src/pages/ArticlePage"
+import ArticlePage from "../src/pages/ArticlePage";
 import Author from "./pages/Authors/Author";
 
-import Home from "../src/pages/Home"
-import Bytes from "../src/pages/BYTES"
-import News from "../src/pages/News"
-import Events from "../src/pages/Events"
+import Home from "../src/pages/Home";
+import Bytes from "../src/pages/BYTES";
+import News from "../src/pages/News";
+import Events from "../src/pages/Events";
 // import Heritage from "../src/pages/Heritage"
 // import Freshine from "../src/pages/Freshine"
-import Sports from "../src/pages/Sports"
+import Sports from "../src/pages/Sports";
 // import Science_Deconstructed from "../src/pages/Science_Deconstructed"
 // import COI from "../src/pages/Center_for_innovation"
-import Spotlight from "../src/pages/Spotlight"
+import Spotlight from "../src/pages/Spotlight";
 // import Immerse from "../src/pages/Immerse"
-import Interviews from "../src/pages/INTERVIEWS"
+import Interviews from "../src/pages/INTERVIEWS";
 // import Entertainment from "../src/pages/ENTERTAINMENT"
-import About_us from "../src/pages/ABOUT_US"
+import About_us from "../src/pages/ABOUT_US";
 // import Contact_us from "../src/pages/CONTACT_US"
 // import Feedback from "../src/pages/Feedback"
-import NotFoundPage from "../src/pages/NotFoundPage"
+import NotFoundPage from "../src/pages/NotFoundPage";
 
 function App() {
   // const [token, setToken] = useState(false);
   return (
-
-    
     <Router>
-
       <Routes>
-       <Route path="/Article" element={<ArticlePage/>}/>
-       <Route path="/Authors/Author" element={<Author/>} />
+        <Route path="/Article" element={<ArticlePage />} />
+        <Route path="/Authors/Author" element={<Author />} />
 
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
         <Route path="/Bytes" element={<Bytes />} />
-        <Route path="/News" element={<News/>}/>
-        <Route path="/Events" element={<Events/>}/>
+        <Route path="/News" element={<News />} />
+        <Route path="/Events" element={<Events />} />
         {/* <Route path="/Heritage" element={<Heritage/>}/>
         <Route path="/Freshine" element={<Freshine />} /> */}
-        <Route path="/Sports" element={<Sports/>}/>
+        <Route path="/Sports" element={<Sports />} />
         {/* <Route path="/Science_Deconstructed" element={<Science_Deconstructed/>}/> */}
         {/* <Route path="/COI" element={<COI/>}/> */}
-        <Route path="/Spotlight" element={<Spotlight/>}/>
+        <Route path="/Spotlight" element={<Spotlight />} />
         {/* <Route path="/Immerse" element={<Immerse/>}/> */}
-        <Route path="/Interviews" element={<Interviews/>}/>
+        <Route path="/Interviews" element={<Interviews />} />
         {/* <Route path="/Entertainment" element={<Entertainment/>}/> */}
-        <Route path="/About_us" element={<About_us/>}/>
+        <Route path="/About_us" element={<About_us />} />
         {/* <Route path="/Contact_us" element={<Contact_us/>}/> */}
         {/* <Route path="/Feedback" element={<Feedback />} /> */}
 
         <Route path="*" element={<NotFoundPage />} />
-
-        
-
-        
-          
-      
-      
-        
-        
-      
-    
-        </Routes>
-      </Router>
-      
-  
-      
-    
-  )
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

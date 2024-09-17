@@ -48,6 +48,18 @@ const ABOUT_US = () => {
           </span>
         </p>
 
+        <br></br>
+        <br></br>
+
+        {/* Add the downloadable PDF link */}
+         <a 
+            href="./TFS_Constitution.pdf" 
+            download="TFS_Constitution.pdf" 
+            className="download-link"
+         >
+           Download Constitution PDF
+         </a>
+
         <Team />
         <h2> Contact Us </h2>
         <div>
