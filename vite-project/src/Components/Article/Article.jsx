@@ -1,21 +1,50 @@
 // import React from "react";
-import { Link } from "react-router-dom";
-import image from "../../../public/assets/publicBytes/1_welctoiitpkd.png"
+import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 import './Article.css'
 
 const Article = () => {
     
-    const heading = "Welcome to IIT PKD B22";
-    const authorName = "Author"; 
-    const publicationDate = "26th October, 2022"; 
-    const text = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas quis sunt optio explicabo pariatur, atque voluptas dicta ducimus architecto ratione modi, aliquam expedita cumque consequatur harum iure, aliquid ipsam sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita impedit est dicta mollitia tempore. Impedit, quo! Aut quae porro saepe iusto illum non magni qui error consequatur, ipsam ex enim!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita impedit est dicta mollitia tempore. Impedit, quo! Aut quae porro saepe iusto illum non magni qui error consequatur, ipsam ex enim!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita impedit est dicta mollitia tempore. Impedit, quo! Aut quae porro saepe iusto illum non magni qui error consequatur, ipsam ex enim!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita impedit est dicta mollitia tempore. Impedit, quo! Aut quae porro saepe iusto illum non magni qui error consequatur, ipsam ex enim! Quasi doloribus deserunt numquam nobis ipsam corporis, corrupti aliquid consectetur odio ad blanditiis voluptatum, assumenda maiores temporibus necessitatibus. Iusto magni dolores rerum.";
+    const { id } = useParams() // Get the article ID from the URL
+    const [article, setArticle] = useState(null); // State to hold the article data
+    const [loading, setLoading] = useState(true); // Loading state
+
+    useEffect(() => {
+        const fetchArticle = async () => {
+            try {
+                const url = `http://localhost:1337/api/articles?filters[id][$eq]=${id}&populate=*`
+                const response = await axios.get(url);
+                console.log(response.data.data)
+                setArticle(response.data.data[0]);
+            } catch (error) {
+                console.error("Error fetching the article:", error);
+            } finally {
+                setLoading(false); 
+            }
+        };
+
+
+        fetchArticle(id);
+    }, [id]);
+
+    if (loading) {
+        return <p>Loading...</p>;
+    }
+
+    if (!article) {
+        return <p>Article not found.</p>;
+    }
+
+    // const { heading, author, date, description, image } = article.attributes;
 
     
+    const img_start_url = "http://localhost:1337"
     const ArticleOnsetCSSID = "article-page-article-onset";
-    const DateLink = `/Article#${ArticleOnsetCSSID}`;
+    const DateLink = `/Article/${id}#${ArticleOnsetCSSID}`;
 
     const AuthorOnsetCSSID = "author-page-author-onset";
-    const AuthorLink = `/Authors/${authorName}#${AuthorOnsetCSSID}`;
+    const AuthorLink = `/Authors/${article.author}#${AuthorOnsetCSSID}`;
 
     // const linkstyles = "art-card-link-styles";
     const linkstyles2 = "art-card-link-styles2";
@@ -25,15 +54,15 @@ const Article = () => {
             <div className='rect-art-card-full-wrapper'>
 
                 <header className='rect-art-card-header' >
-                    <h1 className="rect-art-card-heading">{heading}</h1>
+                    <h1 className="rect-art-card-heading">{article.heading}</h1>
                     <ul className="rect-art-card-additional-data">
-                        <li className='rect-art-card-date'><Link className={linkstyles2} to={DateLink}>{publicationDate}</Link></li>
-                        <li className='rect-art-card-author'><Link className={linkstyles2} to={AuthorLink}>{authorName}</Link></li>
+                        <li className='rect-art-card-date'><Link className={linkstyles2} to={DateLink}>{article.date}</Link></li>
+                        <li className='rect-art-card-author'><Link className={linkstyles2} to={AuthorLink}>{article.author}</Link></li>
                     </ul>
                 </header>
-                <img className="rect-art-card-image" src={image} alt="article image"/>
+                <img className="rect-art-card-image" src={`${img_start_url}${article.image.url}`} alt="article image"/>
                 <div className='rect-art-card-text'>
-                  <p>{text}</p>  
+                  <p>{article.description}</p>  
                 </div>
 
 
@@ -41,10 +70,10 @@ const Article = () => {
                     <img className="rect-author-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle5CxW6QjBz4FH6p5szdloz2gPoQLJ8Outg&s" alt="Author"/>
                     <div className="rect-author-details">
                         <p className="rect-author-name">
-                            Author:  <Link className={linkstyles2} to={AuthorLink}>{authorName}</Link>
+                            Author:  <Link className={linkstyles2} to={AuthorLink}>{article.author}</Link>
                         </p>
                         <p className="rect-publication-date">
-                            Published On: <Link className={linkstyles2} to={DateLink}>{publicationDate}</Link>
+                            Published On: <Link className={linkstyles2} to={DateLink}>{article.date}</Link>
                         </p>
                     </div>
                 </div>

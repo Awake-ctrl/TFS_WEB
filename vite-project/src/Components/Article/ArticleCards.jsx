@@ -13,7 +13,7 @@ const ArticleCards = ({id,heading,author,date,description,image,disabled=true,ca
     const ArticleOnsetCSSID = "article-page-article-onset";
     var ArticleLink = "#";
     if (!disabled){
-        ArticleLink = `/Article#${ArticleOnsetCSSID}`;
+        ArticleLink = `/Article/${id}#${ArticleOnsetCSSID}`;
     }
 
     const linkstyles = "art-card-link-styles";

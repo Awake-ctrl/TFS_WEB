@@ -1,91 +1,37 @@
-// import React from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import ImageCardGroup from "../../Components/ImageCardSlide/ImageCardGroup";
-
-import ArticleCards from '../../Components/Article/ArticleCards'
-import Heading_and_line from '../../Components/sidebar/heading_and_line2'
+import ArticleCards from '../../Components/Article/ArticleCards';
+import Heading_and_line from '../../Components/sidebar/heading_and_line2';
 import Recentposts from "../../Components/sidebar/recentposts2";
 import Socials from "../../Components/sidebar/socials2";
-import Footer from '../../Components/Footer/Footer'
+import Footer from '../../Components/Footer/Footer';
 import FeedbackForm from "../../Components/sidebar/subscriptionform2";
-import '../../Components/sidebar/sidebar.css'
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-
-
+import '../../Components/sidebar/sidebar.css';
+import { useLocation, useParams } from 'react-router-dom';
+import axios from 'axios';
 
 const Author = () => {
-
-  const authorName = "Author"; 
+  const { author } = useParams(); 
   const location = useLocation();
-  const start = "/assets/publicBytes/";
-  const articles = [
-    {
-      heading: "Welcome to IIT PKD B22",
-      authorName: "Author",
-      publicationDate: "26th August, 2022",
-      text: "Behold batch'22! Freshers arrive on campus for their first day at IIT Palakkad",
-      image: start+"1_welctoiitpkd.png",
-      disabled: false,
-    },
-    {
-      heading: "TFS Freshers' Intro!",
-      authorName: "Author",
-      publicationDate: "29th August, 2022",
-      text: "Introduced TFS to batch'22 during the club introduction session as part of the orientation programme 2022",
-      image: start+"2_TFSintro.png",
-    },
-    {
-      heading: "Tiny Fleeting Stories",
-      authorName: "Author",
-      publicationDate: "24th August, 2022",
-      text: "TFS introduced our very own instagram news page 'Tiny Fleeting Stories'.",
-      image: start+"3_tinyfleetingstories.png",
-    },
-    {
-      heading: "Meet The Candidate",
-      authorName: "Author",
-      publicationDate: "23rd February, 2021",
-      text: "The much awaited MTC where the SAC candidates present their manifestos and answer your questions!",
-      image: start+"4_MTC.jpeg",
-    },
-    {
-      heading: "Noor Jehan Open Grill Caught on Fire",
-      authorName: "Author",
-      publicationDate: "19th February, 2021",
-      text: "Noor Jehan Open Grill restaurant, Palakkad, gutted in fire. No casualty reported. The restaurant was a favourite hangout place among IIT Palakkad students.",
-      image: start+"5_NoorJehan.png",
-    },
-    {
-      heading: "The first EML of the 2021",
-      authorName: "Author",
-      publicationDate: "11th February, 2021",
-      text: "The first EML of the year by Mr.Arun Krishnamurthy, the founder of Environmental Foundation of India",
-      image: start+"6_EML.png",
-    },
-    {
-      heading: "The Fifth Institute Day",
-      authorName: "Author",
-      publicationDate: "22nd January, 2021",
-      text: "The 5th Institute Day of IIT Palakkad",
-      image: start+"7_5thInstituteDay.png",
-    },
-    {
-      heading: "Launch of Techin",
-      authorName: "Author",
-      publicationDate: "20th January, 2021",
-      text: "Launch of TECHIN (Technology Innovation Foundation of IIT Palakkad)",
-      image: start+"8_TechinLaunch.png",
-    },
-    {
-      heading: "Bodyweight Burnout",
-      authorName: "Author",
-      publicationDate: "2nd January, 2021",
-      text: "The Virtual General Championships begin with the Fitness challenges by the Fitness club",
-      image: start+"9_BodyweightBurnout.png",
-    },
-  ];
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true); 
 
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const url = `http://localhost:1337/api/articles?filters[author][name][$eq]=${author}&populate=*`;
+        const response = await axios.get(url);
+        setArticles(response.data.data);
+      } catch (error) {
+        console.error("Error fetching the author related articles:", error);
+      } finally {
+        setLoading(false); 
+      }
+    };
+
+    fetchArticles();
+  }, [author]);
 
   useEffect(() => {
     if (location.hash) {
@@ -96,54 +42,53 @@ const Author = () => {
     }
   }, [location]);
 
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (articles.length === 0) {
+    return <p>No articles found for this author.</p>;
+  }
+
   return (
     <div>
       <Navbar />
       <ImageCardGroup />
-      
-
       <div className="article-page-author-name">
-        <h1><h1>Author</h1>{authorName}</h1>
+        <h1>Author: {author}</h1>
       </div>
-      
-      
-      
       <div className="content">
         <div className="wrapper">
-        <div className="wrapper2">
-          <div className="article">
-          <div id="author-page-author-onset"></div>
-          {articles.map((article, index) => (
-              <ArticleCards
-                key={index}
-                heading={article.heading}
-                authorName={article.authorName}
-                publicationDate={article.publicationDate}
-                text={article.text}
-                image={article.image}
-                disabled={article.disabled}
-              />
-        ))}
-          </div> 
-          
-          <aside>
-          <Recentposts />
-              <br></br>
+          <div className="wrapper2">
+            <div className="article">
+              <div id="author-page-author-onset"></div>
+              {articles.map((article) => (
+                <ArticleCards
+                  key={article.id}
+                  id={article.id}
+                  heading={article.heading}
+                  author={article.author}
+                  date={article.date}
+                  description={article.description}
+                  image={article.image?.url}
+                  disabled={article.disabled}
+                  category={article.category}
+                />
+              ))}
+            </div>
+            <aside>
+              <Recentposts />
+              <br />
               <FeedbackForm />
-              <br></br>
-              <Heading_and_line 
-               heading={"Archives"}
-              />
-              <br></br>
-              <Heading_and_line 
-                heading={"Contact Us"}
-              />
-              <br></br>
+              <br />
+              <Heading_and_line heading={"Archives"} />
+              <br />
+              <Heading_and_line heading={"Contact Us"} />
+              <br />
               <Socials />
-          </aside>
+            </aside>
+          </div>
         </div>
-        </div>
-        
       </div>
       <Footer />
     </div>

@@ -29,7 +29,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Article" element={<ArticlePage />} />
+        <Route path="/Article/:id" element={<ArticlePage />} />
         <Route path="/Authors/Author" element={<Author />} />
 
         <Route path="/" element={<Home />} />

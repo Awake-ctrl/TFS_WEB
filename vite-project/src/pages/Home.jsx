@@ -34,7 +34,7 @@ const Home = () => {
     const fetchArticles = async () => {
       try {
         const response = await axios.get('http://localhost:1337/api/articles?populate=*');
-        console.log(response)
+        // console.log(response)
         setArticles(response.data.data);
       } catch (error) {
         console.error('Error fetching articles:', error);
@@ -60,6 +60,7 @@ const Home = () => {
                 .map((article) => (
                   <ArticleCards
                     key={article.id}
+                    id={article.id}
                     heading={article.heading}
                     author={article.author}
                     date={article.date}
