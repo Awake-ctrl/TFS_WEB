@@ -1,43 +1,35 @@
 import { useState } from 'react';
+import axios from 'axios' 
 import './subscriptionform.css'; // Ensure the correct path
 
 const FeedbackForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    feedback: ''
-  });
+  
+  const [name,setName]=useState('');
+  const [email,setEmail]=useState('');
+  const [feedback,setFeedback]=useState('');
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    // console.log(name,email,feedback);
+    const data={
+      Name:name,
+      Email:email,
+      Feedback:feedback
+    }
+    axios.post('ENTER LINK HERE',data).then((response)=>{
+      console.log(response);
+      setName('');
+      setEmail('');
+      setFeedback('');
+      setShowSuccessPopup(true); // Show popup after success
+    }).catch((error) => {
+      console.error('Error submitting feedback:', error);
+    });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL'; // Replace with your deployed script URL
-
-    try {
-      const response = await fetch(scriptURL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-
-      const result = await response.json();
-      if (result.status === 'success') {
-        alert('Feedback submitted successfully');
-        setFormData({ name: '', email: '', feedback: '' }); // Reset the form
-      } else {
-        alert('Failed to submit feedback');
-      }
-    } catch (error) {
-      console.error('Error submitting feedback:', error);
-      alert('There was an error submitting your feedback');
-    }
+  const closePopup = () => {
+    setShowSuccessPopup(false); // Close the popup
   };
 
   return (
@@ -56,8 +48,8 @@ const FeedbackForm = () => {
             name="name" 
             id="feedback-form-name" 
             placeholder="Enter your name" 
-            value={formData.name} 
-            onChange={handleChange} 
+            value={name} 
+            onChange={(e)=>setName(e.target.value)} 
             required 
           />
         </div>
@@ -70,8 +62,8 @@ const FeedbackForm = () => {
             name="email" 
             id="feedback-form-email" 
             placeholder="Enter your email" 
-            value={formData.email} 
-            onChange={handleChange} 
+            value={email} 
+            onChange={(e)=>setEmail(e.target.value)} 
             required 
           />
         </div>
@@ -83,8 +75,8 @@ const FeedbackForm = () => {
             id="feedback-form-feedback" 
             className="feedback-form-feedback-input"
             placeholder="Enter your feedback" 
-            value={formData.feedback} 
-            onChange={handleChange} 
+            value={feedback} 
+            onChange={(e)=>setFeedback(e.target.value)} 
             required
             style={{ height: '150px', width: '100%' }} // Fixed height and full width
           />
@@ -94,6 +86,18 @@ const FeedbackForm = () => {
           <input className="feedback-form-submit" type="submit" value="Submit Feedback"/>
         </div>
       </form>
+
+      {/* Success Popup Modal */}
+      {showSuccessPopup && (
+        <div className="popup">
+          <div className="popup-inner">
+            <h3>Feedback Submitted Successfully!</h3>
+            <p>Thank you for your valuable feedback.</p>
+            <button className="popup-close" onClick={closePopup}>OK</button>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };
