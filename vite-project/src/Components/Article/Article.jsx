@@ -3,14 +3,16 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import './Article.css'
-import { useState } from "react";
-import axios from "axios";
 
 const Article = () => {
     
     const { id } = useParams() // Get the article ID from the URL
     const [article, setArticle] = useState(null); // State to hold the article data
     const [loading, setLoading] = useState(true); // Loading state
+    const [name,setName]=useState('');
+    const [email,setEmail]=useState('');
+    const [comment,setComment]=useState('');
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
     useEffect(() => {
         const fetchArticle = async () => {
@@ -51,10 +53,7 @@ const Article = () => {
     // const linkstyles = "art-card-link-styles";
     const linkstyles2 = "art-card-link-styles2";
 
-    const [name,setName]=useState('');
-    const [email,setEmail]=useState('');
-    const [comment,setComment]=useState('');
-    const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+    
 
     const handleSubmit=(e)=>{
         e.preventDefault();
