@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import './Article.css'
+import { useState } from "react";
+import axios from "axios";
 
 const Article = () => {
     
@@ -49,6 +51,34 @@ const Article = () => {
     // const linkstyles = "art-card-link-styles";
     const linkstyles2 = "art-card-link-styles2";
 
+    const [name,setName]=useState('');
+    const [email,setEmail]=useState('');
+    const [comment,setComment]=useState('');
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        // console.log(name,email,feedback);
+        const data={
+          Name:name,
+          Email:email,
+          Comment:comment
+        }
+        axios.post('ENTER LINK HERE',data).then((response)=>{
+          console.log(response);
+          setName('');
+          setEmail('');
+          setComment('');
+          setShowSuccessPopup(true); // Show popup after success
+        }).catch((error) => {
+          console.error('Error submitting feedback:', error);
+        });
+      };
+    
+      const closePopup = () => {
+        setShowSuccessPopup(false); // Close the popup
+      };
+
     return (
         <div className="rect-art-card-full-container">
             <div className='rect-art-card-full-wrapper'>
@@ -77,7 +107,7 @@ const Article = () => {
                         </p>
                     </div>
                 </div>
-                <div className="rect-comment-section">
+                <form className="rect-comment-section" onSubmit={handleSubmit}>
                     <h3 className="rect-comment-reply-title">Write a Comment</h3>
 
                     <textarea 
@@ -87,6 +117,9 @@ const Article = () => {
                         rows="8" 
                         aria-required="true" 
                         className="rect-comment-textarea"
+                        value={comment}
+                        onChange={(e)=>setComment(e.target.value)}
+                        required
                     ></textarea>`
 
           
@@ -98,6 +131,9 @@ const Article = () => {
                         rows="2" 
                         className="rect-comment-input Name-area"
                         aria-required="true"
+                        value={name} 
+                        onChange={(e)=>setName(e.target.value)} 
+                        required
                         ></textarea>
 
                         <textarea 
@@ -107,12 +143,25 @@ const Article = () => {
                         rows="2" 
                         className="rect-comment-input mail-area"
                         aria-required="true"
+                        value={email} 
+                        onChange={(e)=>setEmail(e.target.value)} 
+                        required
                         ></textarea>
                     </div>
 
                     
-                    <button className="rect-comment-submit-btn">Submit</button>
+                    <input className="rect-comment-submit-btn" type="submit"/>
+                </form>
+                {/* Success Popup Modal */}
+                {showSuccessPopup && (
+                <div className="popup">
+                    <div className="popup-inner">
+                    <h3>Comment sent</h3>
+                    <p>Thank you for your comment.</p>
+                    <button className="popup-close" onClick={closePopup}>OK</button>
+                    </div>
                 </div>
+      )}
             </div>   
         </div>
     );
