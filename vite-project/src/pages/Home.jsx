@@ -9,7 +9,8 @@ import Socials from "../Components/sidebar/socials2";
 import Footer from "../Components/Footer/Footer";
 import FeedbackForm from "../Components/sidebar/subscriptionform2";
 import '../Components/sidebar/sidebar.css';
-import { useEffect } from 'react';
+import { useState,useEffect } from 'react';
+import axios from 'axios';
 import { useLocation } from 'react-router-dom';
 
 
@@ -27,171 +28,21 @@ const Home = () => {
     }
   }, [location]);
 
-  const start = "/assets/publicArticles/";
-  const articles = [
-    {
-      heading: "SAC REVIEW 2023",
-      authorName: "Author",
-      publicationDate: "January 2024",
-      image: "/assets/publicArticles/sac.png",
-      category: "SAC",
-      id: "1",
-      text: "The SAC is an integral part of our institute as they represent the student community and work towards the betterment of the institute. That being said, as the student media body , it is our responsibility to review their work and and bring students opinions to light.                         A big shoutout to all the SAC members for their commendable job in the last term and we hope you would use this review as a positive catalyst for continuous improvement and future success.  ",
-    },
-    {
-      heading: "PLACEMENT / INTERNSHIP SURVEY 2023 -2024",
-      authorName: "Author",
-      publicationDate: "October 2023",
-      image: "/assets/publicArticles/placement.png",
-      category: "SURVEY",
-      id: "2",
-      text: `As you guys know, the placement season has already started. As we embark upon this adventure, we understand that you might have some million questions in your head.
-  
-  What were the companies that came last year? 
-  
-  What should I do to get a good internship/job?
-  
-   Are POR's /CGPA important?  
-  
-  We hope this report will answer all your doubts regarding the internship/placement journey, and make your task a little less daunting
-      `,
-    },
-    {
-      heading: "TFS FRESHERS GUIDE 2023",
-      authorName: "Author",
-      publicationDate: "August 2023",
-      image: "/assets/publicArticles/iit.png",
-      category: "GUIDE",
-      id: "3",
-      text: `TFS is back with a bang!! An Exclusive for the Freshers!
-  
-  Moving out of your home to a new environment is a difficult task. In such a situation, your wisest option would be to explore and get to know the resources that you have. IITPKD offers its students almost every essential campus resource that they would need. The challenge is to be aware of them and utilise them. Hopefully, this article helps make the task a little less daunting. `, // Add text content here
-    },
-    {
-      heading: "TFS Periodicals",
-      authorName: "Author",
-      publicationDate: "May 2022",
-      image: "/assets/publicArticles/FleetStreet.png",
-      category: "Native",
-      id: "4",
-      text: `Presenting a new series, The TFS Periodicals! The aim is to give access to an uncluttered space (as opposed to one's mail inbox) to catch up on institute activities and read transcribed interviews with eminent personalities within the institute (and eventually, outside as well).`,
-    },
-    {
-      heading: "Perspective Part 3",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/perspective3.png",
-      category: "ARTICLE-SERIES",
-      id: "5",
-      text: `Continuation of the guest article series by Mr. Rachit Shah.
-  Multi work series`,
-    },
-    {
-      heading: "Perspective Part 2",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/perspective2.png",
-      category: "ARTICLE-SERIES",
-      id: "6",
-      text: `Continuation of the guest article series by Mr. Rachit Shah.
-  Multi work series`,
-    },
-    {
-      heading: "Exodus Part 2",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/exodus2.png",
-      category: "INTERVIEW",
-      id: "7",
-      text: `Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant.
-  Multi work series`,
-    },
-    {
-      heading: "Perspective Part 1",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/perspective1.png",
-      category: "Interview",
-      id: "8",
-      text: `Continuation of the guest article series by Mr. Rachit Shah.
-  Multi work series`,
-    },
-    {
-      heading: "Exodus Part 1",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/exodus1.png",
-      category: "Interview",
-      id: "9",
-      text: `Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant.
-  Multi work series`,
-    },
-    {
-      heading: "Fedena Disclosure",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/fedena.jpeg",
-      category: "Native",
-      id: "10",
-      text: `A brief look into the security loopholes in Fedena,which were eventually fixed`,
-    },
-    {
-      heading: "Privacy Matters??",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/privacymatters.jpeg",
-      category: "NEWS",
-      id: "11",
-      text: `A quick look into the recent Privacy Policy update from WhatsApp and why it's causing all the fuzz!`,
-    },
-    {
-      heading: "A Message to the Student Community of IIT Palakkad",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/message.png",
-      category: "Native",
-      id: "12",
-      text: `From the Gen Sec to the students - A short interview with the General Secretary`,
-    },
-    {
-      heading: "Mother Tongue Instruction at IITs",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/mothertounge.png",
-      category: "Native",
-      id: "13",
-      text: `As the new year begins and there is fresh hope for change, there is word of one interesting change in the works: the Ministry of Education is proposing to make IITs start teaching students in their mother tongues.
-  
-  As this news has gone unnoticed and remains largely unheard, Navaneeth M Nambiar tries to explain why this idea seems bizarre.`,
-    },
-    {
-      heading: "Catalogue of Clubs",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/clubs.jpg",
-      category: "Native",
-      id: "14",
-      text: `A concise catalogue of the student bodies of IIT Palakkad.`,
-    },
-    {
-      heading: "NEP 2020",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/NEP.jpg",
-      category: "NEWS",
-      id: "15",
-      text: `NEP 2020 took the nation by storm. What is it? How is it going to be implemented?`,
-    },
-    {
-      heading: "The Covid Pause",
-      authorName: "Author",
-      publicationDate: "?/?/?",
-      image: "/assets/publicArticles/covid.jpg",
-      category: "NEWS",
-      id: "16",
-      text: `Are the drawbacks in our Education System more or less apparent during the pandemic? `,
-    },
-  ];
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const response = await axios.get('http://localhost:1337/api/articles?populate=*');
+        console.log(response)
+        setArticles(response.data.data);
+      } catch (error) {
+        console.error('Error fetching articles:', error);
+      }
+    };
+    fetchArticles();
+  }, []);
+
 
   return (
     <div>
@@ -202,18 +53,25 @@ const Home = () => {
       <div className="content">
         <div className="wrapper">
           <div className="wrapper2">
-            <div className="article">
-              {articles.map((article, index) => (
-                <ArticleCards
-                  key={index}
-                  heading={article.heading}
-                  authorName={article.authorName}
-                  publicationDate={article.publicationDate}
-                  text={article.text}
-                  image={article.image}
-                  disabled={article.disabled}
-                />
-              ))}
+          <div className="article">
+              {articles && articles.length > 0 ? (
+                articles
+                .filter((article) => article.category === "home") // Filter by category
+                .map((article) => (
+                  <ArticleCards
+                    key={article.id}
+                    heading={article.heading}
+                    author={article.author}
+                    date={article.date}
+                    description={article.description}
+                    image={article.image?.url}
+                    disabled={article.disabled}
+                    category={article.category}
+                  />
+                ))
+              ) : (
+                <p>No articles available.</p> // Fallback message
+              )}
             </div>
 
             <aside>
