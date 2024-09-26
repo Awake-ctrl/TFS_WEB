@@ -13,10 +13,13 @@
   "pluginOptions": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "default": "Unknown Heading "
     },
     "author": {
-      "type": "string"
+      "type": "string",
+      "default": "Unknown"
     },
     "date": {
       "type": "date"
@@ -33,10 +36,13 @@
       ]
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "default": "The body of the article is currently empty"
     },
     "disabled": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true,
+      "default": true
     },
     "category": {
       "type": "enumeration",
@@ -45,7 +51,9 @@
         "bytes",
         "news",
         "sports"
-      ]
+      ],
+      "default": "home",
+      "required": true
     }
   }
 }
