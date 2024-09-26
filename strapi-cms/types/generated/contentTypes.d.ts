@@ -12,13 +12,22 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    heading: Schema.Attribute.String;
-    author: Schema.Attribute.String;
+    heading: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Unknown Heading '>;
+    author: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Unknown'>;
     date: Schema.Attribute.Date;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    description: Schema.Attribute.Text;
-    disabled: Schema.Attribute.Boolean;
-    category: Schema.Attribute.Enumeration<['home', 'bytes', 'news', 'sports']>;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'The body of the article is currently empty'>;
+    disabled: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<true>;
+    category: Schema.Attribute.Enumeration<
+      ['home', 'bytes', 'news', 'sports']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'home'>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
