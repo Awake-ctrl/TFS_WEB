@@ -1,6 +1,6 @@
 // import React from 'react'
-import { Navbar, Footer, Heading_and_line, Recentposts, FeedbackForm, Socials } from './All_imports';
-import { ByteImage, ArticleCards } from './All_imports'
+import { Navbar, Footer, Heading_and_line, Recentposts, FeedbackForm, Socials } from '../All_imports';
+import { ByteImage, ArticleCards } from '../All_imports'
 
 import '../components/Sidebar/sidebar.css';
 import { useState,useEffect } from 'react';

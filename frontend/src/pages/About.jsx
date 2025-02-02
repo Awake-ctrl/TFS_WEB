@@ -1,5 +1,5 @@
 // import React from 'react'
-import { Navbar, Footer, Team } from './All_imports'
+import { Navbar, Footer, Team } from '../All_imports'
 import "../components/About/About.css";
 import "../components/About/Team"
 
