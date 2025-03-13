@@ -1,17 +1,15 @@
-// import React from "react";
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Navbar, Footer, Heading_and_line, Recentposts, FeedbackForm, Socials } from '../All_imports';
-import { ArticleCards, ImageCardGroup } from '../All_imports'
+import { ArticleCards, ImageCardGroup } from '../All_imports';
 
 import '../components/Sidebar/sidebar.css';
-import { useState,useEffect } from 'react';
-import axios from 'axios';
-import { useLocation } from 'react-router-dom';
-
-
 
 const Home = () => {
-
   const location = useLocation();
+  const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (location.hash) {
@@ -22,20 +20,28 @@ const Home = () => {
     }
   }, [location]);
 
-  const [articles, setArticles] = useState([]);
+    useEffect(() => {
+      const fetchArticle = async () => {
+          try {
+              const response = await axios.get('/db.json');
 
-  useEffect(() => {
-    const fetchArticles = async () => {
-      try {
-        const response = await axios.get('http://localhost:1337/api/articles?populate=*');
-        // console.log(response)
-        setArticles(response.data.data);
-      } catch (error) {
-        console.error('Error fetching articles:', error);
-      }
-    };
-    fetchArticles();
+              const articles = response.data;  // Assuming response data is an array
+              console.log(articles);
+              
+              setArticles(articles);
+          } catch (error) {
+              console.error("Error fetching the article:", error);
+          } finally {
+              setLoading(false);
+          }
+      };
+
+      fetchArticle();
   }, []);
+
+  if (loading) {
+      return <p>Loading...</p>;
+  }
 
 
   return (
@@ -47,41 +53,32 @@ const Home = () => {
       <div className="content">
         <div className="wrapper">
           <div className="wrapper2">
-          <div className="article">
-              {articles && articles.length > 0 ? (
-                articles
-                .filter((article) => article.category === "home") // Filter by category
+            <div className="article">
+              {articles
+                .filter((article) => article.type === "article") // Filter by type
                 .map((article) => (
                   <ArticleCards
                     key={article.id}
                     id={article.id}
                     heading={article.heading}
-                    author={article.author}
-                    date={article.date}
+                    author={article.author || "Anonymous"}
+                    date={article.date || "Unknown Date"}
                     description={article.description}
-                    image={article.image?.url}
-                    disabled={article.disabled}
-                    category={article.category}
+                    image={article.imageurl } // Fallback image
+                    type={article.type}
                   />
-                ))
-              ) : (
-                <p>No articles available.</p> // Fallback message
-              )}
+                ))}
             </div>
 
             <aside>
               <Recentposts />
-              <br></br>
+              <br />
               <FeedbackForm />
-              <br></br>
-              <Heading_and_line 
-               heading={"Archives"}
-              />
-              <br></br>
-              <Heading_and_line 
-                heading={"Contact Us"}
-              />
-              <br></br>
+              <br />
+              <Heading_and_line heading={"Archives"} />
+              <br />
+              <Heading_and_line heading={"Contact Us"} />
+              <br />
               <Socials />
             </aside>
           </div>

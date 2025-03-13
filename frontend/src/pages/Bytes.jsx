@@ -1,17 +1,15 @@
-// import React from 'react'
-
-import { Navbar, Footer, Heading_and_line, Recentposts, FeedbackForm, Socials } from '../All_imports';
-import { ByteImage, ArticleCards } from '../All_imports'
-
-
-import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Navbar, Footer, Heading_and_line, Recentposts, FeedbackForm, Socials } from '../All_imports';
+import { ArticleCards, ImageCardGroup } from '../All_imports';
 
-const Bytes = () => {
-  const category = "bytes";
+import '../components/Sidebar/sidebar.css';
+
+const Home = () => {
   const location = useLocation();
   const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (location.hash) {
@@ -22,45 +20,54 @@ const Bytes = () => {
     }
   }, [location]);
 
-  useEffect(() => {
-    const fetchArticles = async () => {
-      try {
-        const response = await axios.get(`http://localhost:1337/api/articles?filters[category][$eq]=${category}&populate=*`);
-        setArticles(response.data.data);
-      } catch (error) {
-        console.error(`Error fetching ${category}:`, error);
-      }
-    };
-    fetchArticles();
+    useEffect(() => {
+      const fetchArticle = async () => {
+          try {
+              const response = await axios.get('/db.json');
+
+              const articles = response.data;  // Assuming response data is an array
+              console.log(articles);
+              
+              setArticles(articles);
+          } catch (error) {
+              console.error("Error fetching the article:", error);
+          } finally {
+              setLoading(false);
+          }
+      };
+
+      fetchArticle();
   }, []);
+
+  if (loading) {
+      return <p>Loading...</p>;
+  }
+
 
   return (
     <div>
       <div id="home-page-onset"></div>
       <Navbar />
-      <ByteImage />
+      <ImageCardGroup />
 
       <div className="content">
         <div className="wrapper">
           <div className="wrapper2">
             <div className="article">
-              {articles && articles.length > 0 ? (
-                articles.map((article) => (
+              {articles
+                .filter((article) => article.type === "byte") // Filter by type
+                .map((article) => (
                   <ArticleCards
                     key={article.id}
                     id={article.id}
                     heading={article.heading}
-                    author={article.author}
-                    date={article.date}
+                    author={article.author || "Anonymous"}
+                    date={article.date || "Unknown Date"}
                     description={article.description}
-                    image={article.image?.url}
-                    disabled={article.disabled}
-                    category={article.category}
+                    image={article.imageurl } // Fallback image
+                    type={article.type}
                   />
-                ))
-              ) : (
-                <p>No {category} available.</p>
-              )}
+                ))}
             </div>
 
             <aside>
@@ -82,4 +89,4 @@ const Bytes = () => {
   );
 };
 
-export default Bytes;
+export default Home;
