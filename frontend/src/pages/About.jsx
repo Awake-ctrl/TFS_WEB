@@ -63,9 +63,7 @@ const ABOUT_US = () => {
         <h2> Contact Us </h2>
         <div>
           <p className='About_us-para'> 
-           <span className='About_us-center'>ThisGuy - 11111111111 - 111111111@smail.iitpkd.ac.in</span>
-           <br></br>
-           <span className='About_us-center'>ThisGuy - 11111111111 - 111111111@smail.iitpkd.ac.in</span>
+           <div className='About_us-center'>Karthikeya - 11111111111 - <a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></div>
          </p>
         </div>
       <Footer/>

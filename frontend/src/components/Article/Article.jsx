@@ -17,7 +17,7 @@ const Article = () => {
     useEffect(() => {
         const fetchArticle = async () => {
             try {
-                const url = `http://localhost:1337/api/articles?filters[id][$eq]=${id}&populate=*`
+                const url = `/db.json`
                 const response = await axios.get(url);
                 console.log(response.data.data)
                 setArticle(response.data.data[0]);

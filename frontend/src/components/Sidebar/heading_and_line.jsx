@@ -10,22 +10,13 @@ const Heading_and_line = ({heading}) => {
         <div className="heading-and-line-widget-text">
         {heading === "Archives" ? (
           <div>
-            <p>Archive1</p>
-            <p>Archive2</p>
-            <p>Archive3</p>
-            <p>Archive4</p>
-            <p>Archive5</p>
-            <p>Archive6</p>
-            <p>Archive7</p>
-            <p>Archive8</p>
-            <p>Archive9</p>
-            <p>Archive10</p>
-            <p>Archive11</p>
+            <p>NONE</p>
+            
           </div>
         ) : (
           <div>
-            <p><strong>Phone No:</strong> 111111111111</p>
-            <p><strong>Email:</strong> 111111@smail.iitpkd.ac.in</p>
+            <p><strong>Phone No:</strong> 11111111111</p>
+            <p><strong>Email:</strong><a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></p>
           </div>
         )}
 

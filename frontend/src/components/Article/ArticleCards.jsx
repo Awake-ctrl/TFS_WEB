@@ -2,10 +2,11 @@
  import './ArticleCard.css'
  import { Link } from "react-router-dom";
 
-const ArticleCards = ({id,heading,author,date,description,image,disabled=true,category}) => {
+const ArticleCards = () => {
 
+    
     const DateLink = "#";
-    const img_start_url = "http://localhost:1337"
+    const disabled = true;
 
     const AuthorOnsetCSSID = "author-page-author-onset";
     const AuthorLink = `/Authors/${author}#${AuthorOnsetCSSID}`
@@ -25,7 +26,7 @@ const ArticleCards = ({id,heading,author,date,description,image,disabled=true,ca
         <div className="art-card-full-container">
             <Link className={linkstyles} to={ArticleLink}>
             <div className='art-card-full-wrapper'>
-                <img className="art-card-image" src={`${img_start_url}${image}`} alt="image" />  
+                <img className="art-card-image" src={`${image}`} alt="image" />  
                 <header className='art-card-header'>
                     <ul className="art-card-additional-data">
                             <li className='art-card-date'><Link className={linkstyles2} to={DateLink}>{date}</Link></li>
