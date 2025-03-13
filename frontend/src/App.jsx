@@ -6,10 +6,10 @@ import Author from "./pages/Authors/Author";
 
 import Home from "./pages/Home";
 import Bytes from "./pages/Bytes";
-import News from "./pages/News";
-import Sports from "./pages/Sports";
-import Spotlight from "./pages/Spotlight";
-import Interviews from "./pages/Interviews";
+// import News from "./pages/News";
+// import Sports from "./pages/Sports";
+// import Spotlight from "./pages/Spotlight";
+// import Interviews from "./pages/Interviews";
 import About_us from "./pages/About";
 import NotFoundPage from "./pages/NotFoundPage";
 
@@ -22,10 +22,10 @@ function App() {
         <Route path="/Authors/Author" element={<Author />} />
         <Route path="/" element={<Home />} />
         <Route path="/Bytes" element={<Bytes />} />
-        <Route path="/News" element={<News />} />
-        <Route path="/Sports" element={<Sports />} />
-        <Route path="/Spotlight" element={<Spotlight />} />
-        <Route path="/Interviews" element={<Interviews />} />
+        {/* <Route path="/News" element={<News />} /> */}
+        {/* <Route path="/Sports" element={<Sports />} /> */}
+        {/* <Route path="/Spotlight" element={<Spotlight />} /> */}
+        {/* <Route path="/Interviews" element={<Interviews />} /> */}
         <Route path="/About_us" element={<About_us />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
