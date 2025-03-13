@@ -5,7 +5,7 @@ import logoImage from "../../assets/TFSlogo.png"
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isInstiDropdownOpen, setIsInstiDropdownOpen] = useState(false);
+    // const [isInstiDropdownOpen, setIsInstiDropdownOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     
     // Function to toggle the mobile menu
@@ -13,13 +13,13 @@ const Navbar = () => {
       setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const handleInstiMouseEnter = () => {
-      setIsInstiDropdownOpen(true);
-    };
+    // const handleInstiMouseEnter = () => {
+    //   setIsInstiDropdownOpen(true);
+    // };
 
-    const handleInstiMouseLeave = () => {
-      setIsInstiDropdownOpen(false);
-    };
+    // const handleInstiMouseLeave = () => {
+    //   setIsInstiDropdownOpen(false);
+    // };
 
     // Detect scroll to shrink logo
     useEffect(() => {
