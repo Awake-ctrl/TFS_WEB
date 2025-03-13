@@ -2,13 +2,61 @@
     {
       "id": 1 ,
       "type": "article",
-      "heading": "Sdfhafjak",
-      "date": "11-11-2005",
-      "author": "Simeon K. Sonar",
-      "imageurl": "images/gwwu.webp",
-      "description": "auyggqeiarqheojroirhwehiw.bfiuhgoehigethierg"
+      "heading": "A Message to the Student Community of IIT Palakkad",
+      "date": "",
+      "author": "",
+      "imageurl": "/images/a_message_to_student_community_of_iit_pkd.png",
+      "description": "From the Gen Sec to the students - A short interview with the General Secretary"
     },
     
-    
+    {
+      "id": 2 ,
+      "type": "article",
+      "heading": "Catalogue of Clubs",
+      "date": "",
+      "author": "",
+      "imageurl": "/images/catalogue_of_clubs.png",
+      "description": "A concise catalogue of the student bodies of IIT Palakkad."
+    },
+
+    {
+      "id": 3 ,
+      "type": "article",
+      "heading": "Exodus - Part 1",
+      "date": "",
+      "author": "",
+      "imageurl": "/images/exodus_p1.png",
+      "description": "Interview of Aniket Singh, an Alumnus of IIT Palakkad and a full time software developer at Parabole.ai"
+    },
+
+    {
+      "id": 4 ,
+      "type": "article",
+      "heading": "Exodus - Part 2",
+      "date": "",
+      "author": "",
+      "imageurl": "/images/exodus_p2.png",
+      "description": "Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant."
+    },
+
+    {
+      "id": 5 ,
+      "type": "article",
+      "heading": "Fedena Disclosure",
+      "date": "",
+      "author": "",
+      "imageurl": "/images/fedena_disclosure.png",
+      "description": "A brief look into the security loopholes in Fedena,which were eventually fixed."
+    },
+
+    {
+      "id": 6 ,
+      "type": "byte",
+      "heading": "The first EML of the year",
+      "date": "11-02-2021",
+      "author": "",
+      "imageurl": "/images/first_eml_of_2021.png",
+      "description": "by Mr.Arun Krishnamurthy, the founder of Environmental Foundation of India."
+    }
   ]
   
