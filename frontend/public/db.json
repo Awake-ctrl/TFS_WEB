@@ -1,62 +1,184 @@
 [
-    {
-      "id": 1 ,
-      "type": "article",
-      "heading": "A Message to the Student Community of IIT Palakkad",
-      "date": "",
-      "author": "",
-      "imageurl": "/images/a_message_to_student_community_of_iit_pkd.png",
-      "description": "From the Gen Sec to the students - A short interview with the General Secretary"
-    },
-    
-    {
-      "id": 2 ,
-      "type": "article",
-      "heading": "Catalogue of Clubs",
-      "date": "",
-      "author": "",
-      "imageurl": "/images/catalogue_of_clubs.png",
-      "description": "A concise catalogue of the student bodies of IIT Palakkad."
-    },
-
-    {
-      "id": 3 ,
-      "type": "article",
-      "heading": "Exodus - Part 1",
-      "date": "",
-      "author": "",
-      "imageurl": "/images/exodus_p1.png",
-      "description": "Interview of Aniket Singh, an Alumnus of IIT Palakkad and a full time software developer at Parabole.ai"
-    },
-
-    {
-      "id": 4 ,
-      "type": "article",
-      "heading": "Exodus - Part 2",
-      "date": "",
-      "author": "",
-      "imageurl": "/images/exodus_p2.png",
-      "description": "Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant."
-    },
-
-    {
-      "id": 5 ,
-      "type": "article",
-      "heading": "Fedena Disclosure",
-      "date": "",
-      "author": "",
-      "imageurl": "/images/fedena_disclosure.png",
-      "description": "A brief look into the security loopholes in Fedena,which were eventually fixed."
-    },
-
-    {
-      "id": 6 ,
-      "type": "byte",
-      "heading": "The first EML of the year",
-      "date": "11-02-2021",
-      "author": "",
-      "imageurl": "/images/first_eml_of_2021.png",
-      "description": "by Mr.Arun Krishnamurthy, the founder of Environmental Foundation of India."
-    }
-  ]
+  {
+    "id": 1 ,
+    "type": "article",
+    "heading": "A Message to the Student Community of IIT Palakkad",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/a_message_to_student_community_of_iit_pkd.png",
+    "description": "From the Gen Sec to the students - A short interview with the General Secretary"
+  },
   
+  {
+    "id": 2 ,
+    "type": "article",
+    "heading": "Catalogue of Clubs",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/catalogue_of_clubs.png",
+    "description": "A concise catalogue of the student bodies of IIT Palakkad."
+  },
+
+  {
+    "id": 3 ,
+    "type": "article",
+    "heading": "Exodus - Part 1",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/exodus_p1.png",
+    "description": "Interview of Aniket Singh, an Alumnus of IIT Palakkad and a full time software developer at Parabole.ai"
+  },
+
+  {
+    "id": 4 ,
+    "type": "article",
+    "heading": "Exodus - Part 2",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/exodus_p2.png",
+    "description": "Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant."
+  },
+
+  {
+    "id": 5 ,
+    "type": "article",
+    "heading": "Fedena Disclosure",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/fedena_disclosure.png",
+    "description": "A brief look into the security loopholes in Fedena,which were eventually fixed."
+  },
+
+  {
+    "id": 6 ,
+    "type": "byte",
+    "heading": "The first EML of the year",
+    "date": "11-02-2021",
+    "author": "",
+    "imageurl": "/images/first_eml_of_2021.png",
+    "description": "by Mr.Arun Krishnamurthy, the founder of Environmental Foundation of India."
+  },
+
+  
+  {
+    "id": 7 ,
+    "type": "byte",
+    "heading": "Launch of TECHIN",
+    "date": "20-01-2021",
+    "author": "",
+    "imageurl": "/images/launch_of_techin_2021.png",
+    "description": "Technology Innovation Foundation of IIT Palakkad"
+  },
+
+  {
+    "id": 8 ,
+    "type": "article",
+    "heading": "Mother Tongue Instruction at IITs ",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/mother_tongue_instruction_at_iits.png",
+    "description": "Moment of Joy or Point of Concern?"
+  },
+
+  {
+    "id": 9 ,
+    "type": "article",
+    "heading": "NEP 2020",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/nep_2020.png",
+    "description": "NEP 2020 took the nation by storm. What is it? How is it going to be implemented?"
+  },
+
+  {
+    "id": 10 ,
+    "type": "article",
+    "heading": "Perspective",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/perspective_p1.png",
+    "description": "A unique perspective on rare diseases, lifestyles and more. Guest article by Mr. Rachit Shah."
+  },
+
+  {
+    "id": 11 ,
+    "type": "article",
+    "heading": "Perspective",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/perspective_p2.png",
+    "description": "Part 2 - Continuation of the guest article series by Mr. Rachit Shah."
+  },
+
+  {
+    "id": 12 ,
+    "type": "article",
+    "heading": "Perspective",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/perspective_p3.png",
+    "description": "Part 3 - Continuation of the guest article series by Mr. Rachit Shah."
+  },
+
+  {
+    "id": 13 ,
+    "type": "article",
+    "heading": "PLACEMENT / INTERNSHIP SURVEY 2023 -2024",
+    "date": "October 2023",
+    "author": "",
+    "imageurl": "/images/placement_internship_survey_2023_24.png",
+    "description": "As you guys know, the placement season has already started. As we embark upon this adventure, we understand that you might have some million questions in your head."
+  },
+
+  {
+    "id": 14 ,
+    "type": "article",
+    "heading": "Privacy Matters??",
+    "date": "",
+    "author": "",
+    "imageurl": "/images/privacy_matters.png",
+    "description": "A quick look into the recent Privacy Policy update from WhatsApp and why it's causing all the fuzz!!"
+  },
+
+  {
+    "id": 15 ,
+    "type": "article",
+    "heading": "SAC REVIEW 2023",
+    "date": "January 2024",
+    "author": "",
+    "imageurl": "/images/sac_review_2023.png",
+    "description": "The SAC is an integral part of our institute as they represent the student community and work towards the betterment of the institute. That being said, as the student media body , it is our responsibility to review their work and and bring students opinions to light."
+  },
+
+  {
+    "id": 16 ,
+    "type": "article",
+    "heading": "TFS FRESHERS GUIDE 2023",
+    "date": "August 2023",
+    "author": "",
+    "imageurl": "/images/tfs_freshers_guide_2023.png",
+    "description": "TFS is back with a bang!! An Exclusive for the Freshers!"
+  },
+
+  {
+    "id": 17 ,
+    "type": "article",
+    "heading": "The first EML of the year",
+    "date": "May 2022",
+    "author": "",
+    "imageurl": "/images/tfs_periodicals.png",
+    "description": "Presenting a new series, The TFS Periodicals!"
+  },
+
+  {
+    "id": 18 ,
+    "type": "byte",
+    "heading": "Tiny Fleeting Stories",
+    "date": "24-08-2023",
+    "author": "",
+    "imageurl": "/images/tiny_fleeting_stories_2023.png",
+    "description": "TFS introduced our very own instagram news page."
+  }
+
+
+]
