@@ -63,7 +63,10 @@ const ABOUT_US = () => {
         <h2> Contact Us </h2>
         <div>
           <p className='About_us-para'> 
-           <div className='About_us-center'>Karthikeya - 11111111111 - <a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></div>
+           <div className='About_us-center'>Karthikeya - +91 77940 11990 - <a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></div>
+           <div className='About_us-center'>Sai Kiran - +91 8074 779 534 - <a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></div>
+           <div className='About_us-center'>Simeon K Sonar - +91 98346 92809 - <a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></div>
+
          </p>
         </div>
       <Footer/>

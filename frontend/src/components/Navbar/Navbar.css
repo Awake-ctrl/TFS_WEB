@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
-  background-color: rgba(5, 1, 1, 0.75);
+  background-color: #3a506b;
   position: sticky;
   top: 0; 
   z-index: 1000;
@@ -93,13 +93,13 @@
 }
 
 .navbar-link:hover {
-  background-color: #900603;
+  background-color: #1c2541;
   color: #fff;
 }
 
 .navbar-link.active {
   background-color: #eab5a7;
-  color: #900603;
+  color: #131c36;
 }
 
 /* Dropdown Menu Styles */
