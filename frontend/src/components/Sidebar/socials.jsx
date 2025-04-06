@@ -7,7 +7,7 @@ const Socials = () => {
       <ul className="socials-list">
         <li className="socials-item">
           <a
-            href="https://www.instagram.com/your-instagram-page" // Replace with actual URL
+            href="https://www.instagram.com/tfsiitpkd?igsh=OG43aGJqdzJmZXVu" // Replace with actual URL
             target="_blank"
             rel="noopener noreferrer"
             title="Visit The Fleet Street, IIT Palakkad on Instagram"
