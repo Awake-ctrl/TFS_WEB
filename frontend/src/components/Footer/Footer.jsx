@@ -44,7 +44,7 @@ const Footer = () => {
 
        
       {/* Social Icons */}
-      <ul className="socials-list">
+      <ul className="socials-footer-list">
         <li className="socials-item">
           <a
             href="https://www.instagram.com/your-instagram-page" // Replace with actual URL

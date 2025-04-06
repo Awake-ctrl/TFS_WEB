@@ -1,6 +1,6 @@
 .footer {
     margin-top: 4vw; /* added by simeon*/
-    background-color:  #3a506b; /* Light background color */
+    background-color: #078189;/* Light background color */
     padding: 40px 20px; /* Padding for top section */
     display: flex;
     flex-direction: column;
@@ -48,8 +48,10 @@
   }
   
   .footer-bottom {
-    background-color: #1c2541; 
+    background-color: #1c2541;
+    border-radius: 5px;
     color: white;
+    font-size: medium;
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -61,14 +63,13 @@
     margin-bottom: 0.8rem;
     padding: 10px;
     border-radius: 10px;
-    background-color: darkcyan;
-
+     
   }
   .footer-logo a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color:white;
+    color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     
@@ -82,16 +83,13 @@
 .footer-title h1 {
   margin-left: 1rem;
   font-size: 1.5rem;
-  color: white;
+  color: #1c2541;
 }
 
-.footer-title h1 :hover{
-  color:black;
+.footer-logo a:hover {
+  color: #e9f3f4;
 }
 
-.footer-logo a :hover{
-  color: black;
-}
 
 @media (max-width: 650px) {
 
