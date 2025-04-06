@@ -4,7 +4,7 @@
     border: 1px solid #ccc;
     border-radius: 0.3125rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: rgb(129, 143, 180);
     /* max-width: 400px; */
 }
 
@@ -38,7 +38,8 @@
     margin-bottom: 10px;
     font-size: 0.875rem;
     border: 1px solid #ccc;
-    border-radius: 0.2rem;
+    background-color: #fff;
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
@@ -52,7 +53,7 @@
     padding: 0.625rem 1.25rem;
     font-size: 0.875rem;
     margin-top: 10px;
-    background-color:  #1c2541;
+    background-color:  #363062;
     color: #fff;
     border: none;
     border-radius: 0.2rem;

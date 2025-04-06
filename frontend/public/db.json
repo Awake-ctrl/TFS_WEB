@@ -3,7 +3,7 @@
     "id": 1 ,
     "type": "article",
     "heading": "A Message to the Student Community of IIT Palakkad",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/a_message_to_student_community_of_iit_pkd.webp",
     "description": "From the Gen Sec to the students - A short interview with the General Secretary"
@@ -13,7 +13,7 @@
     "id": 2 ,
     "type": "article",
     "heading": "Catalogue of Clubs",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/catalogue_of_clubs.webp",
     "description": "A concise catalogue of the student bodies of IIT Palakkad."
@@ -23,7 +23,7 @@
     "id": 3 ,
     "type": "article",
     "heading": "Exodus - Part 1",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/exodus_p1.webp",
     "description": "Interview of Aniket Singh, an Alumnus of IIT Palakkad and a full time software developer at Parabole.ai"
@@ -33,7 +33,7 @@
     "id": 4 ,
     "type": "article",
     "heading": "Exodus - Part 2",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/exodus_p2.webp",
     "description": "Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant."
@@ -43,7 +43,7 @@
     "id": 5 ,
     "type": "article",
     "heading": "Fedena Disclosure",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/fedena_disclosure.webp",
     "description": "A brief look into the security loopholes in Fedena,which were eventually fixed."
@@ -74,7 +74,7 @@
     "id": 8 ,
     "type": "article",
     "heading": "Mother Tongue Instruction at IITs ",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/mother_tongue_instruction_at_iits.webp",
     "description": "Moment of Joy or Point of Concern?"
@@ -84,7 +84,7 @@
     "id": 9 ,
     "type": "article",
     "heading": "NEP 2020",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/nep_2020.webp",
     "description": "NEP 2020 took the nation by storm. What is it? How is it going to be implemented?"
@@ -94,7 +94,7 @@
     "id": 10 ,
     "type": "article",
     "heading": "Perspective",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/perspective_p1.webp",
     "description": "A unique perspective on rare diseases, lifestyles and more. Guest article by Mr. Rachit Shah."
@@ -104,7 +104,7 @@
     "id": 11 ,
     "type": "article",
     "heading": "Perspective",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/perspective_p2.webp",
     "description": "Part 2 - Continuation of the guest article series by Mr. Rachit Shah."
@@ -114,7 +114,7 @@
     "id": 12 ,
     "type": "article",
     "heading": "Perspective",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/perspective_p3.webp",
     "description": "Part 3 - Continuation of the guest article series by Mr. Rachit Shah."
@@ -134,7 +134,7 @@
     "id": 14 ,
     "type": "article",
     "heading": "Privacy Matters??",
-    "date": "",
+    "date": "N/A",
     "author": "",
     "imageurl": "/images/privacy_matters.webp",
     "description": "A quick look into the recent Privacy Policy update from WhatsApp and why it's causing all the fuzz!!"
@@ -181,11 +181,49 @@
   },
   {
     "id": 19 ,
-    "type": "byte",
-    "heading": "Tiny Fleeting Stories",
+    "type": "article",
+    "heading": "Podcast with Sai Hemanth Reddy about IAC 6.O || Acad Sec @SAC 2024-25 || P01 ||",
+    "subheading": "Podcast 01: With Acad Sec",
     "date": "24-08-2023",
     "author": "",
-    "imageurl": "/images/1234.jpeg",
+    "slider" : 1,
+    "imageurl": "/images/podcast_01.webp",
+    "description": "TFS introduced our very own instagram news page."
+  },
+
+  {
+    "id": 20 ,
+    "type": "article",
+    "heading": "Podcast with Prof. Ramesh Venkateshwaran, BoG Chairman, IITPKD || P02 ||",
+    "subheading": "Podcast 02: With BoG Chairman",
+    "date": "24-08-2023",
+    "author": "",
+    "slider" : 1,
+    "imageurl": "/images/podcast_02.webp",
+    "description": "TFS introduced our very own instagram news page."
+  },
+
+  {
+    "id": 21 ,
+    "type": "article",
+    "heading": "Podcast with Karthikeya B, Students' General Secretary, SAC 2024-25 IITPKD | P03 |",
+    "subheading": "Podcast 03: With Gen Sec",
+    "date": "24-08-2023",
+    "author": "",
+    "slider" : 1,
+    "imageurl": "/images/podcast_03.webp",
+    "description": "TFS introduced our very own instagram news page."
+  },
+
+  {
+    "id": 22 ,
+    "type": "article",
+    "heading": "Podcast with the GC 2.O Organisers || General Championship 2025 || P04 ||",
+    "subheading": "Podcast 04: With GC 2.0 Team",
+    "date": "24-08-2023",
+    "author": "",
+    "slider" : 1,
+    "imageurl": "/images/podcast_04.webp",
     "description": "TFS introduced our very own instagram news page."
   }
 

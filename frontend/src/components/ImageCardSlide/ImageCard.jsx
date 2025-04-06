@@ -1,11 +1,12 @@
 import "./ImageCard.css";
-function ImageCard({ image, category, heading }) {
+function ImageCard(article) {
   return (
     <div className="ImageCardContainer">
-      <img className="ImageCardBackground" src={image} />
+      <img className="ImageCardBackground" src={article.imageurl} />
       <div className="ImageCardTextContainer">
-        <div className="ImageCardCategory">{category.toUpperCase()}</div>
-        <h2 className="ImageCardDescription">{heading}</h2>
+        <div className="ImageCardCategory">{article.date}</div>
+        <h2 className="ImageCardDescription">{article.subheading}</h2>
+
       </div>
     </div>
   );

@@ -9,7 +9,6 @@ import '../components/Sidebar/sidebar.css';
 const Home = () => {
   const location = useLocation();
   const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (location.hash) {
@@ -26,22 +25,16 @@ const Home = () => {
               const response = await axios.get('/db.json');
 
               const articles = response.data;  // Assuming response data is an array
-              console.log(articles);
               
               setArticles(articles);
           } catch (error) {
               console.error("Error fetching the article:", error);
-          } finally {
-              setLoading(false);
           }
       };
 
       fetchArticle();
   }, []);
 
-  if (loading) {
-      return <p>Loading...</p>;
-  }
 
 
   return (
@@ -56,17 +49,9 @@ const Home = () => {
             <div className="article">
               {articles
                 .filter((article) => article.type === "article") // Filter by type
+                .reverse()
                 .map((article) => (
-                  <ArticleCards
-                    key={article.id}
-                    id={article.id}
-                    heading={article.heading}
-                    author={article.author || "Anonymous"}
-                    date={article.date || "Unknown Date"}
-                    description={article.description}
-                    image={article.imageurl } // Fallback image
-                    type={article.type}
-                  />
+                  <ArticleCards {...article}/>
                 ))}
             </div>
 
