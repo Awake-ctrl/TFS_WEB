@@ -119,7 +119,7 @@ const Navbar = () => {
               <Link to="/Entertainment" className="navbar-link">Entertainment</Link>
             </li> */}
             <li>
-              <Link to="/About_us" className="navbar-link">About Us</Link>
+              <Link to="/About_us" className="navbar-link">About</Link>
             </li>
             {/* <li>
               <Link to="/Contact_us" className="navbar-link">Contact Us</Link>

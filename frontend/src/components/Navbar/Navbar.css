@@ -1,35 +1,40 @@
 /* General Navbar Styles */
 .navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  background-color: #3a506b;
+  padding-top: 10px;
+  background-color: rgba(58, 80,107,0.95);
   position: sticky;
   top: 0; 
   z-index: 1000;
   transition: all 0.8 ease;
-  height: 101px;
-}
-.navbar.scrolled {
-  padding: 5px 20px; /* Reduce padding when scrolled */
-  flex-direction: row;
-  justify-content: space-between;
-  height: 60px;
+  height: 85px;
 }
 
 .navbar-logo {
   display: flex;
   align-items: center;
   margin-bottom: 0.8rem;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
   transition: all 0.6s ease;
+  background-color: darkcyan;
+  border-radius: 10px;;
 }
 
 .navbar-logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white
+  color: white;
+}
+
+.navbar-logo a :hover {
+  color: black;
 }
 
 .navbar-logo div h1{
@@ -72,10 +77,14 @@
 
 .navbar-links li {
   margin: 0;
-  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
   position: relative;
   display: flex;
   align-items: center;
+  
+
+  width: 100%;
 }
 
 .navbar-link {
@@ -85,21 +94,16 @@
   font-size: 15px;
   padding: 10px 15px;
   border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-  background-color: transparent;
+  background-color: rgb(104, 104, 175);
+  color:#f8fdfd;
   border: none;
   display: flex;
   align-items: center;
 }
 
 .navbar-link:hover {
-  background-color: #1c2541;
-  color: #fff;
-}
-
-.navbar-link.active {
-  background-color: #eab5a7;
-  color: #131c36;
+  background-color: #4773f8;
+  color: black;
 }
 
 /* Dropdown Menu Styles */
@@ -204,7 +208,7 @@
     justify-content: space-between;
     padding: 5px 20px;
     transition: none;
-    height: 60px; 
+    height: 80px; 
   }
   .navbar-logo {
     margin-bottom: 0; /* Remove bottom margin for mobile */
@@ -223,6 +227,8 @@
   .navbar-links {
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
+    width: 100%;
     transition: none;
   }
   .navbar-menu {
@@ -230,7 +236,7 @@
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: rgba(5, 1, 1, 0.90);
+    background-color: rgba(1, 48, 54, 0.9);
     width: 100%;
     flex-direction: column;
     align-items: center;
