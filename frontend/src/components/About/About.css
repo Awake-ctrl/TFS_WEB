@@ -2,14 +2,34 @@
     text-align : center;
     margin-top: 20pt;
 }
-.About_us-para {
+/* .About_us-para {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 20pt;
     padding-left: 0.0pt;
     text-align: left;
     text-indent: 0.0pt;
+} */
+
+.About_us-para {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20pt;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    font-size: 14pt;
+    background-color: #f9f4ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #169cda;
+    transition: transform 0.3s ease;
 }
+
+.About_us-para:hover {
+    transform: translateY(-2px);
+}
+
 
 .About_us-textspan {
     font-family: Roboto,Arial;
@@ -39,7 +59,7 @@ h2{
     place-items: center;
 }
 
-.download-link {
+/* .download-link {
     margin-left: 25%;
     display: inline-block;
     background-color: #169cda;
@@ -49,7 +69,17 @@ h2{
     border-radius: 5px;
     margin-bottom: 20px;
     font-weight: bold;
-  }
+  } */
+  .download-link {
+    background-color: #169cda;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
   
   .download-link:hover {
     background-color: #1bb0f5;
@@ -80,3 +110,38 @@ h2{
         margin-right: 5%;
     }
   }
+
+  .contact-box {
+    background-color: #f4f4f4;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 60%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-family: Roboto, Arial;
+    font-size: 13pt;
+}
+
+.contact-box a {
+    color: #169cda;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .contact-box {
+        width: 85%;
+        font-size: 12pt;
+    }
+}
+
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

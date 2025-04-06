@@ -51,6 +51,7 @@ const ABOUT_US = () => {
         <br></br>
 
         {/* Add the downloadable PDF link */}
+        <div className="download-container">
          <a 
             href="./TFS_Constitution.pdf" 
             download="TFS_Constitution.pdf" 
@@ -58,9 +59,10 @@ const ABOUT_US = () => {
          >
            Download Constitution PDF
          </a>
+         </div>
 
         <Team />
-        <h2> Contact Us </h2>
+        {/* <h2> Contact Us </h2>
         <div>
           <p className='About_us-para'> 
            <div className='About_us-center'>Karthikeya - +91 77940 11990 - <a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></div>
@@ -68,7 +70,14 @@ const ABOUT_US = () => {
            <div className='About_us-center'>Simeon K Sonar - +91 98346 92809 - <a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></div>
 
          </p>
+        </div> */}
+        <div className="contact-box">
+        <h2> Contact Us </h2>
+          <p><strong>Karthikeya</strong> - +91 77940 11990 - <a href="mailto:132201033@smail.iitpkd.ac.in">132201033@smail.iitpkd.ac.in</a></p>
+          <p><strong>Sai Kiran</strong> - +91 8074 779 534 - <a href="mailto:112201044@smail.iitpkd.ac.in">112201044@smail.iitpkd.ac.in</a></p>
+          <p><strong>Simeon K Sonar</strong> - +91 98346 92809 - <a href="mailto:112301031@smail.iitpkd.ac.in">112301031@smail.iitpkd.ac.in</a></p>
         </div>
+
       <Footer/>
 
     </div>
