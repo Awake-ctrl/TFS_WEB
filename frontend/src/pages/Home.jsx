@@ -48,11 +48,7 @@ const Home = () => {
     <div>
       <div id="home-page-onset"></div>
       <Navbar />
-      <div className="image-card-group-container">
-        <div className="image-card-group-wrapper">
-          <ImageCardGroup />
-        </div>
-      </div>
+      <ImageCardGroup />
 
       <div className="content">
         <div className="wrapper">
