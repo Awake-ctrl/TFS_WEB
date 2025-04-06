@@ -35,13 +35,11 @@ const FeedbackForm = () => {
   return (
     <div className="feedback-form-container">
       <form onSubmit={handleSubmit}>
-        <input type="hidden" name="nr" value="widget"/>
-        <input type="hidden" name="nlang" value=""/>
-        
         <div className="feedback-form-field-name">
-          <h2>Facing any issues with the site?</h2>
+          <p className='feedback-form-field-heading'>Facing any issues with the site?</p>
           <p>Submit your valuable feedback and help us improve!</p>
-          <label htmlFor="feedback-form-name">First name or full name</label>
+          <br />
+          <label className="feedback-form-label">First name or full name</label>
           <input 
             className="feedback-form-name-input" 
             type="text" 
@@ -55,7 +53,7 @@ const FeedbackForm = () => {
         </div>
         
         <div className="feedback-form-field-email">
-          <label htmlFor="feedback-form-email">Email</label>
+          <label className="feedback-form-label">Email</label>
           <input 
             className="feedback-form-email-input" 
             type="email" 
@@ -69,7 +67,7 @@ const FeedbackForm = () => {
         </div>
         
         <div className="feedback-form-field-feedback">
-          <label htmlFor="feedback-form-feedback">Feedback</label>
+          <label className="feedback-form-label">Feedback</label>
           <textarea 
             name="feedback" 
             id="feedback-form-feedback" 

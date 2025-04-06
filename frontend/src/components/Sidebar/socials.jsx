@@ -15,14 +15,14 @@ const Socials = () => {
             <span className="fa-brands fa-instagram"></span> {/* Instagram icon */}
           </a>
         </li>
-        <li className="socials-item">
+        {/* <li className="socials-item">
           <a
             href="https://www.linkedin.com/company/tfs-iitpkd/" // Replace with actual URL
             target="_blank"
             rel="noopener noreferrer"
             title="Visit The Fleet Street, IIT Palakkad on LinkedIn"
           >
-            <span className="fa-brands fa-linkedin"></span> {/* Updated to LinkedIn */}
+            <span className="fa-brands fa-linkedin"></span> 
           </a>
         </li>
         <li className="socials-item">
@@ -32,9 +32,9 @@ const Socials = () => {
             rel="noopener noreferrer"
             title="Visit The Fleet Street, IIT Palakkad on Facebook"
           >
-            <span className="fa-brands fa-facebook"></span> {/* Facebook icon */}
-          </a>
-        </li>
+            <span className="fa-brands fa-facebook"></span> 
+          </a> 
+        </li> */}
       </ul>
     </div>
   );

@@ -72,7 +72,9 @@ const Navbar = () => {
         <div>
         {/* Hamburger Menu Toggle */}
         <button className="navbar-toggle" onClick={handleToggleMenu}>
-          <span className="navbar-toggle-icon">&#9776;</span>
+          <span className="navbar-toggle-icon">
+            {isMobileMenuOpen ? '✕' : '☰'}
+          </span>
         </button>
         <div className={`navbar-menu ${isMobileMenuOpen ? "active" : ""}`}>
           <ul className="navbar-links">
