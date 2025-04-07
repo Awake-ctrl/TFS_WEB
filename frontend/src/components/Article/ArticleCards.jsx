@@ -35,7 +35,7 @@ const ArticleCards = (article) => {
                             </li>
                         </ul>
                         <h1 className="art-card-heading">
-                            <Link className={linkstyles} to={ArticleLink}>{article.subheading}</Link>
+                            <Link className={linkstyles} to={ArticleLink}>{article_heading}</Link>
                         </h1>
                     </header>
                     <div className="art-card-text">

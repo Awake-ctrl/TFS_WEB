@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import axios from "axios";
 import { TypeAnimation } from "react-type-animation";
+import { Circles } from "react-loader-spinner";
 
 import Navbar from "../../components/Navbar/Navbar";
 import ImageCardGroup from "../../components/ImageCardSlide/ImageCardGroup";
@@ -14,8 +15,8 @@ const Author = () => {
   const { author } = useParams();
   const location = useLocation();
   const [articles, setArticles] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  // Scroll to hash element on mount/update
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
@@ -25,7 +26,6 @@ const Author = () => {
     }
   }, [location]);
 
-  // Fetch articles from db.json
   useEffect(() => {
     const fetchArticles = async () => {
       try {
@@ -33,6 +33,8 @@ const Author = () => {
         setArticles(data);
       } catch (error) {
         console.error("Failed to fetch articles:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -42,10 +44,6 @@ const Author = () => {
   const filteredArticles = articles
     .filter((article) => article.author === author)
     .reverse();
-
-  if (filteredArticles.length === 0 || author === "Anonymous") {
-    return <p className="no-articles">No articles found for this author.</p>;
-  }
 
   return (
     <div>
@@ -70,9 +68,24 @@ const Author = () => {
       <div className="author-content">
         <div className="author-wrapper">
           <div className="article" id="author-page-author-onset">
-            {filteredArticles.map((article) => (
-              <ArticleCards key={article.id} {...article} />
-            ))}
+            {loading ? (
+              <div style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}>
+                <Circles height="80" width="80" color="#4fa94d" ariaLabel="loading" />
+              </div>
+            ) : filteredArticles.length === 0 || author === "Anonymous" ? (
+              <h2>
+              <TypeAnimation
+                sequence={"No articles found for this author."}
+                speed={70}
+                cursor={true}
+                repeat={0}
+                style={{ display: "inline-block" }}
+              /></h2>
+            ) : (
+              filteredArticles.map((article) => (
+                <ArticleCards key={article.id} {...article} />
+              ))
+            )}
           </div>
         </div>
       </div>
