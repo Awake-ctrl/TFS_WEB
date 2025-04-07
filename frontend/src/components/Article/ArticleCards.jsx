@@ -10,8 +10,8 @@ const ArticleCards = (article) => {
 
     const ArticleOnsetCSSID = "article-page-article-onset";
     const ArticleLink = `/Article/${article.id}#${ArticleOnsetCSSID}`;
-    const article_date = article.date == '' ? '_-_-_' : article.date;
-    const article_author = article.author == '' ? 'Karthikeya D' : article.author;
+    const article_date = article.date === '' || article.date === undefined ? '_-_-_' : article.date;
+    const article_author = article.author === '' || article.author === undefined? 'Anonymous' : article.author;
 
     const linkstyles = "art-card-link-styles";
     const linkstyles2 = "art-card-link-styles2";

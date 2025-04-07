@@ -6,7 +6,6 @@ import './Article.css';
 const Article = () => {
     const { id } = useParams(); // Get the article ID from the URL
     const [article, setArticle] = useState(null);
-    const [loading, setLoading] = useState(true);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [comment, setComment] = useState('');
@@ -23,17 +22,12 @@ const Article = () => {
                 setArticle(foundArticle || null);
             } catch (error) {
                 console.error("Error fetching the article:", error);
-            } finally {
-                setLoading(false);
-            }
+            } 
         };
 
         fetchArticle();
     }, [id]);
 
-    if (loading) {
-        return <p>Loading...</p>;
-    }
 
     if (!article) {
         return <p>Article not found.</p>;
@@ -72,7 +66,7 @@ const Article = () => {
                         </li>
                         <li className='rect-art-card-author'>
                             <Link className="art-card-link-styles2" to={AuthorLink}>
-                                {article.author || "Karthikeya D"}
+                                {article.author || "Anonymous"}
                             </Link>
                         </li>
                     </ul>
@@ -107,7 +101,7 @@ const Article = () => {
                         <p className="rect-author-name">
                             Author:  
                             <Link className="art-card-link-styles2" to={AuthorLink}>
-                                {article.author || "Karthikeya D."}
+                                {article.author || "Anonymous"}
                             </Link>
                         </p>
                         <p className="rect-publication-date">
