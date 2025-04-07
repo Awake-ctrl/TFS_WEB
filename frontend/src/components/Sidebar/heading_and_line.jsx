@@ -10,7 +10,14 @@ const Heading_and_line = ({heading}) => {
         <div className="heading-and-line-widget-text">
         {heading === "Archives" ? (
           <div>
-            <p>NONE</p>
+          <a
+  href="https://sites.google.com/iitpkd.ac.in/tfs-iit-palakkad/home"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ color: 'black' }}
+>
+  Old Website Link
+</a>
             
           </div>
         ) : (
