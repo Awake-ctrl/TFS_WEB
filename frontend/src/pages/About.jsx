@@ -20,7 +20,7 @@ const ABOUT_US = () => {
   }, [location]);
   
   return (
-    <div class='about-us-content'>
+    <div className='about-us-content'>
       <div id="about-page-onset"></div>
       <Navbar/>
 

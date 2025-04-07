@@ -16,7 +16,7 @@ const Heading_and_line = ({heading}) => {
   rel="noopener noreferrer"
   style={{ color: 'black' }}
 >
-  Old Website Link
+  <p className='heading-and-line-widget-archive-link'>TFS Website (OLD)</p>
 </a>
             
           </div>

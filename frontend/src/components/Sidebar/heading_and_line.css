@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+.heading-and-line-widget-archive-link:hover{
+    color: red;
+}
+
 .heading-and-line-widget-heading {
     background-color:  #363062;
     color: white;

@@ -15,19 +15,16 @@ const Article = () => {
         const fetchArticle = async () => {
             try {
                 const response = await axios.get('/db.json');
-
-                const articles = response.data;  // Assuming response data is an array
-                const foundArticle = articles.find(a => a.id === parseInt(id)); // Find the correct article
-                
+                const articles = response.data; // Assuming it's an array
+                const foundArticle = articles.find(a => a.id === parseInt(id));
                 setArticle(foundArticle || null);
             } catch (error) {
                 console.error("Error fetching the article:", error);
-            } 
+            }
         };
 
         fetchArticle();
     }, [id]);
-
 
     if (!article) {
         return <p>Article not found.</p>;
@@ -41,7 +38,7 @@ const Article = () => {
         const data = { Name: name, Email: email, Comment: comment };
 
         try {
-            await axios.post('ENTER LINK HERE', data);
+            await axios.post('ENTER LINK HERE', data); // Replace with actual endpoint
             setName('');
             setEmail('');
             setComment('');
@@ -71,41 +68,42 @@ const Article = () => {
                         </li>
                     </ul>
                 </header>
-                
+
                 {article.videourl ? (
                     <iframe
-                    className="rect-art-card-video"
-                    src={article.videourl.replace("youtu.be/", "www.youtube.com/embed/").split("?")[0]}
-                    title={article.heading}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                    ) : (
+                        className="rect-art-card-video"
+                        src={article.videourl.replace("youtu.be/", "www.youtube-nocookie.com/embed/").split("?")[0]}
+                        title={article.heading}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    />
+                ) : (
                     <img
                         className="rect-art-card-image"
                         src={article.imageurl}
                         alt={article.heading}
                     />
-                    )}
+                )}
 
                 <div className='rect-art-card-text'>
                     <p>{article.description}</p>  
                 </div>
 
                 <div className='rect-author-container'>
-                    <img className="rect-author-image" 
+                    <img 
+                        className="rect-author-image" 
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSle5CxW6QjBz4FH6p5szdloz2gPoQLJ8Outg&s" 
                         alt="Author" 
                     />
                     <div className="rect-author-details">
                         <p className="rect-author-name">
-                            Author:  
+                            Author:&nbsp;
                             <Link className="art-card-link-styles2" to={AuthorLink}>
                                 {article.author || "Anonymous"}
                             </Link>
                         </p>
                         <p className="rect-publication-date">
-                            Published On:  
+                            Published On:&nbsp;
                             <Link className="art-card-link-styles2" to={DateLink}>
                                 {article.date || "_-_-_"}
                             </Link>
@@ -127,28 +125,28 @@ const Article = () => {
                         required
                     />
                     <div className="rect-comment-input-group">
-                        <textarea 
+                        <input 
+                            type="text"
                             id="rect-short-comment" 
                             name="rect-short-comment" 
                             placeholder="* Name" 
-                            rows="2" 
                             className="rect-comment-input Name-area"
                             value={name} 
                             onChange={(e) => setName(e.target.value)} 
                             required
                         />
-                        <textarea 
+                        <input 
+                            type="email"
                             id="rect-comment-email" 
                             name="rect-comment-email" 
                             placeholder="* E-mail" 
-                            rows="2" 
                             className="rect-comment-input mail-area"
                             value={email} 
                             onChange={(e) => setEmail(e.target.value)} 
                             required
                         />
                     </div>
-                    <input className="rect-comment-submit-btn" type="submit"/>
+                    <input className="rect-comment-submit-btn" type="submit" value="Submit" />
                 </form>
 
                 {/* Success Popup Modal */}
@@ -164,6 +162,6 @@ const Article = () => {
             </div>   
         </div>
     );
-}
+};
 
 export default Article;

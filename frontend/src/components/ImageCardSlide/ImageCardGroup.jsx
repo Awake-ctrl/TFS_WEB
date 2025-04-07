@@ -26,9 +26,10 @@ function ImageCardGroup() {
     fetchArticle();
   }, []);
 
-  const sliderArticles = articles
+  let sliderArticles = articles
     .filter((article) => article.slider === 1)
     .reverse();
+
 
   return (
     <div className="ImageCardGroupContainer">
@@ -39,18 +40,18 @@ function ImageCardGroup() {
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
-            swiper.autoplay.start(); // ✅ Make autoplay start immediately
+            setTimeout(() => {
+              if (swiper.autoplay && swiper.autoplay.running === false) {
+                swiper.autoplay.start();
+              }
+            }, 300);  // ✅ Make autoplay start immediately
           }}
           loop={true}
-          loopAdditionalSlides={3}
-          observer={true}
-          observeParents={true}
-          resizeObserver={true}
           spaceBetween={20}
           autoplay={{
             delay: 2000,
             disableOnInteraction: false,
-            pauseOnMouseEnter: true,
+            pauseOnMouseEnter: false,
           }}
           speed={1000}
           navigation={{

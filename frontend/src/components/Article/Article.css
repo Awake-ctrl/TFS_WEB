@@ -50,8 +50,8 @@
     font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
     font-size: 2em;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow-y: hidden;
 }
@@ -71,8 +71,8 @@
 
 .rect-art-card-date {
     display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow-y: hidden;
     overflow-wrap: normal;
