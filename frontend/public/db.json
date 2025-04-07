@@ -15,6 +15,7 @@
     "heading": "Catalogue of Clubs",
     "date": "",
     "author": "",
+    "slider": 1,
     "imageurl": "/images/catalogue_of_clubs.webp",
     "description": "A concise catalogue of the student bodies of IIT Palakkad."
   },
@@ -25,7 +26,6 @@
     "heading": "Exodus - Part 1",
     "date": "",
     "author": "",
-    "slider": 1,
     "imageurl": "/images/exodus_p1.webp",
     "description": "Interview of Aniket Singh, an Alumnus of IIT Palakkad and a full time software developer at Parabole.ai"
   },
@@ -68,7 +68,6 @@
     "heading": "Launch of TECHIN",
     "date": "20-01-2021",
     "author": "",
-    "slider": 1,
     "imageurl": "/images/launch_of_techin_2021.webp",
     "description": "Technology Innovation Foundation of IIT Palakkad"
   },
@@ -99,7 +98,6 @@
     "heading": "Perspective",
     "date": "",
     "author": "",
-    "slider": 1,
     "imageurl": "/images/perspective_p1.webp",
     "description": "A unique perspective on rare diseases, lifestyles and more. Guest article by Mr. Rachit Shah."
   },
@@ -111,7 +109,6 @@
     "date": "",
     "author": "",
     "imageurl": "/images/perspective_p2.webp",
-    "slider": 1,
     "description": "Part 2 - Continuation of the guest article series by Mr. Rachit Shah."
   },
 
