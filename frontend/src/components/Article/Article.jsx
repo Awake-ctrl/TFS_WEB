@@ -67,20 +67,33 @@ const Article = () => {
                     <ul className="rect-art-card-additional-data">
                         <li className='rect-art-card-date'>
                             <Link className="art-card-link-styles2" to={DateLink}>
-                                {article.date || "Unknown Date"}
+                                {article.date || "_-_-_"}
                             </Link>
                         </li>
                         <li className='rect-art-card-author'>
                             <Link className="art-card-link-styles2" to={AuthorLink}>
-                                {article.author || "Anonymous"}
+                                {article.author || "Karthikeya D"}
                             </Link>
                         </li>
                     </ul>
                 </header>
-                <img className="rect-art-card-image" 
-                    src={article.imageurl} 
-                    alt={article.heading} 
-                />
+                
+                {article.videourl ? (
+                    <iframe
+                    className="rect-art-card-video"
+                    src={article.videourl.replace("youtu.be/", "www.youtube.com/embed/").split("?")[0]}
+                    title={article.heading}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                    ) : (
+                    <img
+                        className="rect-art-card-image"
+                        src={article.imageurl}
+                        alt={article.heading}
+                    />
+                    )}
+
                 <div className='rect-art-card-text'>
                     <p>{article.description}</p>  
                 </div>

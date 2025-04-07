@@ -6,6 +6,7 @@ const ArticleCards = (article) => {
 
     const AuthorOnsetCSSID = "author-page-author-onset";
     const AuthorLink = `/Authors/${article.author || "Unknown"}#${AuthorOnsetCSSID}`;
+    const article_heading = article.subheading === '' || article.subheading === undefined ? article.heading : article.subheading
 
     const ArticleOnsetCSSID = "article-page-article-onset";
     const ArticleLink = `/Article/${article.id}#${ArticleOnsetCSSID}`;
@@ -34,7 +35,7 @@ const ArticleCards = (article) => {
                             </li>
                         </ul>
                         <h1 className="art-card-heading">
-                            <Link className={linkstyles} to={ArticleLink}>{article.heading}</Link>
+                            <Link className={linkstyles} to={ArticleLink}>{article.subheading}</Link>
                         </h1>
                     </header>
                     <div className="art-card-text">
