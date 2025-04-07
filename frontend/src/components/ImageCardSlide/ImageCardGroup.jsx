@@ -48,11 +48,11 @@ function ImageCardGroup() {
           resizeObserver={true}
           spaceBetween={20}
           autoplay={{
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}
-          speed={300}
+          speed={1000}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
