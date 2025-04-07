@@ -21,18 +21,10 @@ function ImageCardGroup() {
         setArticles(articles);
       } catch (error) {
         console.error("Error fetching the article:", error);
-      } 
+      }
     };
     fetchArticle();
   }, []);
-
-  useEffect(() => {
-    if (swiperRef.current) {
-      setTimeout(() => {
-        swiperRef.current.update();
-      }, 100);
-    }
-  }, [articles]);
 
   const sliderArticles = articles
     .filter((article) => article.slider === 1)
@@ -47,13 +39,13 @@ function ImageCardGroup() {
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
+            swiper.autoplay.start(); // ✅ Make autoplay start immediately
           }}
           loop={true}
           loopAdditionalSlides={3}
           observer={true}
           observeParents={true}
           resizeObserver={true}
-          updateOnWindowResize={true}
           spaceBetween={20}
           autoplay={{
             delay: 2000,
@@ -67,42 +59,15 @@ function ImageCardGroup() {
           }}
           modules={[Autoplay, Navigation]}
           breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            480: {
-              slidesPerView: 1,
-              spaceBetween: 15,
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 25,
-            },
-            1280: {
-              slidesPerView: 3,
-              spaceBetween: 25,
-            },
-            1440: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-            },
-            1920: {
-              slidesPerView: 5,
-              spaceBetween: 30,
-            },
-            2560: {
-              slidesPerView: 6,
-              spaceBetween: 30,
-            },
+            320: { slidesPerView: 1, spaceBetween: 10 },
+            480: { slidesPerView: 1, spaceBetween: 15 },
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 20 },
+            1024: { slidesPerView: 3, spaceBetween: 25 },
+            1280: { slidesPerView: 3, spaceBetween: 25 },
+            1440: { slidesPerView: 4, spaceBetween: 30 },
+            1920: { slidesPerView: 5, spaceBetween: 30 },
+            2560: { slidesPerView: 6, spaceBetween: 30 },
           }}
           className="swiper"
         >
