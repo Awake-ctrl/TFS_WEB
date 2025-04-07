@@ -8,8 +8,9 @@ const ArticleCards = (article) => {
     const AuthorLink = `/Authors/${article.author || "Unknown"}#${AuthorOnsetCSSID}`;
 
     const ArticleOnsetCSSID = "article-page-article-onset";
-    const disabled = false;  // Change to `true` if you want to disable links
-    const ArticleLink = disabled ? "#" : `/Article/${article.id}#${ArticleOnsetCSSID}`;
+    const ArticleLink = `/Article/${article.id}#${ArticleOnsetCSSID}`;
+    const article_date = article.date == '' ? '_-_-_' : article.date;
+    const article_author = article.author == '' ? 'Karthikeya D' : article.author;
 
     const linkstyles = "art-card-link-styles";
     const linkstyles2 = "art-card-link-styles2";
@@ -26,10 +27,10 @@ const ArticleCards = (article) => {
                     <header className="art-card-header">
                         <ul className="art-card-additional-data">
                             <li className="art-card-date">
-                                <Link className={linkstyles2} to={DateLink}>{article.date || "Unknown Date"}</Link>
+                                <Link className={linkstyles2} to={DateLink}>{article_date}</Link>
                             </li>
                             <li className="art-card-author">
-                                <Link className={linkstyles2} to={AuthorLink}>{article.author || "Anonymous"}</Link>
+                                <Link className={linkstyles2} to={AuthorLink}>{article_author}</Link>
                             </li>
                         </ul>
                         <h1 className="art-card-heading">
@@ -40,9 +41,7 @@ const ArticleCards = (article) => {
                         <p>{article.description}</p>
                     </div>
 
-                    {!disabled && (
-                        <Link className="art-card-read-more-button" to={ArticleLink}>More</Link>
-                    )}
+                    <Link className="art-card-read-more-button" to={ArticleLink}>Read More</Link>
                 </div>
             </Link>
         </div>

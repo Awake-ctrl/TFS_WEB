@@ -30,6 +30,7 @@ function ImageCardGroup() {
   }, []);
 
   return (
+    
     <div className="ImageCardGroupContainer">
       <div className="ImageCardGroupRow">
         <Swiper

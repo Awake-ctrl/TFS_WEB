@@ -7,7 +7,7 @@ const Recentposts = () => {
 
   return (
       <div className="recent-post-wrapper">
-         <h3 className="recent-post-widget-title">New Posts</h3>
+         <h3 className="recent-post-widget-title">Recent Posts</h3>
          <ul className="recent-post-content-container">
             <li className="recent-post-content-wrapper">
                 <a className="recent-post-content-image" href=""></a>

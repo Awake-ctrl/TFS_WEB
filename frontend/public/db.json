@@ -3,7 +3,7 @@
     "id": 1 ,
     "type": "article",
     "heading": "A Message to the Student Community of IIT Palakkad",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/a_message_to_student_community_of_iit_pkd.webp",
     "description": "From the Gen Sec to the students - A short interview with the General Secretary"
@@ -13,7 +13,7 @@
     "id": 2 ,
     "type": "article",
     "heading": "Catalogue of Clubs",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/catalogue_of_clubs.webp",
     "description": "A concise catalogue of the student bodies of IIT Palakkad."
@@ -23,8 +23,9 @@
     "id": 3 ,
     "type": "article",
     "heading": "Exodus - Part 1",
-    "date": "N/A",
+    "date": "",
     "author": "",
+    "slider": 1,
     "imageurl": "/images/exodus_p1.webp",
     "description": "Interview of Aniket Singh, an Alumnus of IIT Palakkad and a full time software developer at Parabole.ai"
   },
@@ -33,8 +34,9 @@
     "id": 4 ,
     "type": "article",
     "heading": "Exodus - Part 2",
-    "date": "N/A",
+    "date": "",
     "author": "",
+    "slider": 1,
     "imageurl": "/images/exodus_p2.webp",
     "description": "Interview of Akshansh Gupta, an Alumnus of IIT Palakkad and a Sr analyst at Cognizant."
   },
@@ -43,7 +45,7 @@
     "id": 5 ,
     "type": "article",
     "heading": "Fedena Disclosure",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/fedena_disclosure.webp",
     "description": "A brief look into the security loopholes in Fedena,which were eventually fixed."
@@ -66,6 +68,7 @@
     "heading": "Launch of TECHIN",
     "date": "20-01-2021",
     "author": "",
+    "slider": 1,
     "imageurl": "/images/launch_of_techin_2021.webp",
     "description": "Technology Innovation Foundation of IIT Palakkad"
   },
@@ -74,7 +77,7 @@
     "id": 8 ,
     "type": "article",
     "heading": "Mother Tongue Instruction at IITs ",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/mother_tongue_instruction_at_iits.webp",
     "description": "Moment of Joy or Point of Concern?"
@@ -84,7 +87,7 @@
     "id": 9 ,
     "type": "article",
     "heading": "NEP 2020",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/nep_2020.webp",
     "description": "NEP 2020 took the nation by storm. What is it? How is it going to be implemented?"
@@ -94,8 +97,9 @@
     "id": 10 ,
     "type": "article",
     "heading": "Perspective",
-    "date": "N/A",
+    "date": "",
     "author": "",
+    "slider": 1,
     "imageurl": "/images/perspective_p1.webp",
     "description": "A unique perspective on rare diseases, lifestyles and more. Guest article by Mr. Rachit Shah."
   },
@@ -104,9 +108,10 @@
     "id": 11 ,
     "type": "article",
     "heading": "Perspective",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/perspective_p2.webp",
+    "slider": 1,
     "description": "Part 2 - Continuation of the guest article series by Mr. Rachit Shah."
   },
 
@@ -114,9 +119,10 @@
     "id": 12 ,
     "type": "article",
     "heading": "Perspective",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/perspective_p3.webp",
+    "slider": 1,
     "description": "Part 3 - Continuation of the guest article series by Mr. Rachit Shah."
   },
 
@@ -134,7 +140,7 @@
     "id": 14 ,
     "type": "article",
     "heading": "Privacy Matters??",
-    "date": "N/A",
+    "date": "",
     "author": "",
     "imageurl": "/images/privacy_matters.webp",
     "description": "A quick look into the recent Privacy Policy update from WhatsApp and why it's causing all the fuzz!!"
@@ -147,6 +153,7 @@
     "date": "January 2024",
     "author": "",
     "imageurl": "/images/sac_review_2023.webp",
+    "slider": 1,
     "description": "The SAC is an integral part of our institute as they represent the student community and work towards the betterment of the institute. That being said, as the student media body , it is our responsibility to review their work and and bring students opinions to light."
   },
 
@@ -184,11 +191,11 @@
     "type": "article",
     "heading": "Podcast with Sai Hemanth Reddy about IAC 6.O || Acad Sec @SAC 2024-25 || P01 ||",
     "subheading": "Podcast 01: With Acad Sec",
-    "date": "24-08-2023",
+    "date": "October, 2024",
     "author": "",
     "slider" : 1,
     "imageurl": "/images/podcast_01.webp",
-    "description": "TFS introduced our very own instagram news page."
+    "description": "In episode P01 of The Fleet Street podcast series, D. Sai Hemanth Reddy, the Academic Affairs Secretary of IIT Palakkad's Student Affairs Council (SAC) for 2024-25, discusses the upcoming Industry-Academia Conclave 6.0 (IAC 6.0). He elaborates on the event's objectives to foster collaboration between the institute and industry leaders, providing students with insights into current industrial trends and research opportunities. The conclave aims to bridge the gap between academic learning and practical industry applicationsSai Hemanth highlights the significance of IAC 6.0 in enhancing students' understanding of real-world challenges and technological advancements. He emphasizes that the event serves as a platform for networking, allowing students to engage directly with professionals and gain exposure to various career paths. The conclave features a series of talks and sessions led by approximately 30 eminent speakers, offering valuable knowledge and experiences to the participants. Reflecting on the organization of IAC 6.0, Sai Hemanth acknowledges the collaborative efforts of the SAC and the student body in bringing the event to fruition. He expresses optimism that the conclave will inspire students to pursue innovative projects and research, ultimately contributing to their professional growth and the institute's reputation. The podcast provides listeners with an in-depth understanding of the vision and expectations surrounding IAC 6.0."
   },
 
   {
@@ -196,11 +203,11 @@
     "type": "article",
     "heading": "Podcast with Prof. Ramesh Venkateshwaran, BoG Chairman, IITPKD || P02 ||",
     "subheading": "Podcast 02: With BoG Chairman",
-    "date": "24-08-2023",
+    "date": "December, 2024",
     "author": "",
     "slider" : 1,
     "imageurl": "/images/podcast_02.webp",
-    "description": "TFS introduced our very own instagram news page."
+    "description": "In episode P02 of The Fleet Street podcast series, Professor Ramesh Venkateswaran, Chairman of the Board of Governors at IIT Palakkad, shares insights into his professional journey and vision for the institute. With a background in mechanical engineering from IIT Bombay and a postgraduate degree from IIM Bangalore, he brings a wealth of experience in management and education. His diverse roles have included serving as an adjunct faculty member at IIM Bangalore and IIM Udaipur, and as Director of SDM Institute for Management Development in Mysore. Throughout the conversation, Professor Venkateswaran emphasizes the importance of fostering a holistic educational environment that balances academic rigor with extracurricular engagement. He discusses initiatives aimed at enhancing student welfare and promoting a culture of innovation and critical thinking within the IIT Palakkad community. His commitment to student development is evident in his involvement with various organizations focused on mental health and counseling services. Reflecting on his tenure as Chairman, Professor Venkateswaran highlights the collaborative efforts between the administration and students to create an inclusive and supportive campus atmosphere. He envisions IIT Palakkad as a leading institution that not only excels in technical education but also contributes meaningfully to societal progress through research and community engagement. His insights offer a comprehensive understanding of the strategic direction and values guiding IIT Palakkad's growth."
   },
 
   {
@@ -208,11 +215,11 @@
     "type": "article",
     "heading": "Podcast with Karthikeya B, Students' General Secretary, SAC 2024-25 IITPKD | P03 |",
     "subheading": "Podcast 03: With Gen Sec",
-    "date": "24-08-2023",
+    "date": "January, 2025",
     "author": "",
     "slider" : 1,
     "imageurl": "/images/podcast_03.webp",
-    "description": "TFS introduced our very own instagram news page."
+    "description": "In episode P03 of The Fleet Street podcast series, Karthikeya Bejjanki, the Students' General Secretary of IIT Palakkad's Student Affairs Council (SAC) for 2024-25, shares insights into his role and the council's initiatives. He discusses the SAC's efforts to enhance student life, including collaborations with local restaurants to offer discounts to the IIT Palakkad community. Karthikeya elaborates on the SAC's structure, highlighting the various secretaries and their responsibilities in addressing academic, technical, sports, cultural, hostel, postgraduate, and research affairs. He emphasizes the council's commitment to fostering a supportive environment that promotes both academic excellence and extracurricular engagement. Reflecting on his tenure, Karthikeya underscores the importance of student representation in decision-making processes and encourages active participation from the student body. He envisions a collaborative campus culture where students and administration work together to enhance the overall IIT Palakkad experience."
   },
 
   {
@@ -220,11 +227,11 @@
     "type": "article",
     "heading": "Podcast with the GC 2.O Organisers || General Championship 2025 || P04 ||",
     "subheading": "Podcast 04: With GC 2.0 Team",
-    "date": "24-08-2023",
+    "date": "February, 2025",
     "author": "",
     "slider" : 1,
     "imageurl": "/images/podcast_04.webp",
-    "description": "TFS introduced our very own instagram news page."
+    "description": "In this episode of TFSIITPKD’s podcast series, the spotlight turns toward the passionate minds behind GC 2.0 – the General Championship 2025 at IIT Palakkad. Hosted in a laid-back, conversational format, the podcast dives deep into the planning, challenges, and creative brainstorming that shaped this year's edition of the championship. The organizers open up about the extensive groundwork laid months in advance—from ideation to execution—shedding light on how they envisioned a revamped GC experience. Listeners are offered a rare behind-the-scenes glimpse into the dedication and team spirit that drive such large-scale student events. As the discussion unfolds, the organizers delve into what made GC 2.0 different from its predecessor. They highlight new event categories, improved scheduling, inclusivity-focused changes, and efforts to boost inter-hostel engagement. With anecdotes, light-hearted moments, and even a few unfiltered confessions, the podcast captures the human side of organizing—dealing with last-minute chaos, sleepless nights, and the thrill of watching ideas come to life. The conversation also touches upon the role of feedback from GC 1.0 and how it influenced changes this year, making it more vibrant and accessible for everyone involved. The episode concludes with reflections on the impact the General Championship has on student culture at IITPKD. The organizers express hope that GC 2.0 not only builds competitive spirit but also fosters a sense of belonging, creativity, and collaboration across all batches. They also drop a few teasers about upcoming surprises and their aspirations for future editions. Whether you’re a participant, an organizer, or just someone curious about campus life, this podcast is a must-listen—rich with insight, energy, and the essence of student-driven leadership."
   }
 
 

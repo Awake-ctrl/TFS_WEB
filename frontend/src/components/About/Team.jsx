@@ -4,7 +4,7 @@ import './Team.css'; // We'll add styles here
 const Team = () => {
   return (
     <div className="team-container">
-      <h2>The Team</h2>
+      {/* <h2 style={{padding:2px}}>The Team</h2> */}
       {/* <div className="team-member executive-editor">
         <p className="role">Executive Editor</p>
         <h3>Navaneeth M Nambiar</h3>

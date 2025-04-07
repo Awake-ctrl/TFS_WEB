@@ -15,8 +15,8 @@ const Heading_and_line = ({heading}) => {
           </div>
         ) : (
           <div>
-            <p><strong>Phone No:</strong> +91 7794011990</p>
-            <p><strong>Email:</strong><a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></p>
+            <p><strong>Phone&nbsp;:</strong> +91 7794011990</p>
+            <p><strong>Email&nbsp;:</strong><a href="mailto:tfs@iitpkd.ac.in" style={{ textDecoration: "none" }}> tfs@iitpkd.ac.in</a></p>
           </div>
         )}
 

@@ -16,7 +16,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-color: white;
+  background-color: #eeecff;
   
 }
 
@@ -24,7 +24,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  width: 90%;
+  width: 80%;
 
 }
 .wrapper2 {
@@ -44,7 +44,7 @@ aside {
     margin-top: 2.5vw;
     margin-left: 1rem;
     margin-right: 1rem;
-    background-color: white;
+    background-color: #eeecff;
     color: rgb(32, 31, 31);
     height: auto;
     

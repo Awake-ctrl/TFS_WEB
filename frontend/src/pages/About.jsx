@@ -20,7 +20,7 @@ const ABOUT_US = () => {
   }, [location]);
   
   return (
-    <div>
+    <div class='about-us-content'>
       <div id="about-page-onset"></div>
       <Navbar/>
 
@@ -72,12 +72,23 @@ const ABOUT_US = () => {
          </p>
         </div> */}
         <div className="contact-box">
-        <h2> Contact Us </h2>
-          <p><strong>Karthikeya</strong> - +91 77940 11990 - <a href="mailto:132201033@smail.iitpkd.ac.in">132201033@smail.iitpkd.ac.in</a></p>
-          <p><strong>Sai Kiran</strong> - +91 8074 779 534 - <a href="mailto:112201044@smail.iitpkd.ac.in">112201044@smail.iitpkd.ac.in</a></p>
-          <p><strong>Simeon K Sonar</strong> - +91 98346 92809 - <a href="mailto:112301031@smail.iitpkd.ac.in">112301031@smail.iitpkd.ac.in</a></p>
-        </div>
+        <h2>Contact Us</h2>
 
+        <p>
+          <strong>Karthikeya Darishetty</strong> — +91 77940 11990<br />
+          <a href="mailto:132201033@smail.iitpkd.ac.in">132201033@smail.iitpkd.ac.in</a>
+        </p>
+        <br/>
+        <p>
+          <strong>Kallepally Sai Kiran</strong> — +91 8074 779 534<br />
+          <a href="mailto:112201044@smail.iitpkd.ac.in">112201044@smail.iitpkd.ac.in</a>
+        </p>
+          <br/>
+        <p>
+          <strong>Simeon Kandan Sonar</strong> — +91 98346 92809<br />
+          <a href="mailto:112301031@smail.iitpkd.ac.in">112301031@smail.iitpkd.ac.in</a>
+        </p>
+</div>
       <Footer/>
 
     </div>
