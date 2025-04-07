@@ -1,95 +1,82 @@
 import { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
+import axios from "axios";
+import { TypeAnimation } from "react-type-animation";
+
 import Navbar from "../../components/Navbar/Navbar";
 import ImageCardGroup from "../../components/ImageCardSlide/ImageCardGroup";
-import ArticleCards from '../../components/Article/ArticleCards';
-import Heading_and_line from '../../components/Sidebar/heading_and_line';
-import Recentposts from "../../components/Sidebar/recentposts";
-import Socials from "../../components/Sidebar/socials";
-import Footer from '../../components/Footer/Footer';
-import FeedbackForm from "../../components/Sidebar/subscriptionform";
-import '../../components/Sidebar/sidebar.css';
-import { useLocation, useParams } from 'react-router-dom';
-import axios from 'axios';
+import ArticleCards from "../../components/Article/ArticleCards";
+import Footer from "../../components/Footer/Footer";
+
+import "../Authors/Author.css";
 
 const Author = () => {
-  const { author } = useParams(); 
+  const { author } = useParams();
   const location = useLocation();
   const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true); 
 
-  useEffect(() => {
-    const fetchArticles = async () => {
-      try {
-        const url = `http://localhost:1337/api/articles?filters[author][name][$eq]=${author}&populate=*`;
-        const response = await axios.get(url);
-        setArticles(response.data.data);
-      } catch (error) {
-        console.error("Error fetching the author related articles:", error);
-      } finally {
-        setLoading(false); 
-      }
-    };
-
-    fetchArticles();
-  }, [author]);
-
+  // Scroll to hash element on mount/update
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     }
   }, [location]);
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
+  // Fetch articles from db.json
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const { data } = await axios.get("/db.json");
+        setArticles(data);
+      } catch (error) {
+        console.error("Failed to fetch articles:", error);
+      }
+    };
 
-  if (articles.length === 0) {
-    return <p>No articles found for this author.</p>;
+    fetchArticles();
+  }, []);
+
+  const filteredArticles = articles
+    .filter((article) => article.author === author)
+    .reverse();
+
+  if (filteredArticles.length === 0 || author === "Anonymous") {
+    return <p className="no-articles">No articles found for this author.</p>;
   }
 
   return (
     <div>
       <Navbar />
       <ImageCardGroup />
+
       <div className="article-page-author-name">
-        <h1>Author: {author}</h1>
+        <h1>
+          Author:&nbsp;
+          <TypeAnimation
+            sequence={[author]}
+            speed={70}
+            cursor={true}
+            repeat={0}
+            style={{ display: "inline-block" }}
+          />
+        </h1>
+        <br />
+        <br />
       </div>
-      <div className="content">
-        <div className="wrapper">
-          <div className="wrapper2">
-            <div className="article">
-              <div id="author-page-author-onset"></div>
-              {articles.map((article) => (
-                <ArticleCards
-                  key={article.id}
-                  id={article.id}
-                  heading={article.heading}
-                  author={article.author}
-                  date={article.date}
-                  description={article.description}
-                  image={article.image?.url}
-                  disabled={article.disabled}
-                  category={article.category}
-                />
-              ))}
-            </div>
-            <aside>
-              <Recentposts />
-              <br />
-              <FeedbackForm />
-              <br />
-              <Heading_and_line heading={"Archives"} />
-              <br />
-              <Heading_and_line heading={"Contact Us"} />
-              <br />
-              <Socials />
-            </aside>
+
+      <div className="author-content">
+        <div className="author-wrapper">
+          <div className="article" id="author-page-author-onset">
+            {filteredArticles.map((article) => (
+              <ArticleCards key={article.id} {...article} />
+            ))}
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

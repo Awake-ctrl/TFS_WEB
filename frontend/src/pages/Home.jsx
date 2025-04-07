@@ -1,45 +1,55 @@
-import axios from 'axios';
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Navbar, Footer, Heading_and_line, Recentposts, FeedbackForm, Socials } from '../All_imports';
-import { ArticleCards, ImageCardGroup } from '../All_imports';
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
 
-import '../components/Sidebar/sidebar.css';
+import {
+  Navbar,
+  Footer,
+  Heading_and_line,
+  Recentposts,
+  FeedbackForm,
+  Socials,
+  ArticleCards,
+  ImageCardGroup,
+} from "../All_imports";
+
+import "../components/Sidebar/sidebar.css";
 
 const Home = () => {
   const location = useLocation();
   const [articles, setArticles] = useState([]);
 
+  // Scroll to anchor if URL contains hash
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
       }
     }
   }, [location]);
 
-    useEffect(() => {
-      const fetchArticle = async () => {
-          try {
-              const response = await axios.get('/db.json');
+  // Fetch articles from db.json
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const { data } = await axios.get("/db.json");
+        setArticles(data);
+      } catch (error) {
+        console.error("Error fetching articles:", error);
+      }
+    };
 
-              const articles = response.data;  // Assuming response data is an array
-              
-              setArticles(articles);
-          } catch (error) {
-              console.error("Error fetching the article:", error);
-          }
-      };
-
-      fetchArticle();
+    fetchArticles();
   }, []);
 
-
+  const filteredArticles = articles
+    .filter((article) => article.type === "article")
+    .reverse();
 
   return (
     <div>
-      <div id="home-page-onset"></div>
+      <div id="home-page-onset" />
       <Navbar />
       <ImageCardGroup />
 
@@ -47,12 +57,9 @@ const Home = () => {
         <div className="wrapper">
           <div className="wrapper2">
             <div className="article">
-              {articles
-                .filter((article) => article.type === "article") // Filter by type
-                .reverse()
-                .map((article) => (
-                  <ArticleCards {...article}/>
-                ))}
+              {filteredArticles.map((article) => (
+                <ArticleCards key={article.id} {...article} />
+              ))}
             </div>
 
             <aside>
@@ -60,15 +67,16 @@ const Home = () => {
               <br />
               <FeedbackForm />
               <br />
-              <Heading_and_line heading={"Archives"} />
+              <Heading_and_line heading="Archives" />
               <br />
-              <Heading_and_line heading={"Contact Us"} />
+              <Heading_and_line heading="Contact Us" />
               <br />
               <Socials />
             </aside>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

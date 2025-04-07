@@ -5,7 +5,7 @@ const ArticleCards = (article) => {
     const DateLink = "#";
 
     const AuthorOnsetCSSID = "author-page-author-onset";
-    const AuthorLink = `/Authors/${article.author || "Unknown"}#${AuthorOnsetCSSID}`;
+    const AuthorLink = `/Authors/${article.author || "Anonymous"}#${AuthorOnsetCSSID}`;
     const article_heading = article.subheading === '' || article.subheading === undefined ? article.heading : article.subheading
 
     const ArticleOnsetCSSID = "article-page-article-onset";

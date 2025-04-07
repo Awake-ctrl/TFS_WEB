@@ -5,41 +5,62 @@ import "swiper/css/navigation";
 import "swiper/css";
 import "./ImageCardGroup.css";
 import { Autoplay, Navigation } from "swiper/modules";
-import { MdNavigateNext } from "react-icons/md";
-import { MdNavigateBefore } from "react-icons/md";
-import { useState, useEffect } from "react";
+import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
+import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
 function ImageCardGroup() {
   const [articles, setArticles] = useState([]);
+  const swiperRef = useRef(null);
 
-    useEffect(() => {
-      const fetchArticle = async () => {
-          try {
-              const response = await axios.get('/db.json');
-
-              const articles = response.data;  // Assuming response data is an array
-              
-              setArticles(articles);
-          } catch (error) {
-              console.error("Error fetching the article:", error);
-          }
-      };
-
-      fetchArticle();
+  useEffect(() => {
+    const fetchArticle = async () => {
+      try {
+        const response = await axios.get("/db.json");
+        const articles = response.data;
+        setArticles(articles);
+      } catch (error) {
+        console.error("Error fetching the article:", error);
+      } 
+    };
+    fetchArticle();
   }, []);
 
+  useEffect(() => {
+    if (swiperRef.current) {
+      setTimeout(() => {
+        swiperRef.current.update();
+      }, 100);
+    }
+  }, [articles]);
+
+  const sliderArticles = articles
+    .filter((article) => article.slider === 1)
+    .reverse();
+
   return (
-    
     <div className="ImageCardGroupContainer">
       <div className="ImageCardGroupRow">
+        <div className="swiper-button-prev">
+          <MdNavigateBefore className="prev-icon" />
+        </div>
         <Swiper
-          loop={true}
-          spaceBetween={"20px"}
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
           }}
+          loop={true}
+          loopAdditionalSlides={3}
+          observer={true}
+          observeParents={true}
+          resizeObserver={true}
+          updateOnWindowResize={true}
+          spaceBetween={20}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          speed={500}
           navigation={{
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -48,15 +69,15 @@ function ImageCardGroup() {
           breakpoints={{
             320: {
               slidesPerView: 1,
-              spaceBetween: 10, // Gap between slides at small screens
+              spaceBetween: 10,
             },
             480: {
               slidesPerView: 1,
-              spaceBetween: 15, // Slightly larger gap for mobile landscape
+              spaceBetween: 15,
             },
             640: {
               slidesPerView: 2,
-              spaceBetween: 20, // Maintain reasonable spacing for tablets
+              spaceBetween: 20,
             },
             768: {
               slidesPerView: 2,
@@ -64,7 +85,7 @@ function ImageCardGroup() {
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 25, // For small laptops
+              spaceBetween: 25,
             },
             1280: {
               slidesPerView: 3,
@@ -72,7 +93,7 @@ function ImageCardGroup() {
             },
             1440: {
               slidesPerView: 4,
-              spaceBetween: 30, // For larger desktops
+              spaceBetween: 30,
             },
             1920: {
               slidesPerView: 5,
@@ -80,28 +101,20 @@ function ImageCardGroup() {
             },
             2560: {
               slidesPerView: 6,
-              spaceBetween: 30, // Ultra-wide, max gap size
+              spaceBetween: 30,
             },
           }}
           className="swiper"
         >
-          <div className="swiper-button-next">
-            <MdNavigateNext className="next-icon" />
-          </div>
-          <div className="swiper-button-prev">
-            <MdNavigateBefore className="prev-icon" />
-          </div>
-          {articles
-          .filter((article) => article.slider === 1)
-          .reverse()
-          .map((card) => (
-            <>
-              <SwiperSlide style={{ width: "296.5px" }} key={card.id}>
-                <ImageCard {...card} />
-              </SwiperSlide>
-            </>
+          {sliderArticles.map((card) => (
+            <SwiperSlide key={card.id || `slide-${card.title}-${Math.random()}`}>
+              <ImageCard {...card} />
+            </SwiperSlide>
           ))}
         </Swiper>
+        <div className="swiper-button-next">
+          <MdNavigateNext className="next-icon" />
+        </div>
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/Article/:id" element={<ArticlePage />} />
-        <Route path="/Authors/Author" element={<Author />} />
+        <Route path="/Authors/:author" element={<Author />} />
         <Route path="/" element={<Home />} />
         <Route path="/Bytes" element={<Bytes />} />
         {/* <Route path="/News" element={<News />} /> */}

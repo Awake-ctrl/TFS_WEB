@@ -1,7 +1,6 @@
-/* General Navbar Styles */
+/* === GENERAL NAVBAR STYLES === */
 .navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -13,7 +12,7 @@
   height: 85px;
 }
 
-/* Logo Section */
+/* === LOGO SECTION === */
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -40,13 +39,13 @@
   color: black;
 }
 
-.navbar-logo div h1 {
+.navbar-logo h1 {
   margin-left: 1rem;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
 }
 
-/* Logo Image */
+/* === LOGO IMAGE === */
 .navbar-image {
   height: 40px;
   width: auto;
@@ -54,7 +53,11 @@
   transition: all 0.6s ease;
 }
 
-/* Title beside Logo */
+.navbar-image.small {
+  height: 30px;
+}
+
+/* === TITLE TEXT === */
 .navbar-title {
   margin-left: 0.5rem;
   font-family: 'Times New Roman', Times, serif;
@@ -65,28 +68,26 @@
   font-size: 0.7rem;
 }
 
-/* Menu Container */
+/* === NAV LINKS SECTION === */
 .navbar-menu {
   width: 100%;
   transition: all 0.6s ease;
 }
 
-/* Horizontal Links */
 .navbar-links {
   display: flex;
+  justify-content: end;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
 }
 
 .navbar-links li {
   padding: 0 15px;
-  display: flex;
-  align-items: center;
 }
 
-/* Individual Link */
+/* === INDIVIDUAL LINK === */
 .navbar-link {
   color: white;
   text-decoration: none;
@@ -99,7 +100,6 @@
   transition: background-color 0.4s ease, color 0.2s ease;
   display: flex;
   align-items: center;
-  border: none;
 }
 
 .navbar-link:hover {
@@ -107,7 +107,7 @@
   background-color: #818FB4;
 }
 
-/* Toggle (Hamburger icon for mobile) */
+/* === HAMBURGER TOGGLE === */
 .navbar-toggle {
   display: none;
   background: none;
@@ -117,36 +117,28 @@
   cursor: pointer;
 }
 
-/* Optional animated icon effect */
 .navbar-toggle-icon {
   display: inline-block;
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-/* ---------------- Mobile Styles ---------------- */
+/* === RESPONSIVE: MOBILE STYLES === */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 5px 20px;
     height: 80px;
-    transition: none;
   }
 
   .navbar-logo {
     margin-bottom: 0;
-    transition: none;
   }
 
   .navbar-image {
-    height: 40px;
-    transition: none;
+    height: 35px;
   }
 
   .navbar-title {
     font-size: 0.7rem;
-    transition: none;
   }
 
   .navbar-toggle {
@@ -158,11 +150,10 @@
     position: absolute;
     top: 80px;
     right: 0;
-    background-color: rgba(16, 30, 93, 0.9);
+    background-color: rgba(16, 30, 93, 0.95);
     width: 100%;
     flex-direction: column;
     align-items: center;
-    transition: none;
   }
 
   .navbar-menu.active {
@@ -171,19 +162,17 @@
 
   .navbar-links {
     flex-direction: column;
-    align-items: center;
     width: 100%;
   }
 
   .navbar-links li {
     width: 100%;
-    padding: 0;
   }
 
   .navbar-link {
     width: 100%;
+    padding: 15px 0;
     border-radius: 0;
     text-align: center;
-    padding: 15px 0;
   }
 }

@@ -1,142 +1,123 @@
 .ImageCardGroupContainer {
-  padding-top: 2rem;
-  align-items: center;
-  width: 100vw;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
   background-color: #dbd6ff;
-  padding-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ImageCardGroupRow {
-  max-width: 85vw;
-  max-height: 550px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
 }
 
 .swiper {
-  height: 100%;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 0 2rem; /* Creates space for navigation buttons */
+  overflow: hidden;
 }
 
-.swiper:hover .swiper-button-next {
-  opacity: 100%;
-}
-
-.swiper:hover .swiper-button-prev {
-  opacity: 100%;
-}
-
+/* SLIDE STYLING */
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 296.5px;
-
-  height: auto; /* Let it adapt to the content */
-  min-height: 400px;
-  transition: height 0.3s ease;
+  text-align: center;
+  font-size: 18px;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  height: auto;
+  min-height: 300px;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
-/* For large desktop screens */
+.swiper-slide:hover {
+  transform: scale(1.02);
+}
+
 @media (min-width: 1440px) {
   .swiper-slide {
     min-height: 500px;
   }
 }
 
-/* For desktops and laptops */
-@media (min-width: 1024px) and (max-width: 1439px) {
-  .swiper-slide {
-    min-height: 450px;
-  }
-}
-
-/* For tablets and smaller laptops */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1024px) {
   .swiper-slide {
     min-height: 400px;
   }
 }
 
-/* For mobile landscape and large phones */
-@media (min-width: 6800px) and (max-width: 767px) {
+@media (max-width: 768px) {
   .swiper-slide {
-    min-height: 300px;
+    min-height: 320px;
+    font-size: 16px;
   }
 }
 
-/* For small mobile screens */
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .swiper-slide {
-    min-height: 250px;
+    min-height: 260px;
+    font-size: 15px;
   }
 }
 
+/* NAVIGATION BUTTONS */
 .swiper-button-next,
 .swiper-button-prev {
-  opacity: 0%;
+  opacity: 0;
   transition: opacity 0.2s ease;
-  color: white;
   background-color: #4a408e;
-  transform: translateY(-32px);
-  padding: 0;
-  width: 35.6px;
-  height: 65px;
-  margin: 0;
-  border-radius: 4px;
-}
-
-.swiper-button-next {
-  margin-right: 30px;
+  color: white;
+  width: 40px;
+  height: 60px;
+  border-radius: 6px;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
 }
-
+.swiper-button-next {
+  right: 0;
+}
 .swiper-button-prev {
-  margin-left: 30px;
+  left: 0;
 }
-
+.ImageCardGroupRow:hover .swiper-button-next,
+.ImageCardGroupRow:hover .swiper-button-prev {
+  opacity: 1;
+}
 .swiper-button-next::after,
 .swiper-button-prev::after {
   content: "";
 }
 
-/* Optional: smoother slide transitions */
+/* Prevent slide glitches */
 .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
   transition-timing-function: ease-in-out;
 }
 
-.rainy-bg {
-  position: relative;
-  width: 100vw;
-  min-height: 100vh;
-  overflow: hidden;
-  background: linear-gradient(to top, #6e7f80, #a9c9ff); /* Moody sky */
+.swiper-slide-active {
+  opacity: 1;
 }
-
-.rain {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background-image: 
-    repeating-linear-gradient(
-      transparent 0px, 
-      transparent 10px, 
-      rgba(255, 255, 255, 0.3) 10px, 
-      rgba(255, 255, 255, 0.3) 12px
-    );
-  background-size: 2px 100%;
-  animation: rain-fall 0.5s linear infinite;
-  z-index: 0;
-}
-
-@keyframes rain-fall {
-  0% {
-    background-position: 0 -100%;
-  }
-  100% {
-    background-position: 0 100%;
-  }
+.swiper-slide-duplicate,
+.swiper-slide-duplicate-active {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
