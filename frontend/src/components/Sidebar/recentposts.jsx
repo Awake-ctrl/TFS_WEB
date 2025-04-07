@@ -13,7 +13,7 @@ const Recentposts = () => {
                 <a className="recent-post-content-image" href=""></a>
                 <div className="recent-post-content-text">
                     <h4 className="recent-post-content-title">
-                        <a href="#">No new posts added currently</a>
+                        <a href="/Article/22#article-page-article-onset">Podcast with the GC 2.O Organisers </a>
                     </h4>
                     <div className="recent-post-content-date">{formattedDate}</div>
                 </div>

@@ -55,6 +55,16 @@ const Footer = () => {
             <span className="fa-brands fa-instagram"></span> {/* Instagram icon */}
           </a>
         </li>
+        <li className="socials-item">
+          <a
+            href="https://youtube.com/@thehappeningsiitpalakkad?si=0-zwTGZXa8mRl-y2" // Replace with actual URL
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Visit The Fleet Street, IIT Palakkad on Youtube"
+          >
+            <span className="fa-brands fa-youtube" style={{ color: '#e60a0a' }}></span>
+          </a>
+        </li>
         {/* <li className="socials-item">
           <a
             href="https://www.linkedin.com/company/tfs-iitpkd/" // Replace with actual URL
