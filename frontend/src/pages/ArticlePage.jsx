@@ -25,7 +25,6 @@ const ArticlePage = () => {
   return (
     <div className='Main'>
       <Navbar />
-      <ImageCardGroup />
 
       <div id="article-page-article-onset"></div>
       <div className="content">
