@@ -107,13 +107,13 @@ const Article = () => {
                         <p className="rect-author-name">
                             Author:  
                             <Link className="art-card-link-styles2" to={AuthorLink}>
-                                {article.author || "Anonymous"}
+                                {article.author || "Karthikeya D."}
                             </Link>
                         </p>
                         <p className="rect-publication-date">
                             Published On:  
                             <Link className="art-card-link-styles2" to={DateLink}>
-                                {article.date || "Unknown Date"}
+                                {article.date || "_-_-_"}
                             </Link>
                         </p>
                     </div>

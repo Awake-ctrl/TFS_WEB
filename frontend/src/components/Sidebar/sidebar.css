@@ -50,6 +50,16 @@ aside {
     
 }
 
+@media (max-width: 950px) {
+  .wrapper{
+    width: 90%;
+  }
+}
+@media (max-width: 950px) {
+  .wrapper{
+    width: 100%;
+  }
+}
 @media (max-width: 660px) {
   .wrapper2{
     display: block;

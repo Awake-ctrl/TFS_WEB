@@ -7,31 +7,35 @@
 
 .rect-art-card-video {
     width: 100%;
-    height: 400px;
+    aspect-ratio: 16 / 9;
     border-radius: 12px;
     margin-bottom: 1rem;
-  }
-  
+}
 
 .rect-art-card-full-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 1em;
+    padding: 1.2rem;
     background-color: white;
-    border-radius: 0.5em;
+    border-radius: 15px;
     max-width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     text-decoration: none;
     color: black;
     margin-bottom: 0.75em;
 }
+
 .rect-art-card-link-styles {
     text-decoration: none;
     color: black;
+    transition: color 0.3s;
 }
-  
 
+.rect-art-card-link-styles:hover {
+    text-decoration: underline;
+    color: #333;
+}
 
 .rect-art-card-image {
     width: 100%;
@@ -41,20 +45,16 @@
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-  
-
 
 .rect-art-card-heading {
     font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-    font-size: 1.75em;
+    font-size: 2em;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow-y: hidden;
 }
-  
-
 
 .rect-art-card-additional-data {
     padding: 0;
@@ -62,12 +62,14 @@
     list-style: none;
     display: flex;
     font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.4em;
 }
+
 .rect-art-card-additional-data li {
     margin-right: 1.5em;
 }
-.rect-art-card-date{
+
+.rect-art-card-date {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     line-clamp: 1;
@@ -76,17 +78,13 @@
     overflow-wrap: normal;
 }
 
-
-
 .rect-art-card-text {
-    font-size: 1.15em;
+    font-size: 1.3em;
     font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
 }
 
-  
-
 /* Comment - Section */
-  
+
 .rect-author-container {
     display: flex;
     flex-direction: row;
@@ -99,7 +97,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 1.5em;
 }
-  
 
 .rect-author-image {
     width: 15%;
@@ -109,7 +106,6 @@
     border: 3px solid #d0bfa3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-  
 
 .rect-author-name,
 .rect-publication-date {
@@ -118,8 +114,6 @@
     font-family: 'Courier New', Courier, monospace;
     color: #333;
 }
-  
-
 
 .rect-author-details {
     display: flex;
@@ -127,7 +121,6 @@
     align-items: flex-start;
 }
 
-  
 .rect-comment-section {
     margin-top: 1.5em;
     display: flex;
@@ -135,11 +128,9 @@
     gap: 0.625em;
 }
 
-
 .rect-comment-reply-title {
     font-size: 1.75em;
 }
-  
 
 .rect-comment-textarea {
     width: 100%;
@@ -152,7 +143,6 @@
     box-sizing: border-box;
     transition: border-color 0.3s;
 }
-  
 
 .rect-comment-input-group {
     display: flex;
@@ -160,8 +150,7 @@
     flex-wrap: wrap;
     height: 100%;
 }
-  
-  
+
 .rect-comment-input {
     width: calc(50% - 5px);
     padding: 0.625em;
@@ -170,7 +159,7 @@
     border-radius: 4px;
     resize: none;
 }
-  
+
 .rect-comment-submit-btn {
     padding: 0.625em 1.25em;
     font-size: 0.875em;
@@ -181,49 +170,34 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
-  
+
 .rect-comment-submit-btn:hover {
     background-color: #0056b3;
 }
-  
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .rect-comment-input {
-      width: 100%;
-    }
-  
-    .rect-comment-textarea {
-      padding: 0.5em;
-    }
-}
-  
-@media (max-width: 480px) {
-    .rect-art-card-text {
-        max-height: calc(1.21em * 20);
-        overflow-y: auto;
-        padding-right: 0.15em; 
+        width: 100%;
     }
 
     .rect-comment-textarea {
-      padding: 0.5em;
+        padding: 0.5em;
     }
-  
-    .rect-comment-submit-btn {
-      padding: 0.5em 1em;
-    }
-
-    
 }
 
 @media (max-width: 480px) {
     .rect-art-card-text {
         max-height: calc(1.21em * 15);
         overflow-y: auto;
-        padding-right: 0.15em; 
+        padding-right: 0.15em;
     }
 
+    .rect-comment-textarea {
+        padding: 0.5em;
+    }
+
+    .rect-comment-submit-btn {
+        padding: 0.5em 1em;
+    }
 }
-
-
-
-  
-  
